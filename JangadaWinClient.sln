@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JangadaWinClient", "JangadaWinClient\JangadaWinClient\JangadaWinClient.csproj", "{A6DDAC31-F21B-4EE3-8EB8-0B823D3B90FB}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "JangadaWinClientContent", "JangadaWinClient\JangadaWinClientContent\JangadaWinClientContent.contentproj", "{4ECC61A4-0957-43AE-9F57-C1FDAC7B1610}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Windows Phone = Debug|Windows Phone
+		Debug|x86 = Debug|x86
+		Debug|Xbox 360 = Debug|Xbox 360
+		Debug|Zune = Debug|Zune
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Windows Phone = Release|Windows Phone
+		Release|x86 = Release|x86
+		Release|Xbox 360 = Release|Xbox 360
+		Release|Zune = Release|Zune
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6DDAC31-F21B-4EE3-8EB8-0B823D3B90FB}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{A6DDAC31-F21B-4EE3-8EB8-0B823D3B90FB}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{A6DDAC31-F21B-4EE3-8EB8-0B823D3B90FB}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{A6DDAC31-F21B-4EE3-8EB8-0B823D3B90FB}.Debug|Windows Phone.ActiveCfg = Debug|x86
+		{A6DDAC31-F21B-4EE3-8EB8-0B823D3B90FB}.Debug|x86.ActiveCfg = Debug|x86
+		{A6DDAC31-F21B-4EE3-8EB8-0B823D3B90FB}.Debug|x86.Build.0 = Debug|x86
+		{A6DDAC31-F21B-4EE3-8EB8-0B823D3B90FB}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{A6DDAC31-F21B-4EE3-8EB8-0B823D3B90FB}.Debug|Zune.ActiveCfg = Debug|x86
+		{A6DDAC31-F21B-4EE3-8EB8-0B823D3B90FB}.Release|Any CPU.ActiveCfg = Release|x86
+		{A6DDAC31-F21B-4EE3-8EB8-0B823D3B90FB}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{A6DDAC31-F21B-4EE3-8EB8-0B823D3B90FB}.Release|Mixed Platforms.Build.0 = Release|x86
+		{A6DDAC31-F21B-4EE3-8EB8-0B823D3B90FB}.Release|Windows Phone.ActiveCfg = Release|x86
+		{A6DDAC31-F21B-4EE3-8EB8-0B823D3B90FB}.Release|x86.ActiveCfg = Release|x86
+		{A6DDAC31-F21B-4EE3-8EB8-0B823D3B90FB}.Release|x86.Build.0 = Release|x86
+		{A6DDAC31-F21B-4EE3-8EB8-0B823D3B90FB}.Release|Xbox 360.ActiveCfg = Release|x86
+		{A6DDAC31-F21B-4EE3-8EB8-0B823D3B90FB}.Release|Zune.ActiveCfg = Release|x86
+		{4ECC61A4-0957-43AE-9F57-C1FDAC7B1610}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{4ECC61A4-0957-43AE-9F57-C1FDAC7B1610}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{4ECC61A4-0957-43AE-9F57-C1FDAC7B1610}.Debug|Windows Phone.ActiveCfg = Debug|x86
+		{4ECC61A4-0957-43AE-9F57-C1FDAC7B1610}.Debug|x86.ActiveCfg = Debug|x86
+		{4ECC61A4-0957-43AE-9F57-C1FDAC7B1610}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{4ECC61A4-0957-43AE-9F57-C1FDAC7B1610}.Debug|Zune.ActiveCfg = Debug|x86
+		{4ECC61A4-0957-43AE-9F57-C1FDAC7B1610}.Release|Any CPU.ActiveCfg = Release|x86
+		{4ECC61A4-0957-43AE-9F57-C1FDAC7B1610}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{4ECC61A4-0957-43AE-9F57-C1FDAC7B1610}.Release|Windows Phone.ActiveCfg = Release|x86
+		{4ECC61A4-0957-43AE-9F57-C1FDAC7B1610}.Release|x86.ActiveCfg = Release|x86
+		{4ECC61A4-0957-43AE-9F57-C1FDAC7B1610}.Release|Xbox 360.ActiveCfg = Release|x86
+		{4ECC61A4-0957-43AE-9F57-C1FDAC7B1610}.Release|Zune.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,13 @@
+C:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\bin\x86\Debug\JangadaWinClient.exe
+C:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\bin\x86\Debug\JangadaWinClient.pdb
+C:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\obj\x86\Debug\JangadaWinClient.csprojResolveAssemblyReference.cache
+C:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\obj\x86\Debug\JangadaWinClient.exe
+C:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\obj\x86\Debug\JangadaWinClient.pdb
+C:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\bin\x86\Debug\Google.ProtocolBuffers.dll
+C:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\bin\x86\Debug\Google.ProtocolBuffers.Serialization.dll
+C:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\bin\x86\Debug\TomShane.Neoforce.Controls.dll
+C:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\bin\x86\Debug\Google.ProtocolBuffers.xml
+C:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\bin\x86\Debug\Google.ProtocolBuffers.Serialization.xml
+C:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\bin\x86\Debug\TomShane.Neoforce.Controls.pdb
+C:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\bin\x86\Debug\Content\background.xnb

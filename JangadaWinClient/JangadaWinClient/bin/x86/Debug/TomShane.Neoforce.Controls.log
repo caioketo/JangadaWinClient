@@ -1,0 +1,145 @@
+////////////////////////////////////////////////////////////////
+    Date: 06/01/2015 09:01:27
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: Não foi possível localizar uma parte do caminho 'C:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\bin\x86\Debug\Content\Skins\Default.skin'.
+////////////////////////////////////////////////////////////////
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   em System.IO.File.OpenRead(String path)
+   em TomShane.Neoforce.External.Zip.ZipFile.get_ReadStream() na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\External\Zip\ZipFile.cs:linha 33
+   em TomShane.Neoforce.External.Zip.ZipFile.Read(String zipfilename, Boolean TurnOnDebug) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\External\Zip\ZipFile.cs:linha 200
+   em TomShane.Neoforce.External.Zip.ZipFile.Read(String zipfilename) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\External\Zip\ZipFile.cs:linha 189
+   em TomShane.Neoforce.Controls.ArchiveManager..ctor(IServiceProvider serviceProvider, String archive) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\ArchiveManager.cs:linha 88
+   em TomShane.Neoforce.Controls.Skin..ctor(Manager manager, String name) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Skin.cs:linha 553
+   em TomShane.Neoforce.Controls.Manager.SetSkin(String name) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Manager.cs:linha 939
+   em TomShane.Neoforce.Controls.Manager.Initialize() na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Manager.cs:linha 906
+   em JangadaWinClient.Jangada.Initialize() na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 42
+   em Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   em Microsoft.Xna.Framework.Game.Run()
+   em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+    Date: 06/01/2015 09:02:57
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: Não foi possível localizar uma parte do caminho 'C:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\bin\x86\Debug\Content\Skins\Default.skin'.
+////////////////////////////////////////////////////////////////
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   em System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   em System.IO.File.OpenRead(String path)
+   em TomShane.Neoforce.External.Zip.ZipFile.get_ReadStream() na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\External\Zip\ZipFile.cs:linha 33
+   em TomShane.Neoforce.External.Zip.ZipFile.Read(String zipfilename, Boolean TurnOnDebug) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\External\Zip\ZipFile.cs:linha 200
+   em TomShane.Neoforce.External.Zip.ZipFile.Read(String zipfilename) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\External\Zip\ZipFile.cs:linha 189
+   em TomShane.Neoforce.Controls.ArchiveManager..ctor(IServiceProvider serviceProvider, String archive) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\ArchiveManager.cs:linha 88
+   em TomShane.Neoforce.Controls.Skin..ctor(Manager manager, String name) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Skin.cs:linha 553
+   em TomShane.Neoforce.Controls.Manager.SetSkin(String name) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Manager.cs:linha 939
+   em TomShane.Neoforce.Controls.Manager.Initialize() na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Manager.cs:linha 906
+   em JangadaWinClient.Jangada.Initialize() na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 42
+   em Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   em Microsoft.Xna.Framework.Game.Run()
+   em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+    Date: 06/01/2015 10:02:04
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: O thread atual deve ser definido no modo STA (single thread apartment) antes que chamadas OLE possam ser feitas. Verifique se a função Main tem STAThreadAttribute marcado.
+////////////////////////////////////////////////////////////////
+   em System.Windows.Forms.Clipboard.GetDataObject()
+   em System.Windows.Forms.Clipboard.GetText(TextDataFormat format)
+   em System.Windows.Forms.Clipboard.GetText()
+   em TomShane.Neoforce.Controls.TextBox.OnKeyPress(KeyEventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\TextBox.cs:linha 1197
+   em TomShane.Neoforce.Controls.Control.KeyPressProcess(KeyEventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Control.cs:linha 2156
+   em TomShane.Neoforce.Controls.Control.MessageProcess(Message message, EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Control.cs:linha 2091
+   em TomShane.Neoforce.Controls.Control.SendMessage(Message message, EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Control.cs:linha 2015
+   em TomShane.Neoforce.Controls.Manager.KeyPressProcess(Object sender, KeyEventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Manager.cs:linha 1843
+   em TomShane.Neoforce.Controls.InputSystem.UpdateKeys(KeyboardState state, GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\InputSystem.cs:linha 588
+   em TomShane.Neoforce.Controls.InputSystem.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\InputSystem.cs:linha 417
+   em TomShane.Neoforce.Controls.Manager.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Manager.cs:linha 1075
+   em JangadaWinClient.Jangada.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 114
+   em Microsoft.Xna.Framework.Game.Tick()
+   em Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   em Microsoft.Xna.Framework.GameHost.OnIdle()
+   em Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   em Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   em System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   em System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.Run(Form mainForm)
+   em Microsoft.Xna.Framework.WindowsGameHost.Run()
+   em Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   em Microsoft.Xna.Framework.Game.Run()
+   em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+    Date: 06/01/2015 10:20:35
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: Referência de objeto não definida para uma instância de um objeto.
+////////////////////////////////////////////////////////////////
+   em TomShane.Neoforce.Controls.Console.ClientArea_Draw(Object sender, DrawEventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Console.cs:linha 425
+   em TomShane.Neoforce.Controls.Control.OnDraw(DrawEventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Control.cs:linha 2915
+   em TomShane.Neoforce.Controls.Control.DrawChildControls(Renderer renderer, GameTime gameTime, Boolean firstDetachedLevel) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Control.cs:linha 1561
+   em TomShane.Neoforce.Controls.Control.DrawControls(Renderer renderer, Rectangle rect, GameTime gameTime, Boolean firstDetach) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Control.cs:linha 1589
+   em TomShane.Neoforce.Controls.Control.PrepareTexture(Renderer renderer, GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Control.cs:linha 1507
+   em TomShane.Neoforce.Controls.Manager.Draw(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Manager.cs:linha 1213
+   em TomShane.Neoforce.Controls.Manager.BeginDraw(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Manager.cs:linha 1188
+   em JangadaWinClient.Jangada.Draw(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 124
+   em Microsoft.Xna.Framework.Game.DrawFrame()
+   em Microsoft.Xna.Framework.Game.Tick()
+   em Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   em Microsoft.Xna.Framework.GameHost.OnIdle()
+   em Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   em Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   em System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   em System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.Run(Form mainForm)
+   em Microsoft.Xna.Framework.WindowsGameHost.Run()
+   em Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   em Microsoft.Xna.Framework.Game.Run()
+   em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+    Date: 06/01/2015 10:25:39
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: Referência de objeto não definida para uma instância de um objeto.
+////////////////////////////////////////////////////////////////
+   em JangadaWinClient.LoginWindow.loginBtn_click(Object sender, EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\LoginWindow.cs:linha 89
+   em TomShane.Neoforce.Controls.Control.OnClick(EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Control.cs:linha 2793
+   em TomShane.Neoforce.Controls.ButtonBase.OnClick(EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\ButtonBase.cs:linha 104
+   em TomShane.Neoforce.Controls.Button.OnClick(EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Button.cs:linha 272
+   em TomShane.Neoforce.Controls.Control.ClickProcess(EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Control.cs:linha 2392
+   em TomShane.Neoforce.Controls.Control.MessageProcess(Message message, EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Control.cs:linha 2026
+   em TomShane.Neoforce.Controls.Control.SendMessage(Message message, EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Control.cs:linha 2015
+   em TomShane.Neoforce.Controls.Manager.KeyUpProcess(Object sender, KeyEventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Manager.cs:linha 1828
+   em TomShane.Neoforce.Controls.InputSystem.UpdateKeys(KeyboardState state, GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\InputSystem.cs:linha 596
+   em TomShane.Neoforce.Controls.InputSystem.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\InputSystem.cs:linha 417
+   em TomShane.Neoforce.Controls.Manager.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Manager.cs:linha 1075
+   em JangadaWinClient.Jangada.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 116
+   em Microsoft.Xna.Framework.Game.Tick()
+   em Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   em Microsoft.Xna.Framework.GameHost.OnIdle()
+   em Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   em Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   em System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   em System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.Run(Form mainForm)
+   em Microsoft.Xna.Framework.WindowsGameHost.Run()
+   em Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   em Microsoft.Xna.Framework.Game.Run()
+   em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
+////////////////////////////////////////////////////////////////
+
