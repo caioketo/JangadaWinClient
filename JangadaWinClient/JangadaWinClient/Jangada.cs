@@ -28,13 +28,18 @@ namespace JangadaWinClient
         SpriteBatch spriteBatch;
         Manager manager;
         MainMenu mainMenu;
-        LoginWindow loginWindow;
+        public LoginWindow loginWindow;
         TomShane.Neoforce.Controls.Console consoleWindow;
         Texture2D background;
         GraphicsDevice device;
 
         int screenWidth;
         int screenHeight;
+
+        public void AddLog(string message)
+        {
+            consoleWindow.MessageBuffer.Add(new ConsoleMessage("", message, 0));
+        }
 
         public Jangada()
         {
@@ -50,6 +55,7 @@ namespace JangadaWinClient
             manager = new Manager(this, graphics);
             manager.Initialize();
             manager.AutoCreateRenderTarget = false;
+            new TCPClient(7777);
             base.Initialize();
         }
 
@@ -59,7 +65,7 @@ namespace JangadaWinClient
             loginWindow.Show();
         }
 
-        public void addWindow()
+        public void CreateControls()
         {
             consoleWindow = new TomShane.Neoforce.Controls.Console(manager);
             consoleWindow.Top = 320;
@@ -88,7 +94,7 @@ namespace JangadaWinClient
             spriteBatch = new SpriteBatch(GraphicsDevice);
             device = graphics.GraphicsDevice;
             background = Content.Load<Texture2D>("background");
-            addWindow();
+            CreateControls();
             screenWidth = device.PresentationParameters.BackBufferWidth;
             screenHeight = device.PresentationParameters.BackBufferHeight;
         }

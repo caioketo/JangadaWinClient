@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Jangada;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,19 +10,45 @@ namespace JangadaWinClient
     public class LoginWindow
     {
         Window loginWindow;
+        Window connectingWindow;
         Manager manager;
         TextBox loginBox;
         TextBox passBox;
-        TomShane.Neoforce.Controls.Console consoleWindow;
+        Panel charList;
 
         public LoginWindow(Manager manager)
         {
             this.manager = manager;
-            consoleWindow = (TomShane.Neoforce.Controls.Console)manager.GetControl("ConsoleWindow");
         }
 
         public void Init()
         {
+            charList = new Panel(manager);
+            charList.Width = 200;
+            charList.Init();
+            charList.Left = (manager.ScreenWidth / 2) - (charList.Width / 2);
+            charList.Top = (manager.ScreenHeight - charList.Height) / 2;
+            charList.Hide();
+            manager.Add(charList);
+
+            connectingWindow = new Window(manager);
+            connectingWindow.Init();
+            connectingWindow.Text = "";
+            connectingWindow.Width = 250;
+            connectingWindow.Height = 100;
+            connectingWindow.Center();
+            connectingWindow.Hide();
+
+            Label connectingLbl = new Label(manager);
+            connectingLbl.Text = "Connecting ...";
+            connectingLbl.Top = 10;
+            connectingLbl.Left = 10;
+            connectingLbl.Width = 250;
+            connectingLbl.Init();
+            connectingWindow.Add(connectingLbl);
+
+            manager.Add(connectingWindow);
+
             loginWindow = new Window(manager);
             loginWindow.Init();
             loginWindow.Text = "Login";
@@ -86,8 +113,38 @@ namespace JangadaWinClient
 
         private void loginBtn_click(object sender, TomShane.Neoforce.Controls.EventArgs e)
         {
-            consoleWindow.MessageBuffer.Add(new ConsoleMessage("Teste", "Attempting to login...", 0));
-            consoleWindow.MessageBuffer.Add(new ConsoleMessage("Teste", "User: " + loginBox.Text + " Pass: " + passBox.Text, 0));
+            loginWindow.Hide();
+            connectingWindow.Show();
+            Jangada.getInstance().AddLog("Attempting to connect...");
+            TCPClient.getInstance().StartConnect();
+            Jangada.getInstance().AddLog("Connected.");
+            Jangada.getInstance().AddLog("Sending LoginPacket (User: " + loginBox.Text + " Pass: " + passBox.Text + ")");
+            Networkmessage.Builder newMessage = Networkmessage.CreateBuilder();
+            newMessage.LoginPacket = LoginPacket.CreateBuilder()
+                 .SetLogin(loginBox.Text)
+                 .SetPassword(passBox.Text)
+                 .Build();
+            newMessage.Type = Networkmessage.Types.Type.LOGIN;
+            Messages messagesToSend = Messages.CreateBuilder().AddNetworkmessage(newMessage.Build()).Build();
+            TCPClient.getInstance().Send(messagesToSend);
+        }
+
+        public void ShowCharList(List<Character> characters)
+        {
+            int top = 0;
+            foreach (Character character in characters)
+            {
+                Button btn = new Button(manager);
+                btn.Init();
+                btn.Text = character.Name + " | " + character.Info;
+                btn.Top = top;
+                btn.Height = 20;
+                btn.Width = 200;
+                charList.Add(btn);
+                top += 20;
+            }
+            connectingWindow.Hide();
+            charList.Show();
         }
     }
 }

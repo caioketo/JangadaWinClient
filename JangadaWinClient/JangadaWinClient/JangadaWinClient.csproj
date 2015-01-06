@@ -85,9 +85,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LoginWindow.cs" />
+    <Compile Include="Networkmessage.cs" />
+    <Compile Include="Parser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Jangada.cs" />
+    <Compile Include="TCPClient.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />
