@@ -111,22 +111,24 @@ namespace JangadaWinClient
             loginWindow.Hide();
         }
 
+        public void HideConnecting()
+        {
+            connectingWindow.Hide();
+        }
+
+        private void charBtn_click(object sender, TomShane.Neoforce.Controls.EventArgs e)
+        {
+            int charId = Convert.ToInt32(((Button)sender).Name);
+            MessageHelper.SendSelectCharacter(charId);
+            charList.Hide();
+            connectingWindow.Show();
+        }
+
         private void loginBtn_click(object sender, TomShane.Neoforce.Controls.EventArgs e)
         {
             loginWindow.Hide();
             connectingWindow.Show();
-            Jangada.getInstance().AddLog("Attempting to connect...");
-            TCPClient.getInstance().StartConnect();
-            Jangada.getInstance().AddLog("Connected.");
-            Jangada.getInstance().AddLog("Sending LoginPacket (User: " + loginBox.Text + " Pass: " + passBox.Text + ")");
-            Networkmessage.Builder newMessage = Networkmessage.CreateBuilder();
-            newMessage.LoginPacket = LoginPacket.CreateBuilder()
-                 .SetLogin(loginBox.Text)
-                 .SetPassword(passBox.Text)
-                 .Build();
-            newMessage.Type = Networkmessage.Types.Type.LOGIN;
-            Messages messagesToSend = Messages.CreateBuilder().AddNetworkmessage(newMessage.Build()).Build();
-            TCPClient.getInstance().Send(messagesToSend);
+            MessageHelper.SendLoginMessage(loginBox.Text, passBox.Text);
         }
 
         public void ShowCharList(List<Character> characters)
@@ -137,6 +139,8 @@ namespace JangadaWinClient
                 Button btn = new Button(manager);
                 btn.Init();
                 btn.Text = character.Name + " | " + character.Info;
+                btn.Name = character.Id.ToString();
+                btn.Click += new TomShane.Neoforce.Controls.EventHandler(this.charBtn_click);
                 btn.Top = top;
                 btn.Height = 20;
                 btn.Width = 200;

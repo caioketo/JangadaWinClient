@@ -9,6 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using TomShane.Neoforce.Controls;
+using JangadaWinClient.Creatures;
 
 namespace JangadaWinClient
 {
@@ -32,7 +33,27 @@ namespace JangadaWinClient
         TomShane.Neoforce.Controls.Console consoleWindow;
         Texture2D background;
         GraphicsDevice device;
+        Camera camera;
+        Dictionary<int, Terrain> terrains = new Dictionary<int,Terrain>();
+        List<TerrainData> terrainDatas = new List<TerrainData>();
+        public int mapIndex = 0;
+        Player player;
+        int previousScrollValue;
 
+        public void setIsInMenu(bool inMenu)
+        {
+            if (inMenu)
+            {
+                mainMenu.Show();
+            }
+            else
+            {
+                mainMenu.Hide();
+            }
+            isInMenu = inMenu;
+        }
+
+        bool isInMenu = true;
         int screenWidth;
         int screenHeight;
 
@@ -56,6 +77,7 @@ namespace JangadaWinClient
             manager.Initialize();
             manager.AutoCreateRenderTarget = false;
             new TCPClient(7777);
+            terrains.Add(1, new Terrain(GraphicsDevice));
             base.Initialize();
         }
 
@@ -94,9 +116,18 @@ namespace JangadaWinClient
             spriteBatch = new SpriteBatch(GraphicsDevice);
             device = graphics.GraphicsDevice;
             background = Content.Load<Texture2D>("background");
+            terrainDatas.Add(new TerrainData(Content.Load<Texture2D>("HM1"), Content.Load<Texture2D>("TEX1"))
+                {
+                    Id = 1
+                });
+
+            terrains[1].SetHeightMapData(terrainDatas[0]);
             CreateControls();
             screenWidth = device.PresentationParameters.BackBufferWidth;
             screenHeight = device.PresentationParameters.BackBufferHeight;
+            player = new Player(Content.Load<Model>("human"), graphics.GraphicsDevice.Viewport.AspectRatio);
+            // initialize camera start position
+            camera = new Camera(new Vector3(0, -100, 256), player);
         }
 
         protected override void UnloadContent()
@@ -106,10 +137,64 @@ namespace JangadaWinClient
 
         protected override void Update(GameTime gameTime)
         {
-            KeyboardState state = Keyboard.GetState();
+            KeyboardState key = Keyboard.GetState();
             // Allows the game to exit
-            if (state.IsKeyDown(Keys.Escape))
+            if (key.IsKeyDown(Keys.Escape))
                 this.Exit();
+
+
+            // move camera position with keyboard            
+            if (key.IsKeyDown(Keys.A))
+            {
+                camera.Update(1);
+            }
+            if (key.IsKeyDown(Keys.D))
+            {
+                camera.Update(2);
+            }
+            if (key.IsKeyDown(Keys.W))
+            {
+                camera.Update(3);
+            }
+            if (key.IsKeyDown(Keys.S))
+            {
+                camera.Update(4);
+            }
+            if (key.IsKeyDown(Keys.F))
+            {
+                camera.Update(5);
+            }
+            if (key.IsKeyDown(Keys.R))
+            {
+                camera.Update(6);
+            }
+            if (key.IsKeyDown(Keys.Q))
+            {
+                camera.Update(7);
+            }
+            if (key.IsKeyDown(Keys.E))
+            {
+                camera.Update(8);
+            }
+            if (key.IsKeyDown(Keys.G))
+            {
+                camera.Update(9);
+            }
+            if (key.IsKeyDown(Keys.T))
+            {
+                camera.Update(10);
+            }
+
+            MouseState currentMouseState = Mouse.GetState();
+            if (currentMouseState.ScrollWheelValue < previousScrollValue)
+            {
+                camera.SetZoom(0);
+            }
+            else if (currentMouseState.ScrollWheelValue > previousScrollValue)
+            {
+                camera.SetZoom(1);
+            }
+            previousScrollValue = currentMouseState.ScrollWheelValue;
 
             // TODO: Add your update logic here
             manager.Update(gameTime);
@@ -123,7 +208,15 @@ namespace JangadaWinClient
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             spriteBatch.Begin();
-            DrawScenery();
+            if (isInMenu)
+            {
+                DrawScenery();
+            }
+            else
+            {
+                camera.Draw(terrains[mapIndex]);
+                player.Draw(camera.Position);
+            }
             spriteBatch.End();
             
             manager.EndDraw();

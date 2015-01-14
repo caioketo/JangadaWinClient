@@ -10,11 +10,49 @@
       <Output>C:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\bin\x86\Debug\Content\background.xnb</Output>
       <Time>2015-01-06T10:54:01.6367672-02:00</Time>
     </Item>
+    <Item>
+      <Source>HM1.jpg</Source>
+      <Name>HM1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\bin\x86\Debug\Content\HM1.xnb</Output>
+      <Time>2015-01-07T08:55:00.948991-02:00</Time>
+    </Item>
+    <Item>
+      <Source>TEX1.jpg</Source>
+      <Name>TEX1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\bin\x86\Debug\Content\TEX1.xnb</Output>
+      <Time>2015-01-07T08:55:11.5786418-02:00</Time>
+    </Item>
+    <Item>
+      <Source>human.fbx</Source>
+      <Name>human</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\bin\x86\Debug\Content\human.xnb</Output>
+      <Time>2015-01-13T10:31:18.5184453-02:00</Time>
+      <Dependency>
+        <Key>C:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\obj\x86\Debug\human_0.xml</Key>
+        <Value>2015-01-13T11:33:26.93578-02:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>human.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\obj\x86\Debug\human_0.xml</Output>
+      <Time>2015-01-13T10:31:18.5184453-02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{4ECC61A4-0957-43AE-9F57-C1FDAC7B1610}</ContentProjectGUID>
       <TargetPlatform>Windows</TargetPlatform>
-      <TargetProfile>Reach</TargetProfile>
+      <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
       <RootDirectory>C:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClientContent\</RootDirectory>

@@ -18,6 +18,11 @@ namespace JangadaWinClient
                     Jangada.getInstance().AddLog(message.CharactersPacket.CharacterListCount.ToString());
                     Jangada.getInstance().loginWindow.ShowCharList(message.CharactersPacket.CharacterListList.ToList());
                     break;
+                case Networkmessage.Types.Type.CHARACTER_POSITION:
+                    Jangada.getInstance().loginWindow.HideConnecting();
+                    Jangada.getInstance().mapIndex = message.CharacterPositionPacket.MapId;
+                    Jangada.getInstance().setIsInMenu(false);
+                    break;
                 default:
                     break;
             }

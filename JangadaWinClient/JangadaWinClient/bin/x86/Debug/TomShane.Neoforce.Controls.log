@@ -216,3 +216,105 @@ Assembly: TomShane.Neoforce.Controls.dll
    em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
 ////////////////////////////////////////////////////////////////
 
+////////////////////////////////////////////////////////////////
+    Date: 07/01/2015 09:15:26
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: Memória insuficiente para continuar a execução do programa.
+////////////////////////////////////////////////////////////////
+   em Microsoft.Xna.Framework.Helpers.GetExceptionFromResult(UInt32 result)
+   em Microsoft.Xna.Framework.Graphics.GraphicsHelpers.GetExceptionFromResult(UInt32 result)
+   em Microsoft.Xna.Framework.Graphics.VertexBuffer.CreateBuffer(VertexDeclaration vertexDeclaration, UInt32 dwVertexCount, UInt32 usage, _D3DPOOL pool)
+   em Microsoft.Xna.Framework.Graphics.VertexBuffer..ctor(GraphicsDevice graphicsDevice, Type vertexType, Int32 vertexCount, BufferUsage usage)
+   em JangadaWinClient.Terrain.SetVertices() na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Terrain.cs:linha 91
+   em JangadaWinClient.Terrain.SetHeightMapData(Texture2D heightMap, Texture2D heightMapTexture) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Terrain.cs:linha 41
+   em JangadaWinClient.Jangada.LoadContent() na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 107
+   em Microsoft.Xna.Framework.Game.Initialize()
+   em JangadaWinClient.Jangada.Initialize() na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 66
+   em Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   em Microsoft.Xna.Framework.Game.Run()
+   em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+    Date: 07/01/2015 09:16:36
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: Memória insuficiente para continuar a execução do programa.
+////////////////////////////////////////////////////////////////
+   em Microsoft.Xna.Framework.Helpers.GetExceptionFromResult(UInt32 result)
+   em Microsoft.Xna.Framework.Graphics.GraphicsHelpers.GetExceptionFromResult(UInt32 result)
+   em Microsoft.Xna.Framework.Graphics.VertexBuffer.CreateBuffer(VertexDeclaration vertexDeclaration, UInt32 dwVertexCount, UInt32 usage, _D3DPOOL pool)
+   em Microsoft.Xna.Framework.Graphics.VertexBuffer..ctor(GraphicsDevice graphicsDevice, Type vertexType, Int32 vertexCount, BufferUsage usage)
+   em JangadaWinClient.Terrain.SetVertices() na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Terrain.cs:linha 91
+   em JangadaWinClient.Terrain.SetHeightMapData(Texture2D heightMap, Texture2D heightMapTexture) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Terrain.cs:linha 41
+   em JangadaWinClient.Jangada.LoadContent() na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 104
+   em Microsoft.Xna.Framework.Game.Initialize()
+   em JangadaWinClient.Jangada.Initialize() na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 66
+   em Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   em Microsoft.Xna.Framework.Game.Run()
+   em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+    Date: 07/01/2015 09:16:59
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: XNA Framework Reach profile does not support 32 bit indices. Use IndexElementSize.SixteenBits or a type that has a size of two bytes.
+////////////////////////////////////////////////////////////////
+   em Microsoft.Xna.Framework.Graphics.ProfileCapabilities.ThrowNotSupportedException(String message)
+   em Microsoft.Xna.Framework.Graphics.GraphicsDevice.DrawUserIndexedPrimitives[T](PrimitiveType primitiveType, T[] vertexData, Int32 vertexOffset, Int32 numVertices, Int32[] indexData, Int32 indexOffset, Int32 primitiveCount)
+   em JangadaWinClient.Terrain.Draw() na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Terrain.cs:linha 107
+   em JangadaWinClient.Camera.Draw(Terrain terrain) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Camera.cs:linha 115
+   em JangadaWinClient.Jangada.Draw(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 185
+   em Microsoft.Xna.Framework.Game.DrawFrame()
+   em Microsoft.Xna.Framework.Game.Tick()
+   em Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   em Microsoft.Xna.Framework.GameHost.OnIdle()
+   em Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   em Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   em System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   em System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.Run(Form mainForm)
+   em Microsoft.Xna.Framework.WindowsGameHost.Run()
+   em Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   em Microsoft.Xna.Framework.Game.Run()
+   em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+    Date: 14/01/2015 08:48:09
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: fieldOfView takes a value between 0 and Pi (180 degrees) in radians.
+Nome do parâmetro: fieldOfView
+////////////////////////////////////////////////////////////////
+   em Microsoft.Xna.Framework.Matrix.CreatePerspectiveFieldOfView(Single fieldOfView, Single aspectRatio, Single nearPlaneDistance, Single farPlaneDistance)
+   em JangadaWinClient.Camera..ctor(Vector3 landscapePosition, Player _player) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Camera.cs:linha 50
+   em JangadaWinClient.Jangada.LoadContent() na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 130
+   em Microsoft.Xna.Framework.Game.Initialize()
+   em JangadaWinClient.Jangada.Initialize() na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 81
+   em Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   em Microsoft.Xna.Framework.Game.Run()
+   em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+    Date: 14/01/2015 08:48:31
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: fieldOfView takes a value between 0 and Pi (180 degrees) in radians.
+Nome do parâmetro: fieldOfView
+////////////////////////////////////////////////////////////////
+   em Microsoft.Xna.Framework.Matrix.CreatePerspectiveFieldOfView(Single fieldOfView, Single aspectRatio, Single nearPlaneDistance, Single farPlaneDistance)
+   em JangadaWinClient.Camera..ctor(Vector3 landscapePosition, Player _player) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Camera.cs:linha 50
+   em JangadaWinClient.Jangada.LoadContent() na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 130
+   em Microsoft.Xna.Framework.Game.Initialize()
+   em JangadaWinClient.Jangada.Initialize() na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 81
+   em Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   em Microsoft.Xna.Framework.Game.Run()
+   em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
+////////////////////////////////////////////////////////////////
+
