@@ -318,3 +318,524 @@ Nome do parâmetro: fieldOfView
    em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
 ////////////////////////////////////////////////////////////////
 
+////////////////////////////////////////////////////////////////
+    Date: 14/01/2015 10:15:37
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: O thread atual deve ser definido no modo STA (single thread apartment) antes que chamadas OLE possam ser feitas. Verifique se a função Main tem STAThreadAttribute marcado.
+////////////////////////////////////////////////////////////////
+   em System.Windows.Forms.Clipboard.GetDataObject()
+   em System.Windows.Forms.Clipboard.GetText(TextDataFormat format)
+   em System.Windows.Forms.Clipboard.GetText()
+   em TomShane.Neoforce.Controls.TextBox.OnKeyPress(KeyEventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\TextBox.cs:linha 1197
+   em TomShane.Neoforce.Controls.Control.KeyPressProcess(KeyEventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Control.cs:linha 2156
+   em TomShane.Neoforce.Controls.Control.MessageProcess(Message message, EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Control.cs:linha 2091
+   em TomShane.Neoforce.Controls.Control.SendMessage(Message message, EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Control.cs:linha 2015
+   em TomShane.Neoforce.Controls.Manager.KeyPressProcess(Object sender, KeyEventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Manager.cs:linha 1843
+   em TomShane.Neoforce.Controls.InputSystem.UpdateKeys(KeyboardState state, GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\InputSystem.cs:linha 588
+   em TomShane.Neoforce.Controls.InputSystem.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\InputSystem.cs:linha 417
+   em TomShane.Neoforce.Controls.Manager.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Manager.cs:linha 1075
+   em JangadaWinClient.Jangada.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 200
+   em Microsoft.Xna.Framework.Game.Tick()
+   em Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   em Microsoft.Xna.Framework.GameHost.OnIdle()
+   em Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   em Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   em System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   em System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.Run(Form mainForm)
+   em Microsoft.Xna.Framework.WindowsGameHost.Run()
+   em Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   em Microsoft.Xna.Framework.Game.Run()
+   em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+    Date: 14/01/2015 10:38:02
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: Cannot change read-only RasterizerState. State objects become read-only the first time they are bound to a GraphicsDevice. To change property values, create a new RasterizerState instance.
+////////////////////////////////////////////////////////////////
+   em Microsoft.Xna.Framework.Graphics.RasterizerState.ThrowIfBound()
+   em Microsoft.Xna.Framework.Graphics.RasterizerState.set_CullMode(CullMode value)
+   em JangadaWinClient.Jangada.Draw(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 210
+   em Microsoft.Xna.Framework.Game.DrawFrame()
+   em Microsoft.Xna.Framework.Game.Tick()
+   em Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   em Microsoft.Xna.Framework.GameHost.OnIdle()
+   em Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   em Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   em System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   em System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.Run(Form mainForm)
+   em Microsoft.Xna.Framework.WindowsGameHost.Run()
+   em Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   em Microsoft.Xna.Framework.Game.Run()
+   em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+    Date: 14/01/2015 17:07:37
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: An invalid operation was performed. Is your PlayerIndex correct?
+////////////////////////////////////////////////////////////////
+   em Microsoft.Xna.Framework.Input.GamePad.GetState(PlayerIndex playerIndex, GamePadDeadZone deadZoneMode)
+   em Microsoft.Xna.Framework.Input.GamePad.GetState(PlayerIndex playerIndex)
+   em TomShane.Neoforce.Controls.InputSystem.Update(GameTime gameTime)
+   em TomShane.Neoforce.Controls.Manager.Update(GameTime gameTime)
+   em JangadaWinClient.Jangada.Update(GameTime gameTime)
+   em Microsoft.Xna.Framework.Game.Tick()
+   em Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   em Microsoft.Xna.Framework.GameHost.OnIdle()
+   em Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   em Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   em System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   em System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.Run(Form mainForm)
+   em Microsoft.Xna.Framework.WindowsGameHost.Run()
+   em Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   em Microsoft.Xna.Framework.Game.Run()
+   em JangadaWinClient.Program.Main(String[] args)
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+    Date: 15/01/2015 10:46:03
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: O thread atual deve ser definido no modo STA (single thread apartment) antes que chamadas OLE possam ser feitas. Verifique se a função Main tem STAThreadAttribute marcado.
+////////////////////////////////////////////////////////////////
+   em System.Windows.Forms.Clipboard.GetDataObject()
+   em System.Windows.Forms.Clipboard.GetText(TextDataFormat format)
+   em System.Windows.Forms.Clipboard.GetText()
+   em TomShane.Neoforce.Controls.TextBox.OnKeyPress(KeyEventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\TextBox.cs:linha 1197
+   em TomShane.Neoforce.Controls.Control.KeyPressProcess(KeyEventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Control.cs:linha 2156
+   em TomShane.Neoforce.Controls.Control.MessageProcess(Message message, EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Control.cs:linha 2091
+   em TomShane.Neoforce.Controls.Control.SendMessage(Message message, EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Control.cs:linha 2015
+   em TomShane.Neoforce.Controls.Manager.KeyPressProcess(Object sender, KeyEventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Manager.cs:linha 1843
+   em TomShane.Neoforce.Controls.InputSystem.UpdateKeys(KeyboardState state, GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\InputSystem.cs:linha 588
+   em TomShane.Neoforce.Controls.InputSystem.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\InputSystem.cs:linha 417
+   em TomShane.Neoforce.Controls.Manager.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Manager.cs:linha 1075
+   em JangadaWinClient.Jangada.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 188
+   em Microsoft.Xna.Framework.Game.Tick()
+   em Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   em Microsoft.Xna.Framework.GameHost.OnIdle()
+   em Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   em Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   em System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   em System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.Run(Form mainForm)
+   em Microsoft.Xna.Framework.WindowsGameHost.Run()
+   em Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   em Microsoft.Xna.Framework.Game.Run()
+   em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+    Date: 15/01/2015 11:06:13
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: Não é possível gravar dados na conexão de transporte: Uma conexão estabelecida foi anulada pelo software no computador host.
+////////////////////////////////////////////////////////////////
+   em System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   em Google.ProtocolBuffers.CodedOutputStream.RefreshBuffer()
+   em Google.ProtocolBuffers.CodedOutputStream.Flush()
+   em Google.ProtocolBuffers.AbstractMessageLite`2.WriteTo(Stream output)
+   em JangadaWinClient.TCPClient.Send(Messages message) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\TCPClient.cs:linha 76
+   em JangadaWinClient.MessageHelper.SendRequestMovement(MovementType type, Single ammount) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\MessageHelper.cs:linha 49
+   em JangadaWinClient.Jangada.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 159
+   em Microsoft.Xna.Framework.Game.Tick()
+   em Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   em Microsoft.Xna.Framework.GameHost.OnIdle()
+   em Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   em Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   em System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   em System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.Run(Form mainForm)
+   em Microsoft.Xna.Framework.WindowsGameHost.Run()
+   em Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   em Microsoft.Xna.Framework.Game.Run()
+   em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+    Date: 15/01/2015 11:06:25
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: Referência de objeto não definida para uma instância de um objeto.
+////////////////////////////////////////////////////////////////
+   em JangadaWinClient.TCPClient.Send(Messages message) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\TCPClient.cs:linha 76
+   em JangadaWinClient.MessageHelper.SendRequestMovement(MovementType type, Single ammount) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\MessageHelper.cs:linha 49
+   em JangadaWinClient.Jangada.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 159
+   em Microsoft.Xna.Framework.Game.Tick()
+   em Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   em Microsoft.Xna.Framework.GameHost.OnIdle()
+   em Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   em Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   em System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   em System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.Run(Form mainForm)
+   em Microsoft.Xna.Framework.WindowsGameHost.Run()
+   em Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   em Microsoft.Xna.Framework.Game.Run()
+   em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+    Date: 15/01/2015 12:27:13
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: Referência de objeto não definida para uma instância de um objeto.
+////////////////////////////////////////////////////////////////
+   em JangadaWinClient.TCPClient.Send(Messages message) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\TCPClient.cs:linha 76
+   em JangadaWinClient.MessageHelper.SendRequestMovement(MovementType type, Single ammount) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\MessageHelper.cs:linha 48
+   em JangadaWinClient.Jangada.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 174
+   em Microsoft.Xna.Framework.Game.Tick()
+   em Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   em Microsoft.Xna.Framework.GameHost.OnIdle()
+   em Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   em Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   em System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   em System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.Run(Form mainForm)
+   em Microsoft.Xna.Framework.WindowsGameHost.Run()
+   em Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   em Microsoft.Xna.Framework.Game.Run()
+   em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+    Date: 15/01/2015 13:05:53
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: Referência de objeto não definida para uma instância de um objeto.
+////////////////////////////////////////////////////////////////
+   em JangadaWinClient.TCPClient.Send(Messages message) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\TCPClient.cs:linha 76
+   em JangadaWinClient.MessageHelper.SendRequestMovement(MovementType type, Single ammount) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\MessageHelper.cs:linha 48
+   em JangadaWinClient.MouseHandler.Update(NewCamera camera) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\MouseHandler.cs:linha 40
+   em JangadaWinClient.Jangada.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 190
+   em Microsoft.Xna.Framework.Game.Tick()
+   em Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   em Microsoft.Xna.Framework.GameHost.OnIdle()
+   em Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   em Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   em System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   em System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.Run(Form mainForm)
+   em Microsoft.Xna.Framework.WindowsGameHost.Run()
+   em Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   em Microsoft.Xna.Framework.Game.Run()
+   em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+    Date: 15/01/2015 13:06:04
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: Referência de objeto não definida para uma instância de um objeto.
+////////////////////////////////////////////////////////////////
+   em JangadaWinClient.TCPClient.Send(Messages message) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\TCPClient.cs:linha 76
+   em JangadaWinClient.MessageHelper.SendRequestMovement(MovementType type, Single ammount) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\MessageHelper.cs:linha 48
+   em JangadaWinClient.Jangada.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 184
+   em Microsoft.Xna.Framework.Game.Tick()
+   em Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   em Microsoft.Xna.Framework.GameHost.OnIdle()
+   em Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   em Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   em System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   em System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.Run(Form mainForm)
+   em Microsoft.Xna.Framework.WindowsGameHost.Run()
+   em Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   em Microsoft.Xna.Framework.Game.Run()
+   em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+    Date: 20/01/2015 12:53:23
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: Não é possível gravar dados na conexão de transporte: Foi forçado o cancelamento de uma conexão existente pelo host remoto.
+////////////////////////////////////////////////////////////////
+   em System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   em Google.ProtocolBuffers.CodedOutputStream.RefreshBuffer()
+   em Google.ProtocolBuffers.CodedOutputStream.Flush()
+   em Google.ProtocolBuffers.AbstractMessageLite`2.WriteTo(Stream output)
+   em JangadaWinClient.TCPClient.Send(Messages message) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\TCPClient.cs:linha 76
+   em JangadaWinClient.MessageHelper.SendRequestMovement(MovementType type, Single ammount) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\MessageHelper.cs:linha 48
+   em JangadaWinClient.MouseHandler.Update(NewCamera camera) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\MouseHandler.cs:linha 41
+   em JangadaWinClient.Jangada.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 191
+   em Microsoft.Xna.Framework.Game.Tick()
+   em Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   em Microsoft.Xna.Framework.GameHost.OnIdle()
+   em Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   em Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   em System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   em System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.Run(Form mainForm)
+   em Microsoft.Xna.Framework.WindowsGameHost.Run()
+   em Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   em Microsoft.Xna.Framework.Game.Run()
+   em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+    Date: 20/01/2015 12:59:47
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: Não é possível gravar dados na conexão de transporte: Foi forçado o cancelamento de uma conexão existente pelo host remoto.
+////////////////////////////////////////////////////////////////
+   em System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   em Google.ProtocolBuffers.CodedOutputStream.RefreshBuffer()
+   em Google.ProtocolBuffers.CodedOutputStream.Flush()
+   em Google.ProtocolBuffers.AbstractMessageLite`2.WriteTo(Stream output)
+   em JangadaWinClient.TCPClient.Send(Messages message) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\TCPClient.cs:linha 76
+   em JangadaWinClient.MessageHelper.SendRequestMovement(MovementType type, Single ammount) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\MessageHelper.cs:linha 48
+   em JangadaWinClient.MouseHandler.Update(NewCamera camera) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\MouseHandler.cs:linha 41
+   em JangadaWinClient.Jangada.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 191
+   em Microsoft.Xna.Framework.Game.Tick()
+   em Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   em Microsoft.Xna.Framework.GameHost.OnIdle()
+   em Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   em Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   em System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   em System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.Run(Form mainForm)
+   em Microsoft.Xna.Framework.WindowsGameHost.Run()
+   em Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   em Microsoft.Xna.Framework.Game.Run()
+   em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+    Date: 20/01/2015 13:00:37
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:7777
+////////////////////////////////////////////////////////////////
+   em System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+   em JangadaWinClient.TCPClient.Connect(String ip, Int32 port, Action`1 onReceived) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\TCPClient.cs:linha 50
+   em JangadaWinClient.TCPClient.StartConnect() na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\TCPClient.cs:linha 32
+   em JangadaWinClient.MessageHelper.SendLoginMessage(String login, String password) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\MessageHelper.cs:linha 14
+   em JangadaWinClient.LoginWindow.loginBtn_click(Object sender, EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\LoginWindow.cs:linha 131
+   em TomShane.Neoforce.Controls.Control.OnClick(EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Control.cs:linha 2793
+   em TomShane.Neoforce.Controls.ButtonBase.OnClick(EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\ButtonBase.cs:linha 104
+   em TomShane.Neoforce.Controls.Button.OnClick(EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Button.cs:linha 272
+   em TomShane.Neoforce.Controls.Control.ClickProcess(EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Control.cs:linha 2392
+   em TomShane.Neoforce.Controls.Control.MessageProcess(Message message, EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Control.cs:linha 2026
+   em TomShane.Neoforce.Controls.Control.SendMessage(Message message, EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Control.cs:linha 2015
+   em TomShane.Neoforce.Controls.Manager.KeyUpProcess(Object sender, KeyEventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Manager.cs:linha 1828
+   em TomShane.Neoforce.Controls.InputSystem.UpdateKeys(KeyboardState state, GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\InputSystem.cs:linha 596
+   em TomShane.Neoforce.Controls.InputSystem.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\InputSystem.cs:linha 417
+   em TomShane.Neoforce.Controls.Manager.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Manager.cs:linha 1075
+   em JangadaWinClient.Jangada.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 195
+   em Microsoft.Xna.Framework.Game.Tick()
+   em Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   em Microsoft.Xna.Framework.GameHost.OnIdle()
+   em Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   em Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   em System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   em System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.Run(Form mainForm)
+   em Microsoft.Xna.Framework.WindowsGameHost.Run()
+   em Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   em Microsoft.Xna.Framework.Game.Run()
+   em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+    Date: 21/01/2015 08:47:46
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:7777
+////////////////////////////////////////////////////////////////
+   em System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+   em JangadaWinClient.TCPClient.Connect(String ip, Int32 port, Action`1 onReceived) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\TCPClient.cs:linha 50
+   em JangadaWinClient.TCPClient.StartConnect() na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\TCPClient.cs:linha 32
+   em JangadaWinClient.MessageHelper.SendLoginMessage(String login, String password) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\MessageHelper.cs:linha 14
+   em JangadaWinClient.LoginWindow.loginBtn_click(Object sender, EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\LoginWindow.cs:linha 131
+   em TomShane.Neoforce.Controls.Control.OnClick(EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Control.cs:linha 2793
+   em TomShane.Neoforce.Controls.ButtonBase.OnClick(EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\ButtonBase.cs:linha 104
+   em TomShane.Neoforce.Controls.Button.OnClick(EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Button.cs:linha 272
+   em TomShane.Neoforce.Controls.Control.ClickProcess(EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Control.cs:linha 2392
+   em TomShane.Neoforce.Controls.Control.MessageProcess(Message message, EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Control.cs:linha 2026
+   em TomShane.Neoforce.Controls.Control.SendMessage(Message message, EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Control.cs:linha 2015
+   em TomShane.Neoforce.Controls.Manager.MouseUpProcess(Object sender, MouseEventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Manager.cs:linha 1629
+   em TomShane.Neoforce.Controls.InputSystem.UpdateButtons(MouseState state, GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\InputSystem.cs:linha 737
+   em TomShane.Neoforce.Controls.InputSystem.UpdateMouse(MouseState state, GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\InputSystem.cs:linha 690
+   em TomShane.Neoforce.Controls.InputSystem.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\InputSystem.cs:linha 416
+   em TomShane.Neoforce.Controls.Manager.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Manager.cs:linha 1075
+   em JangadaWinClient.Jangada.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 195
+   em Microsoft.Xna.Framework.Game.Tick()
+   em Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   em Microsoft.Xna.Framework.GameHost.OnIdle()
+   em Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   em Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   em System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   em System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.Run(Form mainForm)
+   em Microsoft.Xna.Framework.WindowsGameHost.Run()
+   em Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   em Microsoft.Xna.Framework.Game.Run()
+   em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+    Date: 21/01/2015 12:34:35
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: Begin must be called successfully before a Draw can be called.
+////////////////////////////////////////////////////////////////
+   em Microsoft.Xna.Framework.Graphics.SpriteBatch.InternalDraw(Texture2D texture, Vector4& destination, Boolean scaleDestination, Nullable`1& sourceRectangle, Color color, Single rotation, Vector2& origin, SpriteEffects effects, Single depth)
+   em Microsoft.Xna.Framework.Graphics.SpriteBatch.Draw(Texture2D texture, Rectangle destinationRectangle, Color color)
+   em JangadaWinClient.Jangada.DrawScenery() na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 237
+   em JangadaWinClient.Jangada.Draw(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 221
+   em Microsoft.Xna.Framework.Game.DrawFrame()
+   em Microsoft.Xna.Framework.Game.Tick()
+   em Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   em Microsoft.Xna.Framework.GameHost.OnIdle()
+   em Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   em Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   em System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   em System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.Run(Form mainForm)
+   em Microsoft.Xna.Framework.WindowsGameHost.Run()
+   em Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   em Microsoft.Xna.Framework.Game.Run()
+   em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+    Date: 21/01/2015 12:40:20
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:7777
+////////////////////////////////////////////////////////////////
+   em System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+   em JangadaWinClient.TCPClient.Connect(String ip, Int32 port, Action`1 onReceived) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\TCPClient.cs:linha 50
+   em JangadaWinClient.TCPClient.StartConnect() na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\TCPClient.cs:linha 32
+   em JangadaWinClient.MessageHelper.SendLoginMessage(String login, String password) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\MessageHelper.cs:linha 14
+   em JangadaWinClient.LoginWindow.loginBtn_click(Object sender, EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\LoginWindow.cs:linha 131
+   em TomShane.Neoforce.Controls.Control.OnClick(EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Control.cs:linha 2793
+   em TomShane.Neoforce.Controls.ButtonBase.OnClick(EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\ButtonBase.cs:linha 104
+   em TomShane.Neoforce.Controls.Button.OnClick(EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Button.cs:linha 272
+   em TomShane.Neoforce.Controls.Control.ClickProcess(EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Control.cs:linha 2392
+   em TomShane.Neoforce.Controls.Control.MessageProcess(Message message, EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Control.cs:linha 2026
+   em TomShane.Neoforce.Controls.Control.SendMessage(Message message, EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Control.cs:linha 2015
+   em TomShane.Neoforce.Controls.Manager.MouseUpProcess(Object sender, MouseEventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Manager.cs:linha 1629
+   em TomShane.Neoforce.Controls.InputSystem.UpdateButtons(MouseState state, GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\InputSystem.cs:linha 737
+   em TomShane.Neoforce.Controls.InputSystem.UpdateMouse(MouseState state, GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\InputSystem.cs:linha 690
+   em TomShane.Neoforce.Controls.InputSystem.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\InputSystem.cs:linha 416
+   em TomShane.Neoforce.Controls.Manager.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Manager.cs:linha 1075
+   em JangadaWinClient.Jangada.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 199
+   em Microsoft.Xna.Framework.Game.Tick()
+   em Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   em Microsoft.Xna.Framework.GameHost.OnIdle()
+   em Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   em Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   em System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   em System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.Run(Form mainForm)
+   em Microsoft.Xna.Framework.WindowsGameHost.Run()
+   em Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   em Microsoft.Xna.Framework.Game.Run()
+   em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+    Date: 21/01/2015 12:41:40
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente 127.0.0.1:7777
+////////////////////////////////////////////////////////////////
+   em System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+   em JangadaWinClient.TCPClient.Connect(String ip, Int32 port, Action`1 onReceived) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\TCPClient.cs:linha 50
+   em JangadaWinClient.TCPClient.StartConnect() na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\TCPClient.cs:linha 32
+   em JangadaWinClient.MessageHelper.SendLoginMessage(String login, String password) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\MessageHelper.cs:linha 14
+   em JangadaWinClient.LoginWindow.loginBtn_click(Object sender, EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\LoginWindow.cs:linha 131
+   em TomShane.Neoforce.Controls.Control.OnClick(EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Control.cs:linha 2793
+   em TomShane.Neoforce.Controls.ButtonBase.OnClick(EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\ButtonBase.cs:linha 104
+   em TomShane.Neoforce.Controls.Button.OnClick(EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Button.cs:linha 272
+   em TomShane.Neoforce.Controls.Control.ClickProcess(EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Control.cs:linha 2392
+   em TomShane.Neoforce.Controls.Control.MessageProcess(Message message, EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Control.cs:linha 2026
+   em TomShane.Neoforce.Controls.Control.SendMessage(Message message, EventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Control.cs:linha 2015
+   em TomShane.Neoforce.Controls.Manager.MouseUpProcess(Object sender, MouseEventArgs e) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Manager.cs:linha 1629
+   em TomShane.Neoforce.Controls.InputSystem.UpdateButtons(MouseState state, GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\InputSystem.cs:linha 737
+   em TomShane.Neoforce.Controls.InputSystem.UpdateMouse(MouseState state, GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\InputSystem.cs:linha 690
+   em TomShane.Neoforce.Controls.InputSystem.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\InputSystem.cs:linha 416
+   em TomShane.Neoforce.Controls.Manager.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\Neoforce\Controls\Code\Manager.cs:linha 1075
+   em JangadaWinClient.Jangada.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 199
+   em Microsoft.Xna.Framework.Game.Tick()
+   em Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   em Microsoft.Xna.Framework.GameHost.OnIdle()
+   em Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   em Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   em System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   em System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.Run(Form mainForm)
+   em Microsoft.Xna.Framework.WindowsGameHost.Run()
+   em Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   em Microsoft.Xna.Framework.Game.Run()
+   em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+    Date: 21/01/2015 22:34:15
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: Begin cannot be called again until End has been successfully called.
+////////////////////////////////////////////////////////////////
+   em Microsoft.Xna.Framework.Graphics.SpriteBatch.Begin(SpriteSortMode sortMode, BlendState blendState, SamplerState samplerState, DepthStencilState depthStencilState, RasterizerState rasterizerState, Effect effect, Matrix transformMatrix)
+   em Microsoft.Xna.Framework.Graphics.SpriteBatch.Begin()
+   em JangadaWinClient.Utils.RectangleOverlay.Draw(SpriteBatch spriteBatch) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Utils\RectangleOverlay.cs:linha 38
+   em JangadaWinClient.Content.SmallPortrait.Draw(SpriteBatch spriteBatch) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Content\SmallPortrait.cs:linha 29
+   em JangadaWinClient.Jangada.Draw(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 241
+   em Microsoft.Xna.Framework.Game.DrawFrame()
+   em Microsoft.Xna.Framework.Game.Tick()
+   em Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   em Microsoft.Xna.Framework.GameHost.OnIdle()
+   em Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   em Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   em System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   em System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.Run(Form mainForm)
+   em Microsoft.Xna.Framework.WindowsGameHost.Run()
+   em Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   em Microsoft.Xna.Framework.Game.Run()
+   em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
+////////////////////////////////////////////////////////////////
+

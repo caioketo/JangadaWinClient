@@ -10,6 +10,9 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using TomShane.Neoforce.Controls;
 using JangadaWinClient.Creatures;
+using Jangada;
+using JangadaWinClient.Content;
+using JangadaWinClient.Utils;
 
 namespace JangadaWinClient
 {
@@ -25,6 +28,7 @@ namespace JangadaWinClient
             return instance;
         }
 
+        MouseHandler mouseHandler = new MouseHandler();
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Manager manager;
@@ -33,12 +37,33 @@ namespace JangadaWinClient
         TomShane.Neoforce.Controls.Console consoleWindow;
         Texture2D background;
         GraphicsDevice device;
-        Camera camera;
+        NewCamera newCamera;
+        public World world;
         Dictionary<int, Terrain> terrains = new Dictionary<int,Terrain>();
         List<TerrainData> terrainDatas = new List<TerrainData>();
-        public int mapIndex = 0;
-        Player player;
-        int previousScrollValue;
+        int mapIndex;
+        public Model humanModel;
+        public bool useProto = true;
+
+        SmallPortrait sPortrait;
+        public int MapIndex
+        {
+            get
+            {
+                return mapIndex;
+            }
+
+            set
+            {
+                mapIndex = value;
+                world.SetTerrain(terrains[mapIndex]);
+            }
+        }
+
+        public NewCamera GetCamera()
+        {
+            return newCamera;
+        }
 
         public void setIsInMenu(bool inMenu)
         {
@@ -77,7 +102,7 @@ namespace JangadaWinClient
             manager.Initialize();
             manager.AutoCreateRenderTarget = false;
             new TCPClient(7777);
-            terrains.Add(1, new Terrain(GraphicsDevice));
+            terrains.Add(1, new Terrain(GraphicsDevice, new Vector3(0, -100, 256)));
             base.Initialize();
         }
 
@@ -125,9 +150,15 @@ namespace JangadaWinClient
             CreateControls();
             screenWidth = device.PresentationParameters.BackBufferWidth;
             screenHeight = device.PresentationParameters.BackBufferHeight;
-            player = new Player(Content.Load<Model>("human"), graphics.GraphicsDevice.Viewport.AspectRatio);
-            // initialize camera start position
-            camera = new Camera(new Vector3(0, -100, 256), player);
+            humanModel = Content.Load<Model>("human");
+            foreach (ModelBone bone in humanModel.Bones)
+            {
+                bone.Transform *= Matrix.CreateScale(0.08f);
+            }
+            world = new World(new NewPlayer(humanModel));
+            newCamera = new NewCamera(graphics.GraphicsDevice.Viewport.AspectRatio);
+            sPortrait = new SmallPortrait(Content.Load<Texture2D>("bgsp"), world.player);
+            sPortrait.Load(GraphicsDevice);
         }
 
         protected override void UnloadContent()
@@ -142,84 +173,74 @@ namespace JangadaWinClient
             if (key.IsKeyDown(Keys.Escape))
                 this.Exit();
 
-
-            // move camera position with keyboard            
-            if (key.IsKeyDown(Keys.A))
+            if (!isInMenu)
             {
-                camera.Update(1);
+                if (key.IsKeyDown(Keys.W))
+                {
+                    newCamera.player.MoveForward(0.5f);
+                    MessageHelper.SendRequestMovement(RequestMovementPacket.Types.MovementType.FORWARD, 0.5f);
+                }
+                if (key.IsKeyDown(Keys.S))
+                {
+                    newCamera.player.MoveBackward(0.5f);
+                    MessageHelper.SendRequestMovement(RequestMovementPacket.Types.MovementType.BACKWARD, 0.5f);
+                }
+                if (key.IsKeyDown(Keys.A))
+                {
+                    newCamera.player.Yaw(1f);
+                    MessageHelper.SendRequestMovement(RequestMovementPacket.Types.MovementType.YAW, 1f);
+                }
+                if (key.IsKeyDown(Keys.D))
+                {
+                    newCamera.player.Yaw(-1f);
+                    MessageHelper.SendRequestMovement(RequestMovementPacket.Types.MovementType.YAW, -1f);
+                }
+                if (key.IsKeyDown(Keys.Q))
+                {
+                    newCamera.player.ChangeBoneTransform(1, Matrix.CreateRotationZ(0.1f));
+                }
+                mouseHandler.Update(newCamera);
             }
-            if (key.IsKeyDown(Keys.D))
-            {
-                camera.Update(2);
-            }
-            if (key.IsKeyDown(Keys.W))
-            {
-                camera.Update(3);
-            }
-            if (key.IsKeyDown(Keys.S))
-            {
-                camera.Update(4);
-            }
-            if (key.IsKeyDown(Keys.F))
-            {
-                camera.Update(5);
-            }
-            if (key.IsKeyDown(Keys.R))
-            {
-                camera.Update(6);
-            }
-            if (key.IsKeyDown(Keys.Q))
-            {
-                camera.Update(7);
-            }
-            if (key.IsKeyDown(Keys.E))
-            {
-                camera.Update(8);
-            }
-            if (key.IsKeyDown(Keys.G))
-            {
-                camera.Update(9);
-            }
-            if (key.IsKeyDown(Keys.T))
-            {
-                camera.Update(10);
-            }
-
-            MouseState currentMouseState = Mouse.GetState();
-            if (currentMouseState.ScrollWheelValue < previousScrollValue)
-            {
-                camera.SetZoom(0);
-            }
-            else if (currentMouseState.ScrollWheelValue > previousScrollValue)
-            {
-                camera.SetZoom(1);
-            }
-            previousScrollValue = currentMouseState.ScrollWheelValue;
 
             // TODO: Add your update logic here
             manager.Update(gameTime);
+            newCamera.Update();
             base.Update(gameTime);
         }
 
+        
         protected override void Draw(GameTime gameTime)
         {
             manager.BeginDraw(gameTime);
 
             GraphicsDevice.Clear(Color.CornflowerBlue);
-
+            GraphicsDevice.DepthStencilState = DepthStencilState.Default;
             spriteBatch.Begin();
             if (isInMenu)
             {
                 DrawScenery();
             }
-            else
-            {
-                camera.Draw(terrains[mapIndex]);
-                player.Draw(camera.Position);
-            }
             spriteBatch.End();
+
+            
+            GraphicsDevice.BlendState = BlendState.Opaque;   
+            GraphicsDevice.DepthStencilState = DepthStencilState.Default;
+            GraphicsDevice.SamplerStates[0] = SamplerState.LinearWrap;
+
+            if (!isInMenu)
+            {
+                world.Draw(newCamera);
+            }
+            //spriteBatch.End();
             
             manager.EndDraw();
+
+            spriteBatch.Begin();
+            if (!isInMenu)
+            {
+                sPortrait.Draw(spriteBatch);
+            }
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }

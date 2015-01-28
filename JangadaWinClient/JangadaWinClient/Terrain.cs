@@ -17,18 +17,21 @@ namespace JangadaWinClient
         VertexPositionTexture[] vertices;
         int width;
         int height;
-
+        public Vector3 position;
         public BasicEffect basicEffect;
         int[] indices;
+        Matrix worldMatrix;
 
         // array to read heightMap data
         float[,] heightMapData;
 
 
 
-        public Terrain(GraphicsDevice graphicsDevice)
+        public Terrain(GraphicsDevice graphicsDevice, Vector3 position)
         {
+            this.position = position;
             this.graphicsDevice = graphicsDevice;
+            RecreateWorld();
         }
 
         public void SetHeightMapData(TerrainData data)
@@ -37,25 +40,27 @@ namespace JangadaWinClient
             this.heightMapTexture = data.Texture;
             width = heightMap.Width;
             height = heightMap.Height;
-            SetHeights();
+            LoadHeightData(heightMap);
             SetVertices();
             SetIndices();
             SetEffects();
         }
 
-        public void SetHeights()
+
+        private void LoadHeightData(Texture2D heightMap)
         {
-            Color[] greyValues = new Color[width * height];
-            heightMap.GetData(greyValues);
+            width = heightMap.Width;
+            height = heightMap.Height;
+
+            Color[] heightMapColors = new Color[width * height];
+            heightMap.GetData(heightMapColors);
+
             heightMapData = new float[width, height];
             for (int x = 0; x < width; x++)
-            {
                 for (int y = 0; y < height; y++)
-                {
-                    heightMapData[x, y] = greyValues[x + y * width].G / 3.1f;
-                }
-            }
+                    heightMapData[x, y] = heightMapColors[x + y * width].R / 5.0f;
         }
+
 
         public void SetIndices()
         {
@@ -93,7 +98,10 @@ namespace JangadaWinClient
             graphicsDevice.SetVertexBuffer(new VertexBuffer(graphicsDevice, typeof(VertexPositionColor), vertices.Length, BufferUsage.None));
         }
 
-
+        public void RecreateWorld()
+        {
+            this.worldMatrix = Matrix.CreateTranslation(this.position);
+        }
 
         public void SetEffects()
         {
@@ -102,9 +110,17 @@ namespace JangadaWinClient
             basicEffect.TextureEnabled = true;
         }
 
-        public void Draw()
+        public void Draw(NewCamera camera)
         {
-            graphicsDevice.DrawUserIndexedPrimitives<VertexPositionTexture>(PrimitiveType.TriangleList, vertices, 0, vertices.Length, indices, 0, indices.Length / 3);
+            Matrix worldMatrix = Matrix.CreateTranslation(-width / 2.0f, 0, height / 2.0f);
+            basicEffect.View = camera.viewMatrix;
+            basicEffect.Projection = camera.projectionMatrix;
+            basicEffect.World = worldMatrix;
+            foreach (EffectPass pass in basicEffect.CurrentTechnique.Passes)
+            {
+                pass.Apply();
+                graphicsDevice.DrawUserIndexedPrimitives<VertexPositionTexture>(PrimitiveType.TriangleList, vertices, 0, vertices.Length, indices, 0, indices.Length / 3);
+            }
         }
 
     }

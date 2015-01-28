@@ -30,10 +30,24 @@ namespace Jangada {
       internal static pb::FieldAccess.FieldAccessorTable<global::Jangada.SelectCharacterPacket, global::Jangada.SelectCharacterPacket.Builder> internal__static_Jangada_SelectCharacterPacket__FieldAccessorTable;
       internal static pbd::MessageDescriptor internal__static_Jangada_Position__Descriptor;
       internal static pb::FieldAccess.FieldAccessorTable<global::Jangada.Position, global::Jangada.Position.Builder> internal__static_Jangada_Position__FieldAccessorTable;
-      internal static pbd::MessageDescriptor internal__static_Jangada_CharacterPositionPacket__Descriptor;
-      internal static pb::FieldAccess.FieldAccessorTable<global::Jangada.CharacterPositionPacket, global::Jangada.CharacterPositionPacket.Builder> internal__static_Jangada_CharacterPositionPacket__FieldAccessorTable;
+      internal static pbd::MessageDescriptor internal__static_Jangada_QuaternionMessage__Descriptor;
+      internal static pb::FieldAccess.FieldAccessorTable<global::Jangada.QuaternionMessage, global::Jangada.QuaternionMessage.Builder> internal__static_Jangada_QuaternionMessage__FieldAccessorTable;
+      internal static pbd::MessageDescriptor internal__static_Jangada_RequestMovementPacket__Descriptor;
+      internal static pb::FieldAccess.FieldAccessorTable<global::Jangada.RequestMovementPacket, global::Jangada.RequestMovementPacket.Builder> internal__static_Jangada_RequestMovementPacket__FieldAccessorTable;
+      internal static pbd::MessageDescriptor internal__static_Jangada_AreaDescriptionPacket__Descriptor;
+      internal static pb::FieldAccess.FieldAccessorTable<global::Jangada.AreaDescriptionPacket, global::Jangada.AreaDescriptionPacket.Builder> internal__static_Jangada_AreaDescriptionPacket__FieldAccessorTable;
+      internal static pbd::MessageDescriptor internal__static_Jangada_PlayerDescription__Descriptor;
+      internal static pb::FieldAccess.FieldAccessorTable<global::Jangada.PlayerDescription, global::Jangada.PlayerDescription.Builder> internal__static_Jangada_PlayerDescription__FieldAccessorTable;
+      internal static pbd::MessageDescriptor internal__static_Jangada_PlayerLoginPacket__Descriptor;
+      internal static pb::FieldAccess.FieldAccessorTable<global::Jangada.PlayerLoginPacket, global::Jangada.PlayerLoginPacket.Builder> internal__static_Jangada_PlayerLoginPacket__FieldAccessorTable;
+      internal static pbd::MessageDescriptor internal__static_Jangada_PlayerMovementPacket__Descriptor;
+      internal static pb::FieldAccess.FieldAccessorTable<global::Jangada.PlayerMovementPacket, global::Jangada.PlayerMovementPacket.Builder> internal__static_Jangada_PlayerMovementPacket__FieldAccessorTable;
+      internal static pbd::MessageDescriptor internal__static_Jangada_CharacterMovementPacket__Descriptor;
+      internal static pb::FieldAccess.FieldAccessorTable<global::Jangada.CharacterMovementPacket, global::Jangada.CharacterMovementPacket.Builder> internal__static_Jangada_CharacterMovementPacket__FieldAccessorTable;
       internal static pbd::MessageDescriptor internal__static_Jangada_Messages__Descriptor;
       internal static pb::FieldAccess.FieldAccessorTable<global::Jangada.Messages, global::Jangada.Messages.Builder> internal__static_Jangada_Messages__FieldAccessorTable;
+      internal static pbd::MessageDescriptor internal__static_Jangada_PlayerLogoutPacket__Descriptor;
+      internal static pb::FieldAccess.FieldAccessorTable<global::Jangada.PlayerLogoutPacket, global::Jangada.PlayerLogoutPacket.Builder> internal__static_Jangada_PlayerLogoutPacket__FieldAccessorTable;
       #endregion
       #region Descriptor
       public static pbd::FileDescriptor Descriptor {
@@ -43,30 +57,55 @@ namespace Jangada {
       
       static Networkmessage() {
         byte[] descriptorData = global::System.Convert.FromBase64String(
-            "ChROZXR3b3JrbWVzc2FnZS5wcm90bxIHSmFuZ2FkYSLrAgoOTmV0d29ya21l" + 
+            "ChROZXR3b3JrbWVzc2FnZS5wcm90bxIHSmFuZ2FkYSL9BQoOTmV0d29ya21l" + 
             "c3NhZ2USKgoEdHlwZRgBIAIoDjIcLkphbmdhZGEuTmV0d29ya21lc3NhZ2Uu" + 
             "VHlwZRIpCgtsb2dpblBhY2tldBgCIAEoCzIULkphbmdhZGEuTG9naW5QYWNr" + 
             "ZXQSMwoQY2hhcmFjdGVyc1BhY2tldBgDIAEoCzIZLkphbmdhZGEuQ2hhcmFj" + 
             "dGVyc1BhY2tldBI9ChVzZWxlY3RDaGFyYWN0ZXJQYWNrZXQYBCABKAsyHi5K" + 
-            "YW5nYWRhLlNlbGVjdENoYXJhY3RlclBhY2tldBJBChdjaGFyYWN0ZXJQb3Np" + 
-            "dGlvblBhY2tldBgFIAEoCzIgLkphbmdhZGEuQ2hhcmFjdGVyUG9zaXRpb25Q" + 
-            "YWNrZXQiSwoEVHlwZRIJCgVMT0dJThAAEg4KCkNIQVJBQ1RFUlMQARIQCgxT" + 
-            "RUxFQ1RFRENIQVIQAhIWChJDSEFSQUNURVJfUE9TSVRJT04QAyIuCgtMb2dp" + 
-            "blBhY2tldBINCgVsb2dpbhgBIAIoCRIQCghwYXNzd29yZBgCIAIoCSIzCglD" + 
-            "aGFyYWN0ZXISCgoCaWQYASACKAUSDAoEbmFtZRgCIAIoCRIMCgRpbmZvGAMg" + 
-            "AigJIj0KEENoYXJhY3RlcnNQYWNrZXQSKQoNQ2hhcmFjdGVyTGlzdBgBIAMo" + 
-            "CzISLkphbmdhZGEuQ2hhcmFjdGVyIiMKFVNlbGVjdENoYXJhY3RlclBhY2tl" + 
-            "dBIKCgJpZBgBIAIoBSIrCghQb3NpdGlvbhIJCgF4GAEgAigBEgkKAXkYAiAC" + 
-            "KAESCQoBehgDIAIoASJNChdDaGFyYWN0ZXJQb3NpdGlvblBhY2tldBINCgVt" + 
-            "YXBJZBgBIAIoBRIjCghwb3NpdGlvbhgCIAIoCzIRLkphbmdhZGEuUG9zaXRp" + 
-            "b24iOwoITWVzc2FnZXMSLwoOTmV0d29ya21lc3NhZ2UYASADKAsyFy5KYW5n" + 
-            "YWRhLk5ldHdvcmttZXNzYWdlQgJIAQ==");
+            "YW5nYWRhLlNlbGVjdENoYXJhY3RlclBhY2tldBI9ChVhcmVhRGVzY3JpcHRp" + 
+            "b25QYWNrZXQYBSABKAsyHi5KYW5nYWRhLkFyZWFEZXNjcmlwdGlvblBhY2tl" + 
+            "dBI9ChVyZXF1ZXN0TW92ZW1lbnRQYWNrZXQYBiABKAsyHi5KYW5nYWRhLlJl" + 
+            "cXVlc3RNb3ZlbWVudFBhY2tldBI7ChRwbGF5ZXJNb3ZlbWVudFBhY2tldBgH" + 
+            "IAEoCzIdLkphbmdhZGEuUGxheWVyTW92ZW1lbnRQYWNrZXQSNQoRcGxheWVy" + 
+            "TG9naW5QYWNrZXQYCCABKAsyGi5KYW5nYWRhLlBsYXllckxvZ2luUGFja2V0" + 
+            "EkEKF2NoYXJhY3Rlck1vdmVtZW50UGFja2V0GAkgASgLMiAuSmFuZ2FkYS5D" + 
+            "aGFyYWN0ZXJNb3ZlbWVudFBhY2tldBI3ChJwbGF5ZXJMb2dvdXRQYWNrZXQY" + 
+            "CiABKAsyGy5KYW5nYWRhLlBsYXllckxvZ291dFBhY2tldCKxAQoEVHlwZRIJ" + 
+            "CgVMT0dJThAAEg4KCkNIQVJBQ1RFUlMQARIQCgxTRUxFQ1RFRENIQVIQAhIU" + 
+            "ChBBUkVBX0RFU0NSSVBUSU9OEAMSFAoQUkVRVUVTVF9NT1ZFTUVOVBAEEhMK" + 
+            "D1BMQVlFUl9NT1ZFTUVOVBAFEhAKDFBMQVlFUl9MT0dJThAGEhYKEkNIQVJB" + 
+            "Q1RFUl9NT1ZFTUVOVBAHEhEKDVBMQVlFUl9MT0dPVVQQCCIuCgtMb2dpblBh" + 
+            "Y2tldBINCgVsb2dpbhgBIAIoCRIQCghwYXNzd29yZBgCIAIoCSIzCglDaGFy" + 
+            "YWN0ZXISCgoCaWQYASACKAUSDAoEbmFtZRgCIAIoCRIMCgRpbmZvGAMgAigJ" + 
+            "Ij0KEENoYXJhY3RlcnNQYWNrZXQSKQoNQ2hhcmFjdGVyTGlzdBgBIAMoCzIS" + 
+            "LkphbmdhZGEuQ2hhcmFjdGVyIiMKFVNlbGVjdENoYXJhY3RlclBhY2tldBIK" + 
+            "CgJpZBgBIAIoBSIrCghQb3NpdGlvbhIJCgF4GAEgAigCEgkKAXkYAiACKAIS" + 
+            "CQoBehgDIAIoAiI/ChFRdWF0ZXJuaW9uTWVzc2FnZRIJCgF3GAEgAigCEgkK" + 
+            "AXgYAiACKAISCQoBeRgDIAIoAhIJCgF6GAQgAigCIp8BChVSZXF1ZXN0TW92" + 
+            "ZW1lbnRQYWNrZXQSQQoMbW92ZW1lbnRUeXBlGAEgAigOMisuSmFuZ2FkYS5S" + 
+            "ZXF1ZXN0TW92ZW1lbnRQYWNrZXQuTW92ZW1lbnRUeXBlEg8KB2FtbW91bnQY" + 
+            "AiACKAIiMgoMTW92ZW1lbnRUeXBlEgsKB0ZPUldBUkQQARIMCghCQUNLV0FS" + 
+            "RBACEgcKA1lBVxADIoABChVBcmVhRGVzY3JpcHRpb25QYWNrZXQSDgoGYXJl" + 
+            "YUlkGAEgAigFEioKBnBsYXllchgCIAIoCzIaLkphbmdhZGEuUGxheWVyRGVz" + 
+            "Y3JpcHRpb24SKwoHcGxheWVycxgDIAMoCzIaLkphbmdhZGEuUGxheWVyRGVz" + 
+            "Y3JpcHRpb24ihgEKEVBsYXllckRlc2NyaXB0aW9uEhIKCnBsYXllckd1aWQY" + 
+            "ASACKAkSKQoOcGxheWVyUG9zaXRpb24YAiACKAsyES5KYW5nYWRhLlBvc2l0" + 
+            "aW9uEjIKDnBsYXllclJvdGF0aW9uGAMgAigLMhouSmFuZ2FkYS5RdWF0ZXJu" + 
+            "aW9uTWVzc2FnZSI/ChFQbGF5ZXJMb2dpblBhY2tldBIqCgZwbGF5ZXIYASAC" + 
+            "KAsyGi5KYW5nYWRhLlBsYXllckRlc2NyaXB0aW9uIm8KFFBsYXllck1vdmVt" + 
+            "ZW50UGFja2V0EiYKC25ld1Bvc2l0aW9uGAEgAigLMhEuSmFuZ2FkYS5Qb3Np" + 
+            "dGlvbhIvCgtuZXdSb3RhdGlvbhgCIAIoCzIaLkphbmdhZGEuUXVhdGVybmlv" + 
+            "bk1lc3NhZ2UiRQoXQ2hhcmFjdGVyTW92ZW1lbnRQYWNrZXQSKgoGcGxheWVy" + 
+            "GAEgAigLMhouSmFuZ2FkYS5QbGF5ZXJEZXNjcmlwdGlvbiI7CghNZXNzYWdl" + 
+            "cxIvCg5OZXR3b3JrbWVzc2FnZRgBIAMoCzIXLkphbmdhZGEuTmV0d29ya21l" + 
+            "c3NhZ2UiKAoSUGxheWVyTG9nb3V0UGFja2V0EhIKCnBsYXllckd1aWQYASAC" + 
+            "KAlCAkgB");
         pbd::FileDescriptor.InternalDescriptorAssigner assigner = delegate(pbd::FileDescriptor root) {
           descriptor = root;
           internal__static_Jangada_Networkmessage__Descriptor = Descriptor.MessageTypes[0];
           internal__static_Jangada_Networkmessage__FieldAccessorTable = 
               new pb::FieldAccess.FieldAccessorTable<global::Jangada.Networkmessage, global::Jangada.Networkmessage.Builder>(internal__static_Jangada_Networkmessage__Descriptor,
-                  new string[] { "Type", "LoginPacket", "CharactersPacket", "SelectCharacterPacket", "CharacterPositionPacket", });
+                  new string[] { "Type", "LoginPacket", "CharactersPacket", "SelectCharacterPacket", "AreaDescriptionPacket", "RequestMovementPacket", "PlayerMovementPacket", "PlayerLoginPacket", "CharacterMovementPacket", "PlayerLogoutPacket", });
           internal__static_Jangada_LoginPacket__Descriptor = Descriptor.MessageTypes[1];
           internal__static_Jangada_LoginPacket__FieldAccessorTable = 
               new pb::FieldAccess.FieldAccessorTable<global::Jangada.LoginPacket, global::Jangada.LoginPacket.Builder>(internal__static_Jangada_LoginPacket__Descriptor,
@@ -87,14 +126,42 @@ namespace Jangada {
           internal__static_Jangada_Position__FieldAccessorTable = 
               new pb::FieldAccess.FieldAccessorTable<global::Jangada.Position, global::Jangada.Position.Builder>(internal__static_Jangada_Position__Descriptor,
                   new string[] { "X", "Y", "Z", });
-          internal__static_Jangada_CharacterPositionPacket__Descriptor = Descriptor.MessageTypes[6];
-          internal__static_Jangada_CharacterPositionPacket__FieldAccessorTable = 
-              new pb::FieldAccess.FieldAccessorTable<global::Jangada.CharacterPositionPacket, global::Jangada.CharacterPositionPacket.Builder>(internal__static_Jangada_CharacterPositionPacket__Descriptor,
-                  new string[] { "MapId", "Position", });
-          internal__static_Jangada_Messages__Descriptor = Descriptor.MessageTypes[7];
+          internal__static_Jangada_QuaternionMessage__Descriptor = Descriptor.MessageTypes[6];
+          internal__static_Jangada_QuaternionMessage__FieldAccessorTable = 
+              new pb::FieldAccess.FieldAccessorTable<global::Jangada.QuaternionMessage, global::Jangada.QuaternionMessage.Builder>(internal__static_Jangada_QuaternionMessage__Descriptor,
+                  new string[] { "W", "X", "Y", "Z", });
+          internal__static_Jangada_RequestMovementPacket__Descriptor = Descriptor.MessageTypes[7];
+          internal__static_Jangada_RequestMovementPacket__FieldAccessorTable = 
+              new pb::FieldAccess.FieldAccessorTable<global::Jangada.RequestMovementPacket, global::Jangada.RequestMovementPacket.Builder>(internal__static_Jangada_RequestMovementPacket__Descriptor,
+                  new string[] { "MovementType", "Ammount", });
+          internal__static_Jangada_AreaDescriptionPacket__Descriptor = Descriptor.MessageTypes[8];
+          internal__static_Jangada_AreaDescriptionPacket__FieldAccessorTable = 
+              new pb::FieldAccess.FieldAccessorTable<global::Jangada.AreaDescriptionPacket, global::Jangada.AreaDescriptionPacket.Builder>(internal__static_Jangada_AreaDescriptionPacket__Descriptor,
+                  new string[] { "AreaId", "Player", "Players", });
+          internal__static_Jangada_PlayerDescription__Descriptor = Descriptor.MessageTypes[9];
+          internal__static_Jangada_PlayerDescription__FieldAccessorTable = 
+              new pb::FieldAccess.FieldAccessorTable<global::Jangada.PlayerDescription, global::Jangada.PlayerDescription.Builder>(internal__static_Jangada_PlayerDescription__Descriptor,
+                  new string[] { "PlayerGuid", "PlayerPosition", "PlayerRotation", });
+          internal__static_Jangada_PlayerLoginPacket__Descriptor = Descriptor.MessageTypes[10];
+          internal__static_Jangada_PlayerLoginPacket__FieldAccessorTable = 
+              new pb::FieldAccess.FieldAccessorTable<global::Jangada.PlayerLoginPacket, global::Jangada.PlayerLoginPacket.Builder>(internal__static_Jangada_PlayerLoginPacket__Descriptor,
+                  new string[] { "Player", });
+          internal__static_Jangada_PlayerMovementPacket__Descriptor = Descriptor.MessageTypes[11];
+          internal__static_Jangada_PlayerMovementPacket__FieldAccessorTable = 
+              new pb::FieldAccess.FieldAccessorTable<global::Jangada.PlayerMovementPacket, global::Jangada.PlayerMovementPacket.Builder>(internal__static_Jangada_PlayerMovementPacket__Descriptor,
+                  new string[] { "NewPosition", "NewRotation", });
+          internal__static_Jangada_CharacterMovementPacket__Descriptor = Descriptor.MessageTypes[12];
+          internal__static_Jangada_CharacterMovementPacket__FieldAccessorTable = 
+              new pb::FieldAccess.FieldAccessorTable<global::Jangada.CharacterMovementPacket, global::Jangada.CharacterMovementPacket.Builder>(internal__static_Jangada_CharacterMovementPacket__Descriptor,
+                  new string[] { "Player", });
+          internal__static_Jangada_Messages__Descriptor = Descriptor.MessageTypes[13];
           internal__static_Jangada_Messages__FieldAccessorTable = 
               new pb::FieldAccess.FieldAccessorTable<global::Jangada.Messages, global::Jangada.Messages.Builder>(internal__static_Jangada_Messages__Descriptor,
                   new string[] { "Networkmessage", });
+          internal__static_Jangada_PlayerLogoutPacket__Descriptor = Descriptor.MessageTypes[14];
+          internal__static_Jangada_PlayerLogoutPacket__FieldAccessorTable = 
+              new pb::FieldAccess.FieldAccessorTable<global::Jangada.PlayerLogoutPacket, global::Jangada.PlayerLogoutPacket.Builder>(internal__static_Jangada_PlayerLogoutPacket__Descriptor,
+                  new string[] { "PlayerGuid", });
           return null;
         };
         pbd::FileDescriptor.InternalBuildGeneratedFileFrom(descriptorData,
@@ -110,8 +177,8 @@ namespace Jangada {
   public sealed partial class Networkmessage : pb::GeneratedMessage<Networkmessage, Networkmessage.Builder> {
     private Networkmessage() { }
     private static readonly Networkmessage defaultInstance = new Networkmessage().MakeReadOnly();
-    private static readonly string[] _networkmessageFieldNames = new string[] { "characterPositionPacket", "charactersPacket", "loginPacket", "selectCharacterPacket", "type" };
-    private static readonly uint[] _networkmessageFieldTags = new uint[] { 42, 26, 18, 34, 8 };
+    private static readonly string[] _networkmessageFieldNames = new string[] { "areaDescriptionPacket", "characterMovementPacket", "charactersPacket", "loginPacket", "playerLoginPacket", "playerLogoutPacket", "playerMovementPacket", "requestMovementPacket", "selectCharacterPacket", "type" };
+    private static readonly uint[] _networkmessageFieldTags = new uint[] { 42, 74, 26, 18, 66, 82, 58, 50, 34, 8 };
     public static Networkmessage DefaultInstance {
       get { return defaultInstance; }
     }
@@ -139,7 +206,12 @@ namespace Jangada {
         LOGIN = 0,
         CHARACTERS = 1,
         SELECTEDCHAR = 2,
-        CHARACTER_POSITION = 3,
+        AREA_DESCRIPTION = 3,
+        REQUEST_MOVEMENT = 4,
+        PLAYER_MOVEMENT = 5,
+        PLAYER_LOGIN = 6,
+        CHARACTER_MOVEMENT = 7,
+        PLAYER_LOGOUT = 8,
       }
       
     }
@@ -185,14 +257,64 @@ namespace Jangada {
       get { return selectCharacterPacket_ ?? global::Jangada.SelectCharacterPacket.DefaultInstance; }
     }
     
-    public const int CharacterPositionPacketFieldNumber = 5;
-    private bool hasCharacterPositionPacket;
-    private global::Jangada.CharacterPositionPacket characterPositionPacket_;
-    public bool HasCharacterPositionPacket {
-      get { return hasCharacterPositionPacket; }
+    public const int AreaDescriptionPacketFieldNumber = 5;
+    private bool hasAreaDescriptionPacket;
+    private global::Jangada.AreaDescriptionPacket areaDescriptionPacket_;
+    public bool HasAreaDescriptionPacket {
+      get { return hasAreaDescriptionPacket; }
     }
-    public global::Jangada.CharacterPositionPacket CharacterPositionPacket {
-      get { return characterPositionPacket_ ?? global::Jangada.CharacterPositionPacket.DefaultInstance; }
+    public global::Jangada.AreaDescriptionPacket AreaDescriptionPacket {
+      get { return areaDescriptionPacket_ ?? global::Jangada.AreaDescriptionPacket.DefaultInstance; }
+    }
+    
+    public const int RequestMovementPacketFieldNumber = 6;
+    private bool hasRequestMovementPacket;
+    private global::Jangada.RequestMovementPacket requestMovementPacket_;
+    public bool HasRequestMovementPacket {
+      get { return hasRequestMovementPacket; }
+    }
+    public global::Jangada.RequestMovementPacket RequestMovementPacket {
+      get { return requestMovementPacket_ ?? global::Jangada.RequestMovementPacket.DefaultInstance; }
+    }
+    
+    public const int PlayerMovementPacketFieldNumber = 7;
+    private bool hasPlayerMovementPacket;
+    private global::Jangada.PlayerMovementPacket playerMovementPacket_;
+    public bool HasPlayerMovementPacket {
+      get { return hasPlayerMovementPacket; }
+    }
+    public global::Jangada.PlayerMovementPacket PlayerMovementPacket {
+      get { return playerMovementPacket_ ?? global::Jangada.PlayerMovementPacket.DefaultInstance; }
+    }
+    
+    public const int PlayerLoginPacketFieldNumber = 8;
+    private bool hasPlayerLoginPacket;
+    private global::Jangada.PlayerLoginPacket playerLoginPacket_;
+    public bool HasPlayerLoginPacket {
+      get { return hasPlayerLoginPacket; }
+    }
+    public global::Jangada.PlayerLoginPacket PlayerLoginPacket {
+      get { return playerLoginPacket_ ?? global::Jangada.PlayerLoginPacket.DefaultInstance; }
+    }
+    
+    public const int CharacterMovementPacketFieldNumber = 9;
+    private bool hasCharacterMovementPacket;
+    private global::Jangada.CharacterMovementPacket characterMovementPacket_;
+    public bool HasCharacterMovementPacket {
+      get { return hasCharacterMovementPacket; }
+    }
+    public global::Jangada.CharacterMovementPacket CharacterMovementPacket {
+      get { return characterMovementPacket_ ?? global::Jangada.CharacterMovementPacket.DefaultInstance; }
+    }
+    
+    public const int PlayerLogoutPacketFieldNumber = 10;
+    private bool hasPlayerLogoutPacket;
+    private global::Jangada.PlayerLogoutPacket playerLogoutPacket_;
+    public bool HasPlayerLogoutPacket {
+      get { return hasPlayerLogoutPacket; }
+    }
+    public global::Jangada.PlayerLogoutPacket PlayerLogoutPacket {
+      get { return playerLogoutPacket_ ?? global::Jangada.PlayerLogoutPacket.DefaultInstance; }
     }
     
     public override bool IsInitialized {
@@ -207,8 +329,23 @@ namespace Jangada {
         if (HasSelectCharacterPacket) {
           if (!SelectCharacterPacket.IsInitialized) return false;
         }
-        if (HasCharacterPositionPacket) {
-          if (!CharacterPositionPacket.IsInitialized) return false;
+        if (HasAreaDescriptionPacket) {
+          if (!AreaDescriptionPacket.IsInitialized) return false;
+        }
+        if (HasRequestMovementPacket) {
+          if (!RequestMovementPacket.IsInitialized) return false;
+        }
+        if (HasPlayerMovementPacket) {
+          if (!PlayerMovementPacket.IsInitialized) return false;
+        }
+        if (HasPlayerLoginPacket) {
+          if (!PlayerLoginPacket.IsInitialized) return false;
+        }
+        if (HasCharacterMovementPacket) {
+          if (!CharacterMovementPacket.IsInitialized) return false;
+        }
+        if (HasPlayerLogoutPacket) {
+          if (!PlayerLogoutPacket.IsInitialized) return false;
         }
         return true;
       }
@@ -218,19 +355,34 @@ namespace Jangada {
       int size = SerializedSize;
       string[] field_names = _networkmessageFieldNames;
       if (hasType) {
-        output.WriteEnum(1, field_names[4], (int) Type, Type);
+        output.WriteEnum(1, field_names[9], (int) Type, Type);
       }
       if (hasLoginPacket) {
-        output.WriteMessage(2, field_names[2], LoginPacket);
+        output.WriteMessage(2, field_names[3], LoginPacket);
       }
       if (hasCharactersPacket) {
-        output.WriteMessage(3, field_names[1], CharactersPacket);
+        output.WriteMessage(3, field_names[2], CharactersPacket);
       }
       if (hasSelectCharacterPacket) {
-        output.WriteMessage(4, field_names[3], SelectCharacterPacket);
+        output.WriteMessage(4, field_names[8], SelectCharacterPacket);
       }
-      if (hasCharacterPositionPacket) {
-        output.WriteMessage(5, field_names[0], CharacterPositionPacket);
+      if (hasAreaDescriptionPacket) {
+        output.WriteMessage(5, field_names[0], AreaDescriptionPacket);
+      }
+      if (hasRequestMovementPacket) {
+        output.WriteMessage(6, field_names[7], RequestMovementPacket);
+      }
+      if (hasPlayerMovementPacket) {
+        output.WriteMessage(7, field_names[6], PlayerMovementPacket);
+      }
+      if (hasPlayerLoginPacket) {
+        output.WriteMessage(8, field_names[4], PlayerLoginPacket);
+      }
+      if (hasCharacterMovementPacket) {
+        output.WriteMessage(9, field_names[1], CharacterMovementPacket);
+      }
+      if (hasPlayerLogoutPacket) {
+        output.WriteMessage(10, field_names[5], PlayerLogoutPacket);
       }
       UnknownFields.WriteTo(output);
     }
@@ -254,8 +406,23 @@ namespace Jangada {
         if (hasSelectCharacterPacket) {
           size += pb::CodedOutputStream.ComputeMessageSize(4, SelectCharacterPacket);
         }
-        if (hasCharacterPositionPacket) {
-          size += pb::CodedOutputStream.ComputeMessageSize(5, CharacterPositionPacket);
+        if (hasAreaDescriptionPacket) {
+          size += pb::CodedOutputStream.ComputeMessageSize(5, AreaDescriptionPacket);
+        }
+        if (hasRequestMovementPacket) {
+          size += pb::CodedOutputStream.ComputeMessageSize(6, RequestMovementPacket);
+        }
+        if (hasPlayerMovementPacket) {
+          size += pb::CodedOutputStream.ComputeMessageSize(7, PlayerMovementPacket);
+        }
+        if (hasPlayerLoginPacket) {
+          size += pb::CodedOutputStream.ComputeMessageSize(8, PlayerLoginPacket);
+        }
+        if (hasCharacterMovementPacket) {
+          size += pb::CodedOutputStream.ComputeMessageSize(9, CharacterMovementPacket);
+        }
+        if (hasPlayerLogoutPacket) {
+          size += pb::CodedOutputStream.ComputeMessageSize(10, PlayerLogoutPacket);
         }
         size += UnknownFields.SerializedSize;
         memoizedSerializedSize = size;
@@ -393,8 +560,23 @@ namespace Jangada {
         if (other.HasSelectCharacterPacket) {
           MergeSelectCharacterPacket(other.SelectCharacterPacket);
         }
-        if (other.HasCharacterPositionPacket) {
-          MergeCharacterPositionPacket(other.CharacterPositionPacket);
+        if (other.HasAreaDescriptionPacket) {
+          MergeAreaDescriptionPacket(other.AreaDescriptionPacket);
+        }
+        if (other.HasRequestMovementPacket) {
+          MergeRequestMovementPacket(other.RequestMovementPacket);
+        }
+        if (other.HasPlayerMovementPacket) {
+          MergePlayerMovementPacket(other.PlayerMovementPacket);
+        }
+        if (other.HasPlayerLoginPacket) {
+          MergePlayerLoginPacket(other.PlayerLoginPacket);
+        }
+        if (other.HasCharacterMovementPacket) {
+          MergeCharacterMovementPacket(other.CharacterMovementPacket);
+        }
+        if (other.HasPlayerLogoutPacket) {
+          MergePlayerLogoutPacket(other.PlayerLogoutPacket);
         }
         this.MergeUnknownFields(other.UnknownFields);
         return this;
@@ -479,12 +661,57 @@ namespace Jangada {
               break;
             }
             case 42: {
-              global::Jangada.CharacterPositionPacket.Builder subBuilder = global::Jangada.CharacterPositionPacket.CreateBuilder();
-              if (result.hasCharacterPositionPacket) {
-                subBuilder.MergeFrom(CharacterPositionPacket);
+              global::Jangada.AreaDescriptionPacket.Builder subBuilder = global::Jangada.AreaDescriptionPacket.CreateBuilder();
+              if (result.hasAreaDescriptionPacket) {
+                subBuilder.MergeFrom(AreaDescriptionPacket);
               }
               input.ReadMessage(subBuilder, extensionRegistry);
-              CharacterPositionPacket = subBuilder.BuildPartial();
+              AreaDescriptionPacket = subBuilder.BuildPartial();
+              break;
+            }
+            case 50: {
+              global::Jangada.RequestMovementPacket.Builder subBuilder = global::Jangada.RequestMovementPacket.CreateBuilder();
+              if (result.hasRequestMovementPacket) {
+                subBuilder.MergeFrom(RequestMovementPacket);
+              }
+              input.ReadMessage(subBuilder, extensionRegistry);
+              RequestMovementPacket = subBuilder.BuildPartial();
+              break;
+            }
+            case 58: {
+              global::Jangada.PlayerMovementPacket.Builder subBuilder = global::Jangada.PlayerMovementPacket.CreateBuilder();
+              if (result.hasPlayerMovementPacket) {
+                subBuilder.MergeFrom(PlayerMovementPacket);
+              }
+              input.ReadMessage(subBuilder, extensionRegistry);
+              PlayerMovementPacket = subBuilder.BuildPartial();
+              break;
+            }
+            case 66: {
+              global::Jangada.PlayerLoginPacket.Builder subBuilder = global::Jangada.PlayerLoginPacket.CreateBuilder();
+              if (result.hasPlayerLoginPacket) {
+                subBuilder.MergeFrom(PlayerLoginPacket);
+              }
+              input.ReadMessage(subBuilder, extensionRegistry);
+              PlayerLoginPacket = subBuilder.BuildPartial();
+              break;
+            }
+            case 74: {
+              global::Jangada.CharacterMovementPacket.Builder subBuilder = global::Jangada.CharacterMovementPacket.CreateBuilder();
+              if (result.hasCharacterMovementPacket) {
+                subBuilder.MergeFrom(CharacterMovementPacket);
+              }
+              input.ReadMessage(subBuilder, extensionRegistry);
+              CharacterMovementPacket = subBuilder.BuildPartial();
+              break;
+            }
+            case 82: {
+              global::Jangada.PlayerLogoutPacket.Builder subBuilder = global::Jangada.PlayerLogoutPacket.CreateBuilder();
+              if (result.hasPlayerLogoutPacket) {
+                subBuilder.MergeFrom(PlayerLogoutPacket);
+              }
+              input.ReadMessage(subBuilder, extensionRegistry);
+              PlayerLogoutPacket = subBuilder.BuildPartial();
               break;
             }
           }
@@ -637,43 +864,243 @@ namespace Jangada {
         return this;
       }
       
-      public bool HasCharacterPositionPacket {
-       get { return result.hasCharacterPositionPacket; }
+      public bool HasAreaDescriptionPacket {
+       get { return result.hasAreaDescriptionPacket; }
       }
-      public global::Jangada.CharacterPositionPacket CharacterPositionPacket {
-        get { return result.CharacterPositionPacket; }
-        set { SetCharacterPositionPacket(value); }
+      public global::Jangada.AreaDescriptionPacket AreaDescriptionPacket {
+        get { return result.AreaDescriptionPacket; }
+        set { SetAreaDescriptionPacket(value); }
       }
-      public Builder SetCharacterPositionPacket(global::Jangada.CharacterPositionPacket value) {
+      public Builder SetAreaDescriptionPacket(global::Jangada.AreaDescriptionPacket value) {
         pb::ThrowHelper.ThrowIfNull(value, "value");
         PrepareBuilder();
-        result.hasCharacterPositionPacket = true;
-        result.characterPositionPacket_ = value;
+        result.hasAreaDescriptionPacket = true;
+        result.areaDescriptionPacket_ = value;
         return this;
       }
-      public Builder SetCharacterPositionPacket(global::Jangada.CharacterPositionPacket.Builder builderForValue) {
+      public Builder SetAreaDescriptionPacket(global::Jangada.AreaDescriptionPacket.Builder builderForValue) {
         pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
         PrepareBuilder();
-        result.hasCharacterPositionPacket = true;
-        result.characterPositionPacket_ = builderForValue.Build();
+        result.hasAreaDescriptionPacket = true;
+        result.areaDescriptionPacket_ = builderForValue.Build();
         return this;
       }
-      public Builder MergeCharacterPositionPacket(global::Jangada.CharacterPositionPacket value) {
+      public Builder MergeAreaDescriptionPacket(global::Jangada.AreaDescriptionPacket value) {
         pb::ThrowHelper.ThrowIfNull(value, "value");
         PrepareBuilder();
-        if (result.hasCharacterPositionPacket &&
-            result.characterPositionPacket_ != global::Jangada.CharacterPositionPacket.DefaultInstance) {
-            result.characterPositionPacket_ = global::Jangada.CharacterPositionPacket.CreateBuilder(result.characterPositionPacket_).MergeFrom(value).BuildPartial();
+        if (result.hasAreaDescriptionPacket &&
+            result.areaDescriptionPacket_ != global::Jangada.AreaDescriptionPacket.DefaultInstance) {
+            result.areaDescriptionPacket_ = global::Jangada.AreaDescriptionPacket.CreateBuilder(result.areaDescriptionPacket_).MergeFrom(value).BuildPartial();
         } else {
-          result.characterPositionPacket_ = value;
+          result.areaDescriptionPacket_ = value;
         }
-        result.hasCharacterPositionPacket = true;
+        result.hasAreaDescriptionPacket = true;
         return this;
       }
-      public Builder ClearCharacterPositionPacket() {
+      public Builder ClearAreaDescriptionPacket() {
         PrepareBuilder();
-        result.hasCharacterPositionPacket = false;
-        result.characterPositionPacket_ = null;
+        result.hasAreaDescriptionPacket = false;
+        result.areaDescriptionPacket_ = null;
+        return this;
+      }
+      
+      public bool HasRequestMovementPacket {
+       get { return result.hasRequestMovementPacket; }
+      }
+      public global::Jangada.RequestMovementPacket RequestMovementPacket {
+        get { return result.RequestMovementPacket; }
+        set { SetRequestMovementPacket(value); }
+      }
+      public Builder SetRequestMovementPacket(global::Jangada.RequestMovementPacket value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.hasRequestMovementPacket = true;
+        result.requestMovementPacket_ = value;
+        return this;
+      }
+      public Builder SetRequestMovementPacket(global::Jangada.RequestMovementPacket.Builder builderForValue) {
+        pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+        PrepareBuilder();
+        result.hasRequestMovementPacket = true;
+        result.requestMovementPacket_ = builderForValue.Build();
+        return this;
+      }
+      public Builder MergeRequestMovementPacket(global::Jangada.RequestMovementPacket value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        if (result.hasRequestMovementPacket &&
+            result.requestMovementPacket_ != global::Jangada.RequestMovementPacket.DefaultInstance) {
+            result.requestMovementPacket_ = global::Jangada.RequestMovementPacket.CreateBuilder(result.requestMovementPacket_).MergeFrom(value).BuildPartial();
+        } else {
+          result.requestMovementPacket_ = value;
+        }
+        result.hasRequestMovementPacket = true;
+        return this;
+      }
+      public Builder ClearRequestMovementPacket() {
+        PrepareBuilder();
+        result.hasRequestMovementPacket = false;
+        result.requestMovementPacket_ = null;
+        return this;
+      }
+      
+      public bool HasPlayerMovementPacket {
+       get { return result.hasPlayerMovementPacket; }
+      }
+      public global::Jangada.PlayerMovementPacket PlayerMovementPacket {
+        get { return result.PlayerMovementPacket; }
+        set { SetPlayerMovementPacket(value); }
+      }
+      public Builder SetPlayerMovementPacket(global::Jangada.PlayerMovementPacket value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.hasPlayerMovementPacket = true;
+        result.playerMovementPacket_ = value;
+        return this;
+      }
+      public Builder SetPlayerMovementPacket(global::Jangada.PlayerMovementPacket.Builder builderForValue) {
+        pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+        PrepareBuilder();
+        result.hasPlayerMovementPacket = true;
+        result.playerMovementPacket_ = builderForValue.Build();
+        return this;
+      }
+      public Builder MergePlayerMovementPacket(global::Jangada.PlayerMovementPacket value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        if (result.hasPlayerMovementPacket &&
+            result.playerMovementPacket_ != global::Jangada.PlayerMovementPacket.DefaultInstance) {
+            result.playerMovementPacket_ = global::Jangada.PlayerMovementPacket.CreateBuilder(result.playerMovementPacket_).MergeFrom(value).BuildPartial();
+        } else {
+          result.playerMovementPacket_ = value;
+        }
+        result.hasPlayerMovementPacket = true;
+        return this;
+      }
+      public Builder ClearPlayerMovementPacket() {
+        PrepareBuilder();
+        result.hasPlayerMovementPacket = false;
+        result.playerMovementPacket_ = null;
+        return this;
+      }
+      
+      public bool HasPlayerLoginPacket {
+       get { return result.hasPlayerLoginPacket; }
+      }
+      public global::Jangada.PlayerLoginPacket PlayerLoginPacket {
+        get { return result.PlayerLoginPacket; }
+        set { SetPlayerLoginPacket(value); }
+      }
+      public Builder SetPlayerLoginPacket(global::Jangada.PlayerLoginPacket value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.hasPlayerLoginPacket = true;
+        result.playerLoginPacket_ = value;
+        return this;
+      }
+      public Builder SetPlayerLoginPacket(global::Jangada.PlayerLoginPacket.Builder builderForValue) {
+        pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+        PrepareBuilder();
+        result.hasPlayerLoginPacket = true;
+        result.playerLoginPacket_ = builderForValue.Build();
+        return this;
+      }
+      public Builder MergePlayerLoginPacket(global::Jangada.PlayerLoginPacket value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        if (result.hasPlayerLoginPacket &&
+            result.playerLoginPacket_ != global::Jangada.PlayerLoginPacket.DefaultInstance) {
+            result.playerLoginPacket_ = global::Jangada.PlayerLoginPacket.CreateBuilder(result.playerLoginPacket_).MergeFrom(value).BuildPartial();
+        } else {
+          result.playerLoginPacket_ = value;
+        }
+        result.hasPlayerLoginPacket = true;
+        return this;
+      }
+      public Builder ClearPlayerLoginPacket() {
+        PrepareBuilder();
+        result.hasPlayerLoginPacket = false;
+        result.playerLoginPacket_ = null;
+        return this;
+      }
+      
+      public bool HasCharacterMovementPacket {
+       get { return result.hasCharacterMovementPacket; }
+      }
+      public global::Jangada.CharacterMovementPacket CharacterMovementPacket {
+        get { return result.CharacterMovementPacket; }
+        set { SetCharacterMovementPacket(value); }
+      }
+      public Builder SetCharacterMovementPacket(global::Jangada.CharacterMovementPacket value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.hasCharacterMovementPacket = true;
+        result.characterMovementPacket_ = value;
+        return this;
+      }
+      public Builder SetCharacterMovementPacket(global::Jangada.CharacterMovementPacket.Builder builderForValue) {
+        pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+        PrepareBuilder();
+        result.hasCharacterMovementPacket = true;
+        result.characterMovementPacket_ = builderForValue.Build();
+        return this;
+      }
+      public Builder MergeCharacterMovementPacket(global::Jangada.CharacterMovementPacket value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        if (result.hasCharacterMovementPacket &&
+            result.characterMovementPacket_ != global::Jangada.CharacterMovementPacket.DefaultInstance) {
+            result.characterMovementPacket_ = global::Jangada.CharacterMovementPacket.CreateBuilder(result.characterMovementPacket_).MergeFrom(value).BuildPartial();
+        } else {
+          result.characterMovementPacket_ = value;
+        }
+        result.hasCharacterMovementPacket = true;
+        return this;
+      }
+      public Builder ClearCharacterMovementPacket() {
+        PrepareBuilder();
+        result.hasCharacterMovementPacket = false;
+        result.characterMovementPacket_ = null;
+        return this;
+      }
+      
+      public bool HasPlayerLogoutPacket {
+       get { return result.hasPlayerLogoutPacket; }
+      }
+      public global::Jangada.PlayerLogoutPacket PlayerLogoutPacket {
+        get { return result.PlayerLogoutPacket; }
+        set { SetPlayerLogoutPacket(value); }
+      }
+      public Builder SetPlayerLogoutPacket(global::Jangada.PlayerLogoutPacket value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.hasPlayerLogoutPacket = true;
+        result.playerLogoutPacket_ = value;
+        return this;
+      }
+      public Builder SetPlayerLogoutPacket(global::Jangada.PlayerLogoutPacket.Builder builderForValue) {
+        pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+        PrepareBuilder();
+        result.hasPlayerLogoutPacket = true;
+        result.playerLogoutPacket_ = builderForValue.Build();
+        return this;
+      }
+      public Builder MergePlayerLogoutPacket(global::Jangada.PlayerLogoutPacket value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        if (result.hasPlayerLogoutPacket &&
+            result.playerLogoutPacket_ != global::Jangada.PlayerLogoutPacket.DefaultInstance) {
+            result.playerLogoutPacket_ = global::Jangada.PlayerLogoutPacket.CreateBuilder(result.playerLogoutPacket_).MergeFrom(value).BuildPartial();
+        } else {
+          result.playerLogoutPacket_ = value;
+        }
+        result.hasPlayerLogoutPacket = true;
+        return this;
+      }
+      public Builder ClearPlayerLogoutPacket() {
+        PrepareBuilder();
+        result.hasPlayerLogoutPacket = false;
+        result.playerLogoutPacket_ = null;
         return this;
       }
     }
@@ -1936,7 +2363,7 @@ namespace Jangada {
     private Position() { }
     private static readonly Position defaultInstance = new Position().MakeReadOnly();
     private static readonly string[] _positionFieldNames = new string[] { "x", "y", "z" };
-    private static readonly uint[] _positionFieldTags = new uint[] { 9, 17, 25 };
+    private static readonly uint[] _positionFieldTags = new uint[] { 13, 21, 29 };
     public static Position DefaultInstance {
       get { return defaultInstance; }
     }
@@ -1959,31 +2386,31 @@ namespace Jangada {
     
     public const int XFieldNumber = 1;
     private bool hasX;
-    private double x_;
+    private float x_;
     public bool HasX {
       get { return hasX; }
     }
-    public double X {
+    public float X {
       get { return x_; }
     }
     
     public const int YFieldNumber = 2;
     private bool hasY;
-    private double y_;
+    private float y_;
     public bool HasY {
       get { return hasY; }
     }
-    public double Y {
+    public float Y {
       get { return y_; }
     }
     
     public const int ZFieldNumber = 3;
     private bool hasZ;
-    private double z_;
+    private float z_;
     public bool HasZ {
       get { return hasZ; }
     }
-    public double Z {
+    public float Z {
       get { return z_; }
     }
     
@@ -2000,13 +2427,13 @@ namespace Jangada {
       int size = SerializedSize;
       string[] field_names = _positionFieldNames;
       if (hasX) {
-        output.WriteDouble(1, field_names[0], X);
+        output.WriteFloat(1, field_names[0], X);
       }
       if (hasY) {
-        output.WriteDouble(2, field_names[1], Y);
+        output.WriteFloat(2, field_names[1], Y);
       }
       if (hasZ) {
-        output.WriteDouble(3, field_names[2], Z);
+        output.WriteFloat(3, field_names[2], Z);
       }
       UnknownFields.WriteTo(output);
     }
@@ -2019,13 +2446,13 @@ namespace Jangada {
         
         size = 0;
         if (hasX) {
-          size += pb::CodedOutputStream.ComputeDoubleSize(1, X);
+          size += pb::CodedOutputStream.ComputeFloatSize(1, X);
         }
         if (hasY) {
-          size += pb::CodedOutputStream.ComputeDoubleSize(2, Y);
+          size += pb::CodedOutputStream.ComputeFloatSize(2, Y);
         }
         if (hasZ) {
-          size += pb::CodedOutputStream.ComputeDoubleSize(3, Z);
+          size += pb::CodedOutputStream.ComputeFloatSize(3, Z);
         }
         size += UnknownFields.SerializedSize;
         memoizedSerializedSize = size;
@@ -2203,16 +2630,16 @@ namespace Jangada {
               ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
               break;
             }
-            case 9: {
-              result.hasX = input.ReadDouble(ref result.x_);
+            case 13: {
+              result.hasX = input.ReadFloat(ref result.x_);
               break;
             }
-            case 17: {
-              result.hasY = input.ReadDouble(ref result.y_);
+            case 21: {
+              result.hasY = input.ReadFloat(ref result.y_);
               break;
             }
-            case 25: {
-              result.hasZ = input.ReadDouble(ref result.z_);
+            case 29: {
+              result.hasZ = input.ReadFloat(ref result.z_);
               break;
             }
           }
@@ -2228,11 +2655,11 @@ namespace Jangada {
       public bool HasX {
         get { return result.hasX; }
       }
-      public double X {
+      public float X {
         get { return result.X; }
         set { SetX(value); }
       }
-      public Builder SetX(double value) {
+      public Builder SetX(float value) {
         PrepareBuilder();
         result.hasX = true;
         result.x_ = value;
@@ -2241,18 +2668,18 @@ namespace Jangada {
       public Builder ClearX() {
         PrepareBuilder();
         result.hasX = false;
-        result.x_ = 0D;
+        result.x_ = 0F;
         return this;
       }
       
       public bool HasY {
         get { return result.hasY; }
       }
-      public double Y {
+      public float Y {
         get { return result.Y; }
         set { SetY(value); }
       }
-      public Builder SetY(double value) {
+      public Builder SetY(float value) {
         PrepareBuilder();
         result.hasY = true;
         result.y_ = value;
@@ -2261,18 +2688,18 @@ namespace Jangada {
       public Builder ClearY() {
         PrepareBuilder();
         result.hasY = false;
-        result.y_ = 0D;
+        result.y_ = 0F;
         return this;
       }
       
       public bool HasZ {
         get { return result.hasZ; }
       }
-      public double Z {
+      public float Z {
         get { return result.Z; }
         set { SetZ(value); }
       }
-      public Builder SetZ(double value) {
+      public Builder SetZ(float value) {
         PrepareBuilder();
         result.hasZ = true;
         result.z_ = value;
@@ -2281,7 +2708,7 @@ namespace Jangada {
       public Builder ClearZ() {
         PrepareBuilder();
         result.hasZ = false;
-        result.z_ = 0D;
+        result.z_ = 0F;
         return this;
       }
     }
@@ -2291,68 +2718,95 @@ namespace Jangada {
   }
   
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-  public sealed partial class CharacterPositionPacket : pb::GeneratedMessage<CharacterPositionPacket, CharacterPositionPacket.Builder> {
-    private CharacterPositionPacket() { }
-    private static readonly CharacterPositionPacket defaultInstance = new CharacterPositionPacket().MakeReadOnly();
-    private static readonly string[] _characterPositionPacketFieldNames = new string[] { "mapId", "position" };
-    private static readonly uint[] _characterPositionPacketFieldTags = new uint[] { 8, 18 };
-    public static CharacterPositionPacket DefaultInstance {
+  public sealed partial class QuaternionMessage : pb::GeneratedMessage<QuaternionMessage, QuaternionMessage.Builder> {
+    private QuaternionMessage() { }
+    private static readonly QuaternionMessage defaultInstance = new QuaternionMessage().MakeReadOnly();
+    private static readonly string[] _quaternionMessageFieldNames = new string[] { "w", "x", "y", "z" };
+    private static readonly uint[] _quaternionMessageFieldTags = new uint[] { 13, 21, 29, 37 };
+    public static QuaternionMessage DefaultInstance {
       get { return defaultInstance; }
     }
     
-    public override CharacterPositionPacket DefaultInstanceForType {
+    public override QuaternionMessage DefaultInstanceForType {
       get { return DefaultInstance; }
     }
     
-    protected override CharacterPositionPacket ThisMessage {
+    protected override QuaternionMessage ThisMessage {
       get { return this; }
     }
     
     public static pbd::MessageDescriptor Descriptor {
-      get { return global::Jangada.Proto.Networkmessage.internal__static_Jangada_CharacterPositionPacket__Descriptor; }
+      get { return global::Jangada.Proto.Networkmessage.internal__static_Jangada_QuaternionMessage__Descriptor; }
     }
     
-    protected override pb::FieldAccess.FieldAccessorTable<CharacterPositionPacket, CharacterPositionPacket.Builder> InternalFieldAccessors {
-      get { return global::Jangada.Proto.Networkmessage.internal__static_Jangada_CharacterPositionPacket__FieldAccessorTable; }
+    protected override pb::FieldAccess.FieldAccessorTable<QuaternionMessage, QuaternionMessage.Builder> InternalFieldAccessors {
+      get { return global::Jangada.Proto.Networkmessage.internal__static_Jangada_QuaternionMessage__FieldAccessorTable; }
     }
     
-    public const int MapIdFieldNumber = 1;
-    private bool hasMapId;
-    private int mapId_;
-    public bool HasMapId {
-      get { return hasMapId; }
+    public const int WFieldNumber = 1;
+    private bool hasW;
+    private float w_;
+    public bool HasW {
+      get { return hasW; }
     }
-    public int MapId {
-      get { return mapId_; }
+    public float W {
+      get { return w_; }
     }
     
-    public const int PositionFieldNumber = 2;
-    private bool hasPosition;
-    private global::Jangada.Position position_;
-    public bool HasPosition {
-      get { return hasPosition; }
+    public const int XFieldNumber = 2;
+    private bool hasX;
+    private float x_;
+    public bool HasX {
+      get { return hasX; }
     }
-    public global::Jangada.Position Position {
-      get { return position_ ?? global::Jangada.Position.DefaultInstance; }
+    public float X {
+      get { return x_; }
+    }
+    
+    public const int YFieldNumber = 3;
+    private bool hasY;
+    private float y_;
+    public bool HasY {
+      get { return hasY; }
+    }
+    public float Y {
+      get { return y_; }
+    }
+    
+    public const int ZFieldNumber = 4;
+    private bool hasZ;
+    private float z_;
+    public bool HasZ {
+      get { return hasZ; }
+    }
+    public float Z {
+      get { return z_; }
     }
     
     public override bool IsInitialized {
       get {
-        if (!hasMapId) return false;
-        if (!hasPosition) return false;
-        if (!Position.IsInitialized) return false;
+        if (!hasW) return false;
+        if (!hasX) return false;
+        if (!hasY) return false;
+        if (!hasZ) return false;
         return true;
       }
     }
     
     public override void WriteTo(pb::ICodedOutputStream output) {
       int size = SerializedSize;
-      string[] field_names = _characterPositionPacketFieldNames;
-      if (hasMapId) {
-        output.WriteInt32(1, field_names[0], MapId);
+      string[] field_names = _quaternionMessageFieldNames;
+      if (hasW) {
+        output.WriteFloat(1, field_names[0], W);
       }
-      if (hasPosition) {
-        output.WriteMessage(2, field_names[1], Position);
+      if (hasX) {
+        output.WriteFloat(2, field_names[1], X);
+      }
+      if (hasY) {
+        output.WriteFloat(3, field_names[2], Y);
+      }
+      if (hasZ) {
+        output.WriteFloat(4, field_names[3], Z);
       }
       UnknownFields.WriteTo(output);
     }
@@ -2364,11 +2818,17 @@ namespace Jangada {
         if (size != -1) return size;
         
         size = 0;
-        if (hasMapId) {
-          size += pb::CodedOutputStream.ComputeInt32Size(1, MapId);
+        if (hasW) {
+          size += pb::CodedOutputStream.ComputeFloatSize(1, W);
         }
-        if (hasPosition) {
-          size += pb::CodedOutputStream.ComputeMessageSize(2, Position);
+        if (hasX) {
+          size += pb::CodedOutputStream.ComputeFloatSize(2, X);
+        }
+        if (hasY) {
+          size += pb::CodedOutputStream.ComputeFloatSize(3, Y);
+        }
+        if (hasZ) {
+          size += pb::CodedOutputStream.ComputeFloatSize(4, Z);
         }
         size += UnknownFields.SerializedSize;
         memoizedSerializedSize = size;
@@ -2376,49 +2836,49 @@ namespace Jangada {
       }
     }
     
-    public static CharacterPositionPacket ParseFrom(pb::ByteString data) {
+    public static QuaternionMessage ParseFrom(pb::ByteString data) {
       return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
     }
-    public static CharacterPositionPacket ParseFrom(pb::ByteString data, pb::ExtensionRegistry extensionRegistry) {
+    public static QuaternionMessage ParseFrom(pb::ByteString data, pb::ExtensionRegistry extensionRegistry) {
       return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
     }
-    public static CharacterPositionPacket ParseFrom(byte[] data) {
+    public static QuaternionMessage ParseFrom(byte[] data) {
       return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
     }
-    public static CharacterPositionPacket ParseFrom(byte[] data, pb::ExtensionRegistry extensionRegistry) {
+    public static QuaternionMessage ParseFrom(byte[] data, pb::ExtensionRegistry extensionRegistry) {
       return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
     }
-    public static CharacterPositionPacket ParseFrom(global::System.IO.Stream input) {
+    public static QuaternionMessage ParseFrom(global::System.IO.Stream input) {
       return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
     }
-    public static CharacterPositionPacket ParseFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+    public static QuaternionMessage ParseFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
       return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
     }
-    public static CharacterPositionPacket ParseDelimitedFrom(global::System.IO.Stream input) {
+    public static QuaternionMessage ParseDelimitedFrom(global::System.IO.Stream input) {
       return CreateBuilder().MergeDelimitedFrom(input).BuildParsed();
     }
-    public static CharacterPositionPacket ParseDelimitedFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+    public static QuaternionMessage ParseDelimitedFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
       return CreateBuilder().MergeDelimitedFrom(input, extensionRegistry).BuildParsed();
     }
-    public static CharacterPositionPacket ParseFrom(pb::ICodedInputStream input) {
+    public static QuaternionMessage ParseFrom(pb::ICodedInputStream input) {
       return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
     }
-    public static CharacterPositionPacket ParseFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+    public static QuaternionMessage ParseFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
       return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
     }
-    private CharacterPositionPacket MakeReadOnly() {
+    private QuaternionMessage MakeReadOnly() {
       return this;
     }
     
     public static Builder CreateBuilder() { return new Builder(); }
     public override Builder ToBuilder() { return CreateBuilder(this); }
     public override Builder CreateBuilderForType() { return new Builder(); }
-    public static Builder CreateBuilder(CharacterPositionPacket prototype) {
+    public static Builder CreateBuilder(QuaternionMessage prototype) {
       return new Builder(prototype);
     }
     
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    public sealed partial class Builder : pb::GeneratedBuilder<CharacterPositionPacket, Builder> {
+    public sealed partial class Builder : pb::GeneratedBuilder<QuaternionMessage, Builder> {
       protected override Builder ThisBuilder {
         get { return this; }
       }
@@ -2426,18 +2886,18 @@ namespace Jangada {
         result = DefaultInstance;
         resultIsReadOnly = true;
       }
-      internal Builder(CharacterPositionPacket cloneFrom) {
+      internal Builder(QuaternionMessage cloneFrom) {
         result = cloneFrom;
         resultIsReadOnly = true;
       }
       
       private bool resultIsReadOnly;
-      private CharacterPositionPacket result;
+      private QuaternionMessage result;
       
-      private CharacterPositionPacket PrepareBuilder() {
+      private QuaternionMessage PrepareBuilder() {
         if (resultIsReadOnly) {
-          CharacterPositionPacket original = result;
-          result = new CharacterPositionPacket();
+          QuaternionMessage original = result;
+          result = new QuaternionMessage();
           resultIsReadOnly = false;
           MergeFrom(original);
         }
@@ -2448,7 +2908,7 @@ namespace Jangada {
         get { return result.IsInitialized; }
       }
       
-      protected override CharacterPositionPacket MessageBeingBuilt {
+      protected override QuaternionMessage MessageBeingBuilt {
         get { return PrepareBuilder(); }
       }
       
@@ -2467,14 +2927,14 @@ namespace Jangada {
       }
       
       public override pbd::MessageDescriptor DescriptorForType {
-        get { return global::Jangada.CharacterPositionPacket.Descriptor; }
+        get { return global::Jangada.QuaternionMessage.Descriptor; }
       }
       
-      public override CharacterPositionPacket DefaultInstanceForType {
-        get { return global::Jangada.CharacterPositionPacket.DefaultInstance; }
+      public override QuaternionMessage DefaultInstanceForType {
+        get { return global::Jangada.QuaternionMessage.DefaultInstance; }
       }
       
-      public override CharacterPositionPacket BuildPartial() {
+      public override QuaternionMessage BuildPartial() {
         if (resultIsReadOnly) {
           return result;
         }
@@ -2483,22 +2943,28 @@ namespace Jangada {
       }
       
       public override Builder MergeFrom(pb::IMessage other) {
-        if (other is CharacterPositionPacket) {
-          return MergeFrom((CharacterPositionPacket) other);
+        if (other is QuaternionMessage) {
+          return MergeFrom((QuaternionMessage) other);
         } else {
           base.MergeFrom(other);
           return this;
         }
       }
       
-      public override Builder MergeFrom(CharacterPositionPacket other) {
-        if (other == global::Jangada.CharacterPositionPacket.DefaultInstance) return this;
+      public override Builder MergeFrom(QuaternionMessage other) {
+        if (other == global::Jangada.QuaternionMessage.DefaultInstance) return this;
         PrepareBuilder();
-        if (other.HasMapId) {
-          MapId = other.MapId;
+        if (other.HasW) {
+          W = other.W;
         }
-        if (other.HasPosition) {
-          MergePosition(other.Position);
+        if (other.HasX) {
+          X = other.X;
+        }
+        if (other.HasY) {
+          Y = other.Y;
+        }
+        if (other.HasZ) {
+          Z = other.Z;
         }
         this.MergeUnknownFields(other.UnknownFields);
         return this;
@@ -2515,9 +2981,384 @@ namespace Jangada {
         string field_name;
         while (input.ReadTag(out tag, out field_name)) {
           if(tag == 0 && field_name != null) {
-            int field_ordinal = global::System.Array.BinarySearch(_characterPositionPacketFieldNames, field_name, global::System.StringComparer.Ordinal);
+            int field_ordinal = global::System.Array.BinarySearch(_quaternionMessageFieldNames, field_name, global::System.StringComparer.Ordinal);
             if(field_ordinal >= 0)
-              tag = _characterPositionPacketFieldTags[field_ordinal];
+              tag = _quaternionMessageFieldTags[field_ordinal];
+            else {
+              if (unknownFields == null) {
+                unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+              }
+              ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+              continue;
+            }
+          }
+          switch (tag) {
+            case 0: {
+              throw pb::InvalidProtocolBufferException.InvalidTag();
+            }
+            default: {
+              if (pb::WireFormat.IsEndGroupTag(tag)) {
+                if (unknownFields != null) {
+                  this.UnknownFields = unknownFields.Build();
+                }
+                return this;
+              }
+              if (unknownFields == null) {
+                unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+              }
+              ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+              break;
+            }
+            case 13: {
+              result.hasW = input.ReadFloat(ref result.w_);
+              break;
+            }
+            case 21: {
+              result.hasX = input.ReadFloat(ref result.x_);
+              break;
+            }
+            case 29: {
+              result.hasY = input.ReadFloat(ref result.y_);
+              break;
+            }
+            case 37: {
+              result.hasZ = input.ReadFloat(ref result.z_);
+              break;
+            }
+          }
+        }
+        
+        if (unknownFields != null) {
+          this.UnknownFields = unknownFields.Build();
+        }
+        return this;
+      }
+      
+      
+      public bool HasW {
+        get { return result.hasW; }
+      }
+      public float W {
+        get { return result.W; }
+        set { SetW(value); }
+      }
+      public Builder SetW(float value) {
+        PrepareBuilder();
+        result.hasW = true;
+        result.w_ = value;
+        return this;
+      }
+      public Builder ClearW() {
+        PrepareBuilder();
+        result.hasW = false;
+        result.w_ = 0F;
+        return this;
+      }
+      
+      public bool HasX {
+        get { return result.hasX; }
+      }
+      public float X {
+        get { return result.X; }
+        set { SetX(value); }
+      }
+      public Builder SetX(float value) {
+        PrepareBuilder();
+        result.hasX = true;
+        result.x_ = value;
+        return this;
+      }
+      public Builder ClearX() {
+        PrepareBuilder();
+        result.hasX = false;
+        result.x_ = 0F;
+        return this;
+      }
+      
+      public bool HasY {
+        get { return result.hasY; }
+      }
+      public float Y {
+        get { return result.Y; }
+        set { SetY(value); }
+      }
+      public Builder SetY(float value) {
+        PrepareBuilder();
+        result.hasY = true;
+        result.y_ = value;
+        return this;
+      }
+      public Builder ClearY() {
+        PrepareBuilder();
+        result.hasY = false;
+        result.y_ = 0F;
+        return this;
+      }
+      
+      public bool HasZ {
+        get { return result.hasZ; }
+      }
+      public float Z {
+        get { return result.Z; }
+        set { SetZ(value); }
+      }
+      public Builder SetZ(float value) {
+        PrepareBuilder();
+        result.hasZ = true;
+        result.z_ = value;
+        return this;
+      }
+      public Builder ClearZ() {
+        PrepareBuilder();
+        result.hasZ = false;
+        result.z_ = 0F;
+        return this;
+      }
+    }
+    static QuaternionMessage() {
+      object.ReferenceEquals(global::Jangada.Proto.Networkmessage.Descriptor, null);
+    }
+  }
+  
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+  public sealed partial class RequestMovementPacket : pb::GeneratedMessage<RequestMovementPacket, RequestMovementPacket.Builder> {
+    private RequestMovementPacket() { }
+    private static readonly RequestMovementPacket defaultInstance = new RequestMovementPacket().MakeReadOnly();
+    private static readonly string[] _requestMovementPacketFieldNames = new string[] { "ammount", "movementType" };
+    private static readonly uint[] _requestMovementPacketFieldTags = new uint[] { 21, 8 };
+    public static RequestMovementPacket DefaultInstance {
+      get { return defaultInstance; }
+    }
+    
+    public override RequestMovementPacket DefaultInstanceForType {
+      get { return DefaultInstance; }
+    }
+    
+    protected override RequestMovementPacket ThisMessage {
+      get { return this; }
+    }
+    
+    public static pbd::MessageDescriptor Descriptor {
+      get { return global::Jangada.Proto.Networkmessage.internal__static_Jangada_RequestMovementPacket__Descriptor; }
+    }
+    
+    protected override pb::FieldAccess.FieldAccessorTable<RequestMovementPacket, RequestMovementPacket.Builder> InternalFieldAccessors {
+      get { return global::Jangada.Proto.Networkmessage.internal__static_Jangada_RequestMovementPacket__FieldAccessorTable; }
+    }
+    
+    #region Nested types
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public static partial class Types {
+      public enum MovementType {
+        FORWARD = 1,
+        BACKWARD = 2,
+        YAW = 3,
+      }
+      
+    }
+    #endregion
+    
+    public const int MovementTypeFieldNumber = 1;
+    private bool hasMovementType;
+    private global::Jangada.RequestMovementPacket.Types.MovementType movementType_ = global::Jangada.RequestMovementPacket.Types.MovementType.FORWARD;
+    public bool HasMovementType {
+      get { return hasMovementType; }
+    }
+    public global::Jangada.RequestMovementPacket.Types.MovementType MovementType {
+      get { return movementType_; }
+    }
+    
+    public const int AmmountFieldNumber = 2;
+    private bool hasAmmount;
+    private float ammount_;
+    public bool HasAmmount {
+      get { return hasAmmount; }
+    }
+    public float Ammount {
+      get { return ammount_; }
+    }
+    
+    public override bool IsInitialized {
+      get {
+        if (!hasMovementType) return false;
+        if (!hasAmmount) return false;
+        return true;
+      }
+    }
+    
+    public override void WriteTo(pb::ICodedOutputStream output) {
+      int size = SerializedSize;
+      string[] field_names = _requestMovementPacketFieldNames;
+      if (hasMovementType) {
+        output.WriteEnum(1, field_names[1], (int) MovementType, MovementType);
+      }
+      if (hasAmmount) {
+        output.WriteFloat(2, field_names[0], Ammount);
+      }
+      UnknownFields.WriteTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public override int SerializedSize {
+      get {
+        int size = memoizedSerializedSize;
+        if (size != -1) return size;
+        
+        size = 0;
+        if (hasMovementType) {
+          size += pb::CodedOutputStream.ComputeEnumSize(1, (int) MovementType);
+        }
+        if (hasAmmount) {
+          size += pb::CodedOutputStream.ComputeFloatSize(2, Ammount);
+        }
+        size += UnknownFields.SerializedSize;
+        memoizedSerializedSize = size;
+        return size;
+      }
+    }
+    
+    public static RequestMovementPacket ParseFrom(pb::ByteString data) {
+      return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+    }
+    public static RequestMovementPacket ParseFrom(pb::ByteString data, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+    }
+    public static RequestMovementPacket ParseFrom(byte[] data) {
+      return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+    }
+    public static RequestMovementPacket ParseFrom(byte[] data, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+    }
+    public static RequestMovementPacket ParseFrom(global::System.IO.Stream input) {
+      return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+    }
+    public static RequestMovementPacket ParseFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+    }
+    public static RequestMovementPacket ParseDelimitedFrom(global::System.IO.Stream input) {
+      return CreateBuilder().MergeDelimitedFrom(input).BuildParsed();
+    }
+    public static RequestMovementPacket ParseDelimitedFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+      return CreateBuilder().MergeDelimitedFrom(input, extensionRegistry).BuildParsed();
+    }
+    public static RequestMovementPacket ParseFrom(pb::ICodedInputStream input) {
+      return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+    }
+    public static RequestMovementPacket ParseFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+    }
+    private RequestMovementPacket MakeReadOnly() {
+      return this;
+    }
+    
+    public static Builder CreateBuilder() { return new Builder(); }
+    public override Builder ToBuilder() { return CreateBuilder(this); }
+    public override Builder CreateBuilderForType() { return new Builder(); }
+    public static Builder CreateBuilder(RequestMovementPacket prototype) {
+      return new Builder(prototype);
+    }
+    
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed partial class Builder : pb::GeneratedBuilder<RequestMovementPacket, Builder> {
+      protected override Builder ThisBuilder {
+        get { return this; }
+      }
+      public Builder() {
+        result = DefaultInstance;
+        resultIsReadOnly = true;
+      }
+      internal Builder(RequestMovementPacket cloneFrom) {
+        result = cloneFrom;
+        resultIsReadOnly = true;
+      }
+      
+      private bool resultIsReadOnly;
+      private RequestMovementPacket result;
+      
+      private RequestMovementPacket PrepareBuilder() {
+        if (resultIsReadOnly) {
+          RequestMovementPacket original = result;
+          result = new RequestMovementPacket();
+          resultIsReadOnly = false;
+          MergeFrom(original);
+        }
+        return result;
+      }
+      
+      public override bool IsInitialized {
+        get { return result.IsInitialized; }
+      }
+      
+      protected override RequestMovementPacket MessageBeingBuilt {
+        get { return PrepareBuilder(); }
+      }
+      
+      public override Builder Clear() {
+        result = DefaultInstance;
+        resultIsReadOnly = true;
+        return this;
+      }
+      
+      public override Builder Clone() {
+        if (resultIsReadOnly) {
+          return new Builder(result);
+        } else {
+          return new Builder().MergeFrom(result);
+        }
+      }
+      
+      public override pbd::MessageDescriptor DescriptorForType {
+        get { return global::Jangada.RequestMovementPacket.Descriptor; }
+      }
+      
+      public override RequestMovementPacket DefaultInstanceForType {
+        get { return global::Jangada.RequestMovementPacket.DefaultInstance; }
+      }
+      
+      public override RequestMovementPacket BuildPartial() {
+        if (resultIsReadOnly) {
+          return result;
+        }
+        resultIsReadOnly = true;
+        return result.MakeReadOnly();
+      }
+      
+      public override Builder MergeFrom(pb::IMessage other) {
+        if (other is RequestMovementPacket) {
+          return MergeFrom((RequestMovementPacket) other);
+        } else {
+          base.MergeFrom(other);
+          return this;
+        }
+      }
+      
+      public override Builder MergeFrom(RequestMovementPacket other) {
+        if (other == global::Jangada.RequestMovementPacket.DefaultInstance) return this;
+        PrepareBuilder();
+        if (other.HasMovementType) {
+          MovementType = other.MovementType;
+        }
+        if (other.HasAmmount) {
+          Ammount = other.Ammount;
+        }
+        this.MergeUnknownFields(other.UnknownFields);
+        return this;
+      }
+      
+      public override Builder MergeFrom(pb::ICodedInputStream input) {
+        return MergeFrom(input, pb::ExtensionRegistry.Empty);
+      }
+      
+      public override Builder MergeFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+        PrepareBuilder();
+        pb::UnknownFieldSet.Builder unknownFields = null;
+        uint tag;
+        string field_name;
+        while (input.ReadTag(out tag, out field_name)) {
+          if(tag == 0 && field_name != null) {
+            int field_ordinal = global::System.Array.BinarySearch(_requestMovementPacketFieldNames, field_name, global::System.StringComparer.Ordinal);
+            if(field_ordinal >= 0)
+              tag = _requestMovementPacketFieldTags[field_ordinal];
             else {
               if (unknownFields == null) {
                 unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
@@ -2544,16 +3385,19 @@ namespace Jangada {
               break;
             }
             case 8: {
-              result.hasMapId = input.ReadInt32(ref result.mapId_);
+              object unknown;
+              if(input.ReadEnum(ref result.movementType_, out unknown)) {
+                result.hasMovementType = true;
+              } else if(unknown is int) {
+                if (unknownFields == null) {
+                  unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+                }
+                unknownFields.MergeVarintField(1, (ulong)(int)unknown);
+              }
               break;
             }
-            case 18: {
-              global::Jangada.Position.Builder subBuilder = global::Jangada.Position.CreateBuilder();
-              if (result.hasPosition) {
-                subBuilder.MergeFrom(Position);
-              }
-              input.ReadMessage(subBuilder, extensionRegistry);
-              Position = subBuilder.BuildPartial();
+            case 21: {
+              result.hasAmmount = input.ReadFloat(ref result.ammount_);
               break;
             }
           }
@@ -2566,67 +3410,1834 @@ namespace Jangada {
       }
       
       
-      public bool HasMapId {
-        get { return result.hasMapId; }
+      public bool HasMovementType {
+       get { return result.hasMovementType; }
       }
-      public int MapId {
-        get { return result.MapId; }
-        set { SetMapId(value); }
+      public global::Jangada.RequestMovementPacket.Types.MovementType MovementType {
+        get { return result.MovementType; }
+        set { SetMovementType(value); }
       }
-      public Builder SetMapId(int value) {
+      public Builder SetMovementType(global::Jangada.RequestMovementPacket.Types.MovementType value) {
         PrepareBuilder();
-        result.hasMapId = true;
-        result.mapId_ = value;
+        result.hasMovementType = true;
+        result.movementType_ = value;
         return this;
       }
-      public Builder ClearMapId() {
+      public Builder ClearMovementType() {
         PrepareBuilder();
-        result.hasMapId = false;
-        result.mapId_ = 0;
+        result.hasMovementType = false;
+        result.movementType_ = global::Jangada.RequestMovementPacket.Types.MovementType.FORWARD;
         return this;
       }
       
-      public bool HasPosition {
-       get { return result.hasPosition; }
+      public bool HasAmmount {
+        get { return result.hasAmmount; }
       }
-      public global::Jangada.Position Position {
-        get { return result.Position; }
-        set { SetPosition(value); }
+      public float Ammount {
+        get { return result.Ammount; }
+        set { SetAmmount(value); }
       }
-      public Builder SetPosition(global::Jangada.Position value) {
-        pb::ThrowHelper.ThrowIfNull(value, "value");
+      public Builder SetAmmount(float value) {
         PrepareBuilder();
-        result.hasPosition = true;
-        result.position_ = value;
+        result.hasAmmount = true;
+        result.ammount_ = value;
         return this;
       }
-      public Builder SetPosition(global::Jangada.Position.Builder builderForValue) {
-        pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+      public Builder ClearAmmount() {
         PrepareBuilder();
-        result.hasPosition = true;
-        result.position_ = builderForValue.Build();
-        return this;
-      }
-      public Builder MergePosition(global::Jangada.Position value) {
-        pb::ThrowHelper.ThrowIfNull(value, "value");
-        PrepareBuilder();
-        if (result.hasPosition &&
-            result.position_ != global::Jangada.Position.DefaultInstance) {
-            result.position_ = global::Jangada.Position.CreateBuilder(result.position_).MergeFrom(value).BuildPartial();
-        } else {
-          result.position_ = value;
-        }
-        result.hasPosition = true;
-        return this;
-      }
-      public Builder ClearPosition() {
-        PrepareBuilder();
-        result.hasPosition = false;
-        result.position_ = null;
+        result.hasAmmount = false;
+        result.ammount_ = 0F;
         return this;
       }
     }
-    static CharacterPositionPacket() {
+    static RequestMovementPacket() {
+      object.ReferenceEquals(global::Jangada.Proto.Networkmessage.Descriptor, null);
+    }
+  }
+  
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+  public sealed partial class AreaDescriptionPacket : pb::GeneratedMessage<AreaDescriptionPacket, AreaDescriptionPacket.Builder> {
+    private AreaDescriptionPacket() { }
+    private static readonly AreaDescriptionPacket defaultInstance = new AreaDescriptionPacket().MakeReadOnly();
+    private static readonly string[] _areaDescriptionPacketFieldNames = new string[] { "areaId", "player", "players" };
+    private static readonly uint[] _areaDescriptionPacketFieldTags = new uint[] { 8, 18, 26 };
+    public static AreaDescriptionPacket DefaultInstance {
+      get { return defaultInstance; }
+    }
+    
+    public override AreaDescriptionPacket DefaultInstanceForType {
+      get { return DefaultInstance; }
+    }
+    
+    protected override AreaDescriptionPacket ThisMessage {
+      get { return this; }
+    }
+    
+    public static pbd::MessageDescriptor Descriptor {
+      get { return global::Jangada.Proto.Networkmessage.internal__static_Jangada_AreaDescriptionPacket__Descriptor; }
+    }
+    
+    protected override pb::FieldAccess.FieldAccessorTable<AreaDescriptionPacket, AreaDescriptionPacket.Builder> InternalFieldAccessors {
+      get { return global::Jangada.Proto.Networkmessage.internal__static_Jangada_AreaDescriptionPacket__FieldAccessorTable; }
+    }
+    
+    public const int AreaIdFieldNumber = 1;
+    private bool hasAreaId;
+    private int areaId_;
+    public bool HasAreaId {
+      get { return hasAreaId; }
+    }
+    public int AreaId {
+      get { return areaId_; }
+    }
+    
+    public const int PlayerFieldNumber = 2;
+    private bool hasPlayer;
+    private global::Jangada.PlayerDescription player_;
+    public bool HasPlayer {
+      get { return hasPlayer; }
+    }
+    public global::Jangada.PlayerDescription Player {
+      get { return player_ ?? global::Jangada.PlayerDescription.DefaultInstance; }
+    }
+    
+    public const int PlayersFieldNumber = 3;
+    private pbc::PopsicleList<global::Jangada.PlayerDescription> players_ = new pbc::PopsicleList<global::Jangada.PlayerDescription>();
+    public scg::IList<global::Jangada.PlayerDescription> PlayersList {
+      get { return players_; }
+    }
+    public int PlayersCount {
+      get { return players_.Count; }
+    }
+    public global::Jangada.PlayerDescription GetPlayers(int index) {
+      return players_[index];
+    }
+    
+    public override bool IsInitialized {
+      get {
+        if (!hasAreaId) return false;
+        if (!hasPlayer) return false;
+        if (!Player.IsInitialized) return false;
+        foreach (global::Jangada.PlayerDescription element in PlayersList) {
+          if (!element.IsInitialized) return false;
+        }
+        return true;
+      }
+    }
+    
+    public override void WriteTo(pb::ICodedOutputStream output) {
+      int size = SerializedSize;
+      string[] field_names = _areaDescriptionPacketFieldNames;
+      if (hasAreaId) {
+        output.WriteInt32(1, field_names[0], AreaId);
+      }
+      if (hasPlayer) {
+        output.WriteMessage(2, field_names[1], Player);
+      }
+      if (players_.Count > 0) {
+        output.WriteMessageArray(3, field_names[2], players_);
+      }
+      UnknownFields.WriteTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public override int SerializedSize {
+      get {
+        int size = memoizedSerializedSize;
+        if (size != -1) return size;
+        
+        size = 0;
+        if (hasAreaId) {
+          size += pb::CodedOutputStream.ComputeInt32Size(1, AreaId);
+        }
+        if (hasPlayer) {
+          size += pb::CodedOutputStream.ComputeMessageSize(2, Player);
+        }
+        foreach (global::Jangada.PlayerDescription element in PlayersList) {
+          size += pb::CodedOutputStream.ComputeMessageSize(3, element);
+        }
+        size += UnknownFields.SerializedSize;
+        memoizedSerializedSize = size;
+        return size;
+      }
+    }
+    
+    public static AreaDescriptionPacket ParseFrom(pb::ByteString data) {
+      return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+    }
+    public static AreaDescriptionPacket ParseFrom(pb::ByteString data, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+    }
+    public static AreaDescriptionPacket ParseFrom(byte[] data) {
+      return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+    }
+    public static AreaDescriptionPacket ParseFrom(byte[] data, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+    }
+    public static AreaDescriptionPacket ParseFrom(global::System.IO.Stream input) {
+      return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+    }
+    public static AreaDescriptionPacket ParseFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+    }
+    public static AreaDescriptionPacket ParseDelimitedFrom(global::System.IO.Stream input) {
+      return CreateBuilder().MergeDelimitedFrom(input).BuildParsed();
+    }
+    public static AreaDescriptionPacket ParseDelimitedFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+      return CreateBuilder().MergeDelimitedFrom(input, extensionRegistry).BuildParsed();
+    }
+    public static AreaDescriptionPacket ParseFrom(pb::ICodedInputStream input) {
+      return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+    }
+    public static AreaDescriptionPacket ParseFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+    }
+    private AreaDescriptionPacket MakeReadOnly() {
+      players_.MakeReadOnly();
+      return this;
+    }
+    
+    public static Builder CreateBuilder() { return new Builder(); }
+    public override Builder ToBuilder() { return CreateBuilder(this); }
+    public override Builder CreateBuilderForType() { return new Builder(); }
+    public static Builder CreateBuilder(AreaDescriptionPacket prototype) {
+      return new Builder(prototype);
+    }
+    
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed partial class Builder : pb::GeneratedBuilder<AreaDescriptionPacket, Builder> {
+      protected override Builder ThisBuilder {
+        get { return this; }
+      }
+      public Builder() {
+        result = DefaultInstance;
+        resultIsReadOnly = true;
+      }
+      internal Builder(AreaDescriptionPacket cloneFrom) {
+        result = cloneFrom;
+        resultIsReadOnly = true;
+      }
+      
+      private bool resultIsReadOnly;
+      private AreaDescriptionPacket result;
+      
+      private AreaDescriptionPacket PrepareBuilder() {
+        if (resultIsReadOnly) {
+          AreaDescriptionPacket original = result;
+          result = new AreaDescriptionPacket();
+          resultIsReadOnly = false;
+          MergeFrom(original);
+        }
+        return result;
+      }
+      
+      public override bool IsInitialized {
+        get { return result.IsInitialized; }
+      }
+      
+      protected override AreaDescriptionPacket MessageBeingBuilt {
+        get { return PrepareBuilder(); }
+      }
+      
+      public override Builder Clear() {
+        result = DefaultInstance;
+        resultIsReadOnly = true;
+        return this;
+      }
+      
+      public override Builder Clone() {
+        if (resultIsReadOnly) {
+          return new Builder(result);
+        } else {
+          return new Builder().MergeFrom(result);
+        }
+      }
+      
+      public override pbd::MessageDescriptor DescriptorForType {
+        get { return global::Jangada.AreaDescriptionPacket.Descriptor; }
+      }
+      
+      public override AreaDescriptionPacket DefaultInstanceForType {
+        get { return global::Jangada.AreaDescriptionPacket.DefaultInstance; }
+      }
+      
+      public override AreaDescriptionPacket BuildPartial() {
+        if (resultIsReadOnly) {
+          return result;
+        }
+        resultIsReadOnly = true;
+        return result.MakeReadOnly();
+      }
+      
+      public override Builder MergeFrom(pb::IMessage other) {
+        if (other is AreaDescriptionPacket) {
+          return MergeFrom((AreaDescriptionPacket) other);
+        } else {
+          base.MergeFrom(other);
+          return this;
+        }
+      }
+      
+      public override Builder MergeFrom(AreaDescriptionPacket other) {
+        if (other == global::Jangada.AreaDescriptionPacket.DefaultInstance) return this;
+        PrepareBuilder();
+        if (other.HasAreaId) {
+          AreaId = other.AreaId;
+        }
+        if (other.HasPlayer) {
+          MergePlayer(other.Player);
+        }
+        if (other.players_.Count != 0) {
+          result.players_.Add(other.players_);
+        }
+        this.MergeUnknownFields(other.UnknownFields);
+        return this;
+      }
+      
+      public override Builder MergeFrom(pb::ICodedInputStream input) {
+        return MergeFrom(input, pb::ExtensionRegistry.Empty);
+      }
+      
+      public override Builder MergeFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+        PrepareBuilder();
+        pb::UnknownFieldSet.Builder unknownFields = null;
+        uint tag;
+        string field_name;
+        while (input.ReadTag(out tag, out field_name)) {
+          if(tag == 0 && field_name != null) {
+            int field_ordinal = global::System.Array.BinarySearch(_areaDescriptionPacketFieldNames, field_name, global::System.StringComparer.Ordinal);
+            if(field_ordinal >= 0)
+              tag = _areaDescriptionPacketFieldTags[field_ordinal];
+            else {
+              if (unknownFields == null) {
+                unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+              }
+              ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+              continue;
+            }
+          }
+          switch (tag) {
+            case 0: {
+              throw pb::InvalidProtocolBufferException.InvalidTag();
+            }
+            default: {
+              if (pb::WireFormat.IsEndGroupTag(tag)) {
+                if (unknownFields != null) {
+                  this.UnknownFields = unknownFields.Build();
+                }
+                return this;
+              }
+              if (unknownFields == null) {
+                unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+              }
+              ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+              break;
+            }
+            case 8: {
+              result.hasAreaId = input.ReadInt32(ref result.areaId_);
+              break;
+            }
+            case 18: {
+              global::Jangada.PlayerDescription.Builder subBuilder = global::Jangada.PlayerDescription.CreateBuilder();
+              if (result.hasPlayer) {
+                subBuilder.MergeFrom(Player);
+              }
+              input.ReadMessage(subBuilder, extensionRegistry);
+              Player = subBuilder.BuildPartial();
+              break;
+            }
+            case 26: {
+              input.ReadMessageArray(tag, field_name, result.players_, global::Jangada.PlayerDescription.DefaultInstance, extensionRegistry);
+              break;
+            }
+          }
+        }
+        
+        if (unknownFields != null) {
+          this.UnknownFields = unknownFields.Build();
+        }
+        return this;
+      }
+      
+      
+      public bool HasAreaId {
+        get { return result.hasAreaId; }
+      }
+      public int AreaId {
+        get { return result.AreaId; }
+        set { SetAreaId(value); }
+      }
+      public Builder SetAreaId(int value) {
+        PrepareBuilder();
+        result.hasAreaId = true;
+        result.areaId_ = value;
+        return this;
+      }
+      public Builder ClearAreaId() {
+        PrepareBuilder();
+        result.hasAreaId = false;
+        result.areaId_ = 0;
+        return this;
+      }
+      
+      public bool HasPlayer {
+       get { return result.hasPlayer; }
+      }
+      public global::Jangada.PlayerDescription Player {
+        get { return result.Player; }
+        set { SetPlayer(value); }
+      }
+      public Builder SetPlayer(global::Jangada.PlayerDescription value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.hasPlayer = true;
+        result.player_ = value;
+        return this;
+      }
+      public Builder SetPlayer(global::Jangada.PlayerDescription.Builder builderForValue) {
+        pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+        PrepareBuilder();
+        result.hasPlayer = true;
+        result.player_ = builderForValue.Build();
+        return this;
+      }
+      public Builder MergePlayer(global::Jangada.PlayerDescription value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        if (result.hasPlayer &&
+            result.player_ != global::Jangada.PlayerDescription.DefaultInstance) {
+            result.player_ = global::Jangada.PlayerDescription.CreateBuilder(result.player_).MergeFrom(value).BuildPartial();
+        } else {
+          result.player_ = value;
+        }
+        result.hasPlayer = true;
+        return this;
+      }
+      public Builder ClearPlayer() {
+        PrepareBuilder();
+        result.hasPlayer = false;
+        result.player_ = null;
+        return this;
+      }
+      
+      public pbc::IPopsicleList<global::Jangada.PlayerDescription> PlayersList {
+        get { return PrepareBuilder().players_; }
+      }
+      public int PlayersCount {
+        get { return result.PlayersCount; }
+      }
+      public global::Jangada.PlayerDescription GetPlayers(int index) {
+        return result.GetPlayers(index);
+      }
+      public Builder SetPlayers(int index, global::Jangada.PlayerDescription value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.players_[index] = value;
+        return this;
+      }
+      public Builder SetPlayers(int index, global::Jangada.PlayerDescription.Builder builderForValue) {
+        pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+        PrepareBuilder();
+        result.players_[index] = builderForValue.Build();
+        return this;
+      }
+      public Builder AddPlayers(global::Jangada.PlayerDescription value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.players_.Add(value);
+        return this;
+      }
+      public Builder AddPlayers(global::Jangada.PlayerDescription.Builder builderForValue) {
+        pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+        PrepareBuilder();
+        result.players_.Add(builderForValue.Build());
+        return this;
+      }
+      public Builder AddRangePlayers(scg::IEnumerable<global::Jangada.PlayerDescription> values) {
+        PrepareBuilder();
+        result.players_.Add(values);
+        return this;
+      }
+      public Builder ClearPlayers() {
+        PrepareBuilder();
+        result.players_.Clear();
+        return this;
+      }
+    }
+    static AreaDescriptionPacket() {
+      object.ReferenceEquals(global::Jangada.Proto.Networkmessage.Descriptor, null);
+    }
+  }
+  
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+  public sealed partial class PlayerDescription : pb::GeneratedMessage<PlayerDescription, PlayerDescription.Builder> {
+    private PlayerDescription() { }
+    private static readonly PlayerDescription defaultInstance = new PlayerDescription().MakeReadOnly();
+    private static readonly string[] _playerDescriptionFieldNames = new string[] { "playerGuid", "playerPosition", "playerRotation" };
+    private static readonly uint[] _playerDescriptionFieldTags = new uint[] { 10, 18, 26 };
+    public static PlayerDescription DefaultInstance {
+      get { return defaultInstance; }
+    }
+    
+    public override PlayerDescription DefaultInstanceForType {
+      get { return DefaultInstance; }
+    }
+    
+    protected override PlayerDescription ThisMessage {
+      get { return this; }
+    }
+    
+    public static pbd::MessageDescriptor Descriptor {
+      get { return global::Jangada.Proto.Networkmessage.internal__static_Jangada_PlayerDescription__Descriptor; }
+    }
+    
+    protected override pb::FieldAccess.FieldAccessorTable<PlayerDescription, PlayerDescription.Builder> InternalFieldAccessors {
+      get { return global::Jangada.Proto.Networkmessage.internal__static_Jangada_PlayerDescription__FieldAccessorTable; }
+    }
+    
+    public const int PlayerGuidFieldNumber = 1;
+    private bool hasPlayerGuid;
+    private string playerGuid_ = "";
+    public bool HasPlayerGuid {
+      get { return hasPlayerGuid; }
+    }
+    public string PlayerGuid {
+      get { return playerGuid_; }
+    }
+    
+    public const int PlayerPositionFieldNumber = 2;
+    private bool hasPlayerPosition;
+    private global::Jangada.Position playerPosition_;
+    public bool HasPlayerPosition {
+      get { return hasPlayerPosition; }
+    }
+    public global::Jangada.Position PlayerPosition {
+      get { return playerPosition_ ?? global::Jangada.Position.DefaultInstance; }
+    }
+    
+    public const int PlayerRotationFieldNumber = 3;
+    private bool hasPlayerRotation;
+    private global::Jangada.QuaternionMessage playerRotation_;
+    public bool HasPlayerRotation {
+      get { return hasPlayerRotation; }
+    }
+    public global::Jangada.QuaternionMessage PlayerRotation {
+      get { return playerRotation_ ?? global::Jangada.QuaternionMessage.DefaultInstance; }
+    }
+    
+    public override bool IsInitialized {
+      get {
+        if (!hasPlayerGuid) return false;
+        if (!hasPlayerPosition) return false;
+        if (!hasPlayerRotation) return false;
+        if (!PlayerPosition.IsInitialized) return false;
+        if (!PlayerRotation.IsInitialized) return false;
+        return true;
+      }
+    }
+    
+    public override void WriteTo(pb::ICodedOutputStream output) {
+      int size = SerializedSize;
+      string[] field_names = _playerDescriptionFieldNames;
+      if (hasPlayerGuid) {
+        output.WriteString(1, field_names[0], PlayerGuid);
+      }
+      if (hasPlayerPosition) {
+        output.WriteMessage(2, field_names[1], PlayerPosition);
+      }
+      if (hasPlayerRotation) {
+        output.WriteMessage(3, field_names[2], PlayerRotation);
+      }
+      UnknownFields.WriteTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public override int SerializedSize {
+      get {
+        int size = memoizedSerializedSize;
+        if (size != -1) return size;
+        
+        size = 0;
+        if (hasPlayerGuid) {
+          size += pb::CodedOutputStream.ComputeStringSize(1, PlayerGuid);
+        }
+        if (hasPlayerPosition) {
+          size += pb::CodedOutputStream.ComputeMessageSize(2, PlayerPosition);
+        }
+        if (hasPlayerRotation) {
+          size += pb::CodedOutputStream.ComputeMessageSize(3, PlayerRotation);
+        }
+        size += UnknownFields.SerializedSize;
+        memoizedSerializedSize = size;
+        return size;
+      }
+    }
+    
+    public static PlayerDescription ParseFrom(pb::ByteString data) {
+      return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+    }
+    public static PlayerDescription ParseFrom(pb::ByteString data, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+    }
+    public static PlayerDescription ParseFrom(byte[] data) {
+      return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+    }
+    public static PlayerDescription ParseFrom(byte[] data, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+    }
+    public static PlayerDescription ParseFrom(global::System.IO.Stream input) {
+      return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+    }
+    public static PlayerDescription ParseFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+    }
+    public static PlayerDescription ParseDelimitedFrom(global::System.IO.Stream input) {
+      return CreateBuilder().MergeDelimitedFrom(input).BuildParsed();
+    }
+    public static PlayerDescription ParseDelimitedFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+      return CreateBuilder().MergeDelimitedFrom(input, extensionRegistry).BuildParsed();
+    }
+    public static PlayerDescription ParseFrom(pb::ICodedInputStream input) {
+      return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+    }
+    public static PlayerDescription ParseFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+    }
+    private PlayerDescription MakeReadOnly() {
+      return this;
+    }
+    
+    public static Builder CreateBuilder() { return new Builder(); }
+    public override Builder ToBuilder() { return CreateBuilder(this); }
+    public override Builder CreateBuilderForType() { return new Builder(); }
+    public static Builder CreateBuilder(PlayerDescription prototype) {
+      return new Builder(prototype);
+    }
+    
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed partial class Builder : pb::GeneratedBuilder<PlayerDescription, Builder> {
+      protected override Builder ThisBuilder {
+        get { return this; }
+      }
+      public Builder() {
+        result = DefaultInstance;
+        resultIsReadOnly = true;
+      }
+      internal Builder(PlayerDescription cloneFrom) {
+        result = cloneFrom;
+        resultIsReadOnly = true;
+      }
+      
+      private bool resultIsReadOnly;
+      private PlayerDescription result;
+      
+      private PlayerDescription PrepareBuilder() {
+        if (resultIsReadOnly) {
+          PlayerDescription original = result;
+          result = new PlayerDescription();
+          resultIsReadOnly = false;
+          MergeFrom(original);
+        }
+        return result;
+      }
+      
+      public override bool IsInitialized {
+        get { return result.IsInitialized; }
+      }
+      
+      protected override PlayerDescription MessageBeingBuilt {
+        get { return PrepareBuilder(); }
+      }
+      
+      public override Builder Clear() {
+        result = DefaultInstance;
+        resultIsReadOnly = true;
+        return this;
+      }
+      
+      public override Builder Clone() {
+        if (resultIsReadOnly) {
+          return new Builder(result);
+        } else {
+          return new Builder().MergeFrom(result);
+        }
+      }
+      
+      public override pbd::MessageDescriptor DescriptorForType {
+        get { return global::Jangada.PlayerDescription.Descriptor; }
+      }
+      
+      public override PlayerDescription DefaultInstanceForType {
+        get { return global::Jangada.PlayerDescription.DefaultInstance; }
+      }
+      
+      public override PlayerDescription BuildPartial() {
+        if (resultIsReadOnly) {
+          return result;
+        }
+        resultIsReadOnly = true;
+        return result.MakeReadOnly();
+      }
+      
+      public override Builder MergeFrom(pb::IMessage other) {
+        if (other is PlayerDescription) {
+          return MergeFrom((PlayerDescription) other);
+        } else {
+          base.MergeFrom(other);
+          return this;
+        }
+      }
+      
+      public override Builder MergeFrom(PlayerDescription other) {
+        if (other == global::Jangada.PlayerDescription.DefaultInstance) return this;
+        PrepareBuilder();
+        if (other.HasPlayerGuid) {
+          PlayerGuid = other.PlayerGuid;
+        }
+        if (other.HasPlayerPosition) {
+          MergePlayerPosition(other.PlayerPosition);
+        }
+        if (other.HasPlayerRotation) {
+          MergePlayerRotation(other.PlayerRotation);
+        }
+        this.MergeUnknownFields(other.UnknownFields);
+        return this;
+      }
+      
+      public override Builder MergeFrom(pb::ICodedInputStream input) {
+        return MergeFrom(input, pb::ExtensionRegistry.Empty);
+      }
+      
+      public override Builder MergeFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+        PrepareBuilder();
+        pb::UnknownFieldSet.Builder unknownFields = null;
+        uint tag;
+        string field_name;
+        while (input.ReadTag(out tag, out field_name)) {
+          if(tag == 0 && field_name != null) {
+            int field_ordinal = global::System.Array.BinarySearch(_playerDescriptionFieldNames, field_name, global::System.StringComparer.Ordinal);
+            if(field_ordinal >= 0)
+              tag = _playerDescriptionFieldTags[field_ordinal];
+            else {
+              if (unknownFields == null) {
+                unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+              }
+              ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+              continue;
+            }
+          }
+          switch (tag) {
+            case 0: {
+              throw pb::InvalidProtocolBufferException.InvalidTag();
+            }
+            default: {
+              if (pb::WireFormat.IsEndGroupTag(tag)) {
+                if (unknownFields != null) {
+                  this.UnknownFields = unknownFields.Build();
+                }
+                return this;
+              }
+              if (unknownFields == null) {
+                unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+              }
+              ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+              break;
+            }
+            case 10: {
+              result.hasPlayerGuid = input.ReadString(ref result.playerGuid_);
+              break;
+            }
+            case 18: {
+              global::Jangada.Position.Builder subBuilder = global::Jangada.Position.CreateBuilder();
+              if (result.hasPlayerPosition) {
+                subBuilder.MergeFrom(PlayerPosition);
+              }
+              input.ReadMessage(subBuilder, extensionRegistry);
+              PlayerPosition = subBuilder.BuildPartial();
+              break;
+            }
+            case 26: {
+              global::Jangada.QuaternionMessage.Builder subBuilder = global::Jangada.QuaternionMessage.CreateBuilder();
+              if (result.hasPlayerRotation) {
+                subBuilder.MergeFrom(PlayerRotation);
+              }
+              input.ReadMessage(subBuilder, extensionRegistry);
+              PlayerRotation = subBuilder.BuildPartial();
+              break;
+            }
+          }
+        }
+        
+        if (unknownFields != null) {
+          this.UnknownFields = unknownFields.Build();
+        }
+        return this;
+      }
+      
+      
+      public bool HasPlayerGuid {
+        get { return result.hasPlayerGuid; }
+      }
+      public string PlayerGuid {
+        get { return result.PlayerGuid; }
+        set { SetPlayerGuid(value); }
+      }
+      public Builder SetPlayerGuid(string value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.hasPlayerGuid = true;
+        result.playerGuid_ = value;
+        return this;
+      }
+      public Builder ClearPlayerGuid() {
+        PrepareBuilder();
+        result.hasPlayerGuid = false;
+        result.playerGuid_ = "";
+        return this;
+      }
+      
+      public bool HasPlayerPosition {
+       get { return result.hasPlayerPosition; }
+      }
+      public global::Jangada.Position PlayerPosition {
+        get { return result.PlayerPosition; }
+        set { SetPlayerPosition(value); }
+      }
+      public Builder SetPlayerPosition(global::Jangada.Position value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.hasPlayerPosition = true;
+        result.playerPosition_ = value;
+        return this;
+      }
+      public Builder SetPlayerPosition(global::Jangada.Position.Builder builderForValue) {
+        pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+        PrepareBuilder();
+        result.hasPlayerPosition = true;
+        result.playerPosition_ = builderForValue.Build();
+        return this;
+      }
+      public Builder MergePlayerPosition(global::Jangada.Position value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        if (result.hasPlayerPosition &&
+            result.playerPosition_ != global::Jangada.Position.DefaultInstance) {
+            result.playerPosition_ = global::Jangada.Position.CreateBuilder(result.playerPosition_).MergeFrom(value).BuildPartial();
+        } else {
+          result.playerPosition_ = value;
+        }
+        result.hasPlayerPosition = true;
+        return this;
+      }
+      public Builder ClearPlayerPosition() {
+        PrepareBuilder();
+        result.hasPlayerPosition = false;
+        result.playerPosition_ = null;
+        return this;
+      }
+      
+      public bool HasPlayerRotation {
+       get { return result.hasPlayerRotation; }
+      }
+      public global::Jangada.QuaternionMessage PlayerRotation {
+        get { return result.PlayerRotation; }
+        set { SetPlayerRotation(value); }
+      }
+      public Builder SetPlayerRotation(global::Jangada.QuaternionMessage value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.hasPlayerRotation = true;
+        result.playerRotation_ = value;
+        return this;
+      }
+      public Builder SetPlayerRotation(global::Jangada.QuaternionMessage.Builder builderForValue) {
+        pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+        PrepareBuilder();
+        result.hasPlayerRotation = true;
+        result.playerRotation_ = builderForValue.Build();
+        return this;
+      }
+      public Builder MergePlayerRotation(global::Jangada.QuaternionMessage value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        if (result.hasPlayerRotation &&
+            result.playerRotation_ != global::Jangada.QuaternionMessage.DefaultInstance) {
+            result.playerRotation_ = global::Jangada.QuaternionMessage.CreateBuilder(result.playerRotation_).MergeFrom(value).BuildPartial();
+        } else {
+          result.playerRotation_ = value;
+        }
+        result.hasPlayerRotation = true;
+        return this;
+      }
+      public Builder ClearPlayerRotation() {
+        PrepareBuilder();
+        result.hasPlayerRotation = false;
+        result.playerRotation_ = null;
+        return this;
+      }
+    }
+    static PlayerDescription() {
+      object.ReferenceEquals(global::Jangada.Proto.Networkmessage.Descriptor, null);
+    }
+  }
+  
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+  public sealed partial class PlayerLoginPacket : pb::GeneratedMessage<PlayerLoginPacket, PlayerLoginPacket.Builder> {
+    private PlayerLoginPacket() { }
+    private static readonly PlayerLoginPacket defaultInstance = new PlayerLoginPacket().MakeReadOnly();
+    private static readonly string[] _playerLoginPacketFieldNames = new string[] { "player" };
+    private static readonly uint[] _playerLoginPacketFieldTags = new uint[] { 10 };
+    public static PlayerLoginPacket DefaultInstance {
+      get { return defaultInstance; }
+    }
+    
+    public override PlayerLoginPacket DefaultInstanceForType {
+      get { return DefaultInstance; }
+    }
+    
+    protected override PlayerLoginPacket ThisMessage {
+      get { return this; }
+    }
+    
+    public static pbd::MessageDescriptor Descriptor {
+      get { return global::Jangada.Proto.Networkmessage.internal__static_Jangada_PlayerLoginPacket__Descriptor; }
+    }
+    
+    protected override pb::FieldAccess.FieldAccessorTable<PlayerLoginPacket, PlayerLoginPacket.Builder> InternalFieldAccessors {
+      get { return global::Jangada.Proto.Networkmessage.internal__static_Jangada_PlayerLoginPacket__FieldAccessorTable; }
+    }
+    
+    public const int PlayerFieldNumber = 1;
+    private bool hasPlayer;
+    private global::Jangada.PlayerDescription player_;
+    public bool HasPlayer {
+      get { return hasPlayer; }
+    }
+    public global::Jangada.PlayerDescription Player {
+      get { return player_ ?? global::Jangada.PlayerDescription.DefaultInstance; }
+    }
+    
+    public override bool IsInitialized {
+      get {
+        if (!hasPlayer) return false;
+        if (!Player.IsInitialized) return false;
+        return true;
+      }
+    }
+    
+    public override void WriteTo(pb::ICodedOutputStream output) {
+      int size = SerializedSize;
+      string[] field_names = _playerLoginPacketFieldNames;
+      if (hasPlayer) {
+        output.WriteMessage(1, field_names[0], Player);
+      }
+      UnknownFields.WriteTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public override int SerializedSize {
+      get {
+        int size = memoizedSerializedSize;
+        if (size != -1) return size;
+        
+        size = 0;
+        if (hasPlayer) {
+          size += pb::CodedOutputStream.ComputeMessageSize(1, Player);
+        }
+        size += UnknownFields.SerializedSize;
+        memoizedSerializedSize = size;
+        return size;
+      }
+    }
+    
+    public static PlayerLoginPacket ParseFrom(pb::ByteString data) {
+      return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+    }
+    public static PlayerLoginPacket ParseFrom(pb::ByteString data, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+    }
+    public static PlayerLoginPacket ParseFrom(byte[] data) {
+      return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+    }
+    public static PlayerLoginPacket ParseFrom(byte[] data, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+    }
+    public static PlayerLoginPacket ParseFrom(global::System.IO.Stream input) {
+      return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+    }
+    public static PlayerLoginPacket ParseFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+    }
+    public static PlayerLoginPacket ParseDelimitedFrom(global::System.IO.Stream input) {
+      return CreateBuilder().MergeDelimitedFrom(input).BuildParsed();
+    }
+    public static PlayerLoginPacket ParseDelimitedFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+      return CreateBuilder().MergeDelimitedFrom(input, extensionRegistry).BuildParsed();
+    }
+    public static PlayerLoginPacket ParseFrom(pb::ICodedInputStream input) {
+      return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+    }
+    public static PlayerLoginPacket ParseFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+    }
+    private PlayerLoginPacket MakeReadOnly() {
+      return this;
+    }
+    
+    public static Builder CreateBuilder() { return new Builder(); }
+    public override Builder ToBuilder() { return CreateBuilder(this); }
+    public override Builder CreateBuilderForType() { return new Builder(); }
+    public static Builder CreateBuilder(PlayerLoginPacket prototype) {
+      return new Builder(prototype);
+    }
+    
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed partial class Builder : pb::GeneratedBuilder<PlayerLoginPacket, Builder> {
+      protected override Builder ThisBuilder {
+        get { return this; }
+      }
+      public Builder() {
+        result = DefaultInstance;
+        resultIsReadOnly = true;
+      }
+      internal Builder(PlayerLoginPacket cloneFrom) {
+        result = cloneFrom;
+        resultIsReadOnly = true;
+      }
+      
+      private bool resultIsReadOnly;
+      private PlayerLoginPacket result;
+      
+      private PlayerLoginPacket PrepareBuilder() {
+        if (resultIsReadOnly) {
+          PlayerLoginPacket original = result;
+          result = new PlayerLoginPacket();
+          resultIsReadOnly = false;
+          MergeFrom(original);
+        }
+        return result;
+      }
+      
+      public override bool IsInitialized {
+        get { return result.IsInitialized; }
+      }
+      
+      protected override PlayerLoginPacket MessageBeingBuilt {
+        get { return PrepareBuilder(); }
+      }
+      
+      public override Builder Clear() {
+        result = DefaultInstance;
+        resultIsReadOnly = true;
+        return this;
+      }
+      
+      public override Builder Clone() {
+        if (resultIsReadOnly) {
+          return new Builder(result);
+        } else {
+          return new Builder().MergeFrom(result);
+        }
+      }
+      
+      public override pbd::MessageDescriptor DescriptorForType {
+        get { return global::Jangada.PlayerLoginPacket.Descriptor; }
+      }
+      
+      public override PlayerLoginPacket DefaultInstanceForType {
+        get { return global::Jangada.PlayerLoginPacket.DefaultInstance; }
+      }
+      
+      public override PlayerLoginPacket BuildPartial() {
+        if (resultIsReadOnly) {
+          return result;
+        }
+        resultIsReadOnly = true;
+        return result.MakeReadOnly();
+      }
+      
+      public override Builder MergeFrom(pb::IMessage other) {
+        if (other is PlayerLoginPacket) {
+          return MergeFrom((PlayerLoginPacket) other);
+        } else {
+          base.MergeFrom(other);
+          return this;
+        }
+      }
+      
+      public override Builder MergeFrom(PlayerLoginPacket other) {
+        if (other == global::Jangada.PlayerLoginPacket.DefaultInstance) return this;
+        PrepareBuilder();
+        if (other.HasPlayer) {
+          MergePlayer(other.Player);
+        }
+        this.MergeUnknownFields(other.UnknownFields);
+        return this;
+      }
+      
+      public override Builder MergeFrom(pb::ICodedInputStream input) {
+        return MergeFrom(input, pb::ExtensionRegistry.Empty);
+      }
+      
+      public override Builder MergeFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+        PrepareBuilder();
+        pb::UnknownFieldSet.Builder unknownFields = null;
+        uint tag;
+        string field_name;
+        while (input.ReadTag(out tag, out field_name)) {
+          if(tag == 0 && field_name != null) {
+            int field_ordinal = global::System.Array.BinarySearch(_playerLoginPacketFieldNames, field_name, global::System.StringComparer.Ordinal);
+            if(field_ordinal >= 0)
+              tag = _playerLoginPacketFieldTags[field_ordinal];
+            else {
+              if (unknownFields == null) {
+                unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+              }
+              ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+              continue;
+            }
+          }
+          switch (tag) {
+            case 0: {
+              throw pb::InvalidProtocolBufferException.InvalidTag();
+            }
+            default: {
+              if (pb::WireFormat.IsEndGroupTag(tag)) {
+                if (unknownFields != null) {
+                  this.UnknownFields = unknownFields.Build();
+                }
+                return this;
+              }
+              if (unknownFields == null) {
+                unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+              }
+              ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+              break;
+            }
+            case 10: {
+              global::Jangada.PlayerDescription.Builder subBuilder = global::Jangada.PlayerDescription.CreateBuilder();
+              if (result.hasPlayer) {
+                subBuilder.MergeFrom(Player);
+              }
+              input.ReadMessage(subBuilder, extensionRegistry);
+              Player = subBuilder.BuildPartial();
+              break;
+            }
+          }
+        }
+        
+        if (unknownFields != null) {
+          this.UnknownFields = unknownFields.Build();
+        }
+        return this;
+      }
+      
+      
+      public bool HasPlayer {
+       get { return result.hasPlayer; }
+      }
+      public global::Jangada.PlayerDescription Player {
+        get { return result.Player; }
+        set { SetPlayer(value); }
+      }
+      public Builder SetPlayer(global::Jangada.PlayerDescription value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.hasPlayer = true;
+        result.player_ = value;
+        return this;
+      }
+      public Builder SetPlayer(global::Jangada.PlayerDescription.Builder builderForValue) {
+        pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+        PrepareBuilder();
+        result.hasPlayer = true;
+        result.player_ = builderForValue.Build();
+        return this;
+      }
+      public Builder MergePlayer(global::Jangada.PlayerDescription value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        if (result.hasPlayer &&
+            result.player_ != global::Jangada.PlayerDescription.DefaultInstance) {
+            result.player_ = global::Jangada.PlayerDescription.CreateBuilder(result.player_).MergeFrom(value).BuildPartial();
+        } else {
+          result.player_ = value;
+        }
+        result.hasPlayer = true;
+        return this;
+      }
+      public Builder ClearPlayer() {
+        PrepareBuilder();
+        result.hasPlayer = false;
+        result.player_ = null;
+        return this;
+      }
+    }
+    static PlayerLoginPacket() {
+      object.ReferenceEquals(global::Jangada.Proto.Networkmessage.Descriptor, null);
+    }
+  }
+  
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+  public sealed partial class PlayerMovementPacket : pb::GeneratedMessage<PlayerMovementPacket, PlayerMovementPacket.Builder> {
+    private PlayerMovementPacket() { }
+    private static readonly PlayerMovementPacket defaultInstance = new PlayerMovementPacket().MakeReadOnly();
+    private static readonly string[] _playerMovementPacketFieldNames = new string[] { "newPosition", "newRotation" };
+    private static readonly uint[] _playerMovementPacketFieldTags = new uint[] { 10, 18 };
+    public static PlayerMovementPacket DefaultInstance {
+      get { return defaultInstance; }
+    }
+    
+    public override PlayerMovementPacket DefaultInstanceForType {
+      get { return DefaultInstance; }
+    }
+    
+    protected override PlayerMovementPacket ThisMessage {
+      get { return this; }
+    }
+    
+    public static pbd::MessageDescriptor Descriptor {
+      get { return global::Jangada.Proto.Networkmessage.internal__static_Jangada_PlayerMovementPacket__Descriptor; }
+    }
+    
+    protected override pb::FieldAccess.FieldAccessorTable<PlayerMovementPacket, PlayerMovementPacket.Builder> InternalFieldAccessors {
+      get { return global::Jangada.Proto.Networkmessage.internal__static_Jangada_PlayerMovementPacket__FieldAccessorTable; }
+    }
+    
+    public const int NewPositionFieldNumber = 1;
+    private bool hasNewPosition;
+    private global::Jangada.Position newPosition_;
+    public bool HasNewPosition {
+      get { return hasNewPosition; }
+    }
+    public global::Jangada.Position NewPosition {
+      get { return newPosition_ ?? global::Jangada.Position.DefaultInstance; }
+    }
+    
+    public const int NewRotationFieldNumber = 2;
+    private bool hasNewRotation;
+    private global::Jangada.QuaternionMessage newRotation_;
+    public bool HasNewRotation {
+      get { return hasNewRotation; }
+    }
+    public global::Jangada.QuaternionMessage NewRotation {
+      get { return newRotation_ ?? global::Jangada.QuaternionMessage.DefaultInstance; }
+    }
+    
+    public override bool IsInitialized {
+      get {
+        if (!hasNewPosition) return false;
+        if (!hasNewRotation) return false;
+        if (!NewPosition.IsInitialized) return false;
+        if (!NewRotation.IsInitialized) return false;
+        return true;
+      }
+    }
+    
+    public override void WriteTo(pb::ICodedOutputStream output) {
+      int size = SerializedSize;
+      string[] field_names = _playerMovementPacketFieldNames;
+      if (hasNewPosition) {
+        output.WriteMessage(1, field_names[0], NewPosition);
+      }
+      if (hasNewRotation) {
+        output.WriteMessage(2, field_names[1], NewRotation);
+      }
+      UnknownFields.WriteTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public override int SerializedSize {
+      get {
+        int size = memoizedSerializedSize;
+        if (size != -1) return size;
+        
+        size = 0;
+        if (hasNewPosition) {
+          size += pb::CodedOutputStream.ComputeMessageSize(1, NewPosition);
+        }
+        if (hasNewRotation) {
+          size += pb::CodedOutputStream.ComputeMessageSize(2, NewRotation);
+        }
+        size += UnknownFields.SerializedSize;
+        memoizedSerializedSize = size;
+        return size;
+      }
+    }
+    
+    public static PlayerMovementPacket ParseFrom(pb::ByteString data) {
+      return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+    }
+    public static PlayerMovementPacket ParseFrom(pb::ByteString data, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+    }
+    public static PlayerMovementPacket ParseFrom(byte[] data) {
+      return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+    }
+    public static PlayerMovementPacket ParseFrom(byte[] data, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+    }
+    public static PlayerMovementPacket ParseFrom(global::System.IO.Stream input) {
+      return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+    }
+    public static PlayerMovementPacket ParseFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+    }
+    public static PlayerMovementPacket ParseDelimitedFrom(global::System.IO.Stream input) {
+      return CreateBuilder().MergeDelimitedFrom(input).BuildParsed();
+    }
+    public static PlayerMovementPacket ParseDelimitedFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+      return CreateBuilder().MergeDelimitedFrom(input, extensionRegistry).BuildParsed();
+    }
+    public static PlayerMovementPacket ParseFrom(pb::ICodedInputStream input) {
+      return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+    }
+    public static PlayerMovementPacket ParseFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+    }
+    private PlayerMovementPacket MakeReadOnly() {
+      return this;
+    }
+    
+    public static Builder CreateBuilder() { return new Builder(); }
+    public override Builder ToBuilder() { return CreateBuilder(this); }
+    public override Builder CreateBuilderForType() { return new Builder(); }
+    public static Builder CreateBuilder(PlayerMovementPacket prototype) {
+      return new Builder(prototype);
+    }
+    
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed partial class Builder : pb::GeneratedBuilder<PlayerMovementPacket, Builder> {
+      protected override Builder ThisBuilder {
+        get { return this; }
+      }
+      public Builder() {
+        result = DefaultInstance;
+        resultIsReadOnly = true;
+      }
+      internal Builder(PlayerMovementPacket cloneFrom) {
+        result = cloneFrom;
+        resultIsReadOnly = true;
+      }
+      
+      private bool resultIsReadOnly;
+      private PlayerMovementPacket result;
+      
+      private PlayerMovementPacket PrepareBuilder() {
+        if (resultIsReadOnly) {
+          PlayerMovementPacket original = result;
+          result = new PlayerMovementPacket();
+          resultIsReadOnly = false;
+          MergeFrom(original);
+        }
+        return result;
+      }
+      
+      public override bool IsInitialized {
+        get { return result.IsInitialized; }
+      }
+      
+      protected override PlayerMovementPacket MessageBeingBuilt {
+        get { return PrepareBuilder(); }
+      }
+      
+      public override Builder Clear() {
+        result = DefaultInstance;
+        resultIsReadOnly = true;
+        return this;
+      }
+      
+      public override Builder Clone() {
+        if (resultIsReadOnly) {
+          return new Builder(result);
+        } else {
+          return new Builder().MergeFrom(result);
+        }
+      }
+      
+      public override pbd::MessageDescriptor DescriptorForType {
+        get { return global::Jangada.PlayerMovementPacket.Descriptor; }
+      }
+      
+      public override PlayerMovementPacket DefaultInstanceForType {
+        get { return global::Jangada.PlayerMovementPacket.DefaultInstance; }
+      }
+      
+      public override PlayerMovementPacket BuildPartial() {
+        if (resultIsReadOnly) {
+          return result;
+        }
+        resultIsReadOnly = true;
+        return result.MakeReadOnly();
+      }
+      
+      public override Builder MergeFrom(pb::IMessage other) {
+        if (other is PlayerMovementPacket) {
+          return MergeFrom((PlayerMovementPacket) other);
+        } else {
+          base.MergeFrom(other);
+          return this;
+        }
+      }
+      
+      public override Builder MergeFrom(PlayerMovementPacket other) {
+        if (other == global::Jangada.PlayerMovementPacket.DefaultInstance) return this;
+        PrepareBuilder();
+        if (other.HasNewPosition) {
+          MergeNewPosition(other.NewPosition);
+        }
+        if (other.HasNewRotation) {
+          MergeNewRotation(other.NewRotation);
+        }
+        this.MergeUnknownFields(other.UnknownFields);
+        return this;
+      }
+      
+      public override Builder MergeFrom(pb::ICodedInputStream input) {
+        return MergeFrom(input, pb::ExtensionRegistry.Empty);
+      }
+      
+      public override Builder MergeFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+        PrepareBuilder();
+        pb::UnknownFieldSet.Builder unknownFields = null;
+        uint tag;
+        string field_name;
+        while (input.ReadTag(out tag, out field_name)) {
+          if(tag == 0 && field_name != null) {
+            int field_ordinal = global::System.Array.BinarySearch(_playerMovementPacketFieldNames, field_name, global::System.StringComparer.Ordinal);
+            if(field_ordinal >= 0)
+              tag = _playerMovementPacketFieldTags[field_ordinal];
+            else {
+              if (unknownFields == null) {
+                unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+              }
+              ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+              continue;
+            }
+          }
+          switch (tag) {
+            case 0: {
+              throw pb::InvalidProtocolBufferException.InvalidTag();
+            }
+            default: {
+              if (pb::WireFormat.IsEndGroupTag(tag)) {
+                if (unknownFields != null) {
+                  this.UnknownFields = unknownFields.Build();
+                }
+                return this;
+              }
+              if (unknownFields == null) {
+                unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+              }
+              ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+              break;
+            }
+            case 10: {
+              global::Jangada.Position.Builder subBuilder = global::Jangada.Position.CreateBuilder();
+              if (result.hasNewPosition) {
+                subBuilder.MergeFrom(NewPosition);
+              }
+              input.ReadMessage(subBuilder, extensionRegistry);
+              NewPosition = subBuilder.BuildPartial();
+              break;
+            }
+            case 18: {
+              global::Jangada.QuaternionMessage.Builder subBuilder = global::Jangada.QuaternionMessage.CreateBuilder();
+              if (result.hasNewRotation) {
+                subBuilder.MergeFrom(NewRotation);
+              }
+              input.ReadMessage(subBuilder, extensionRegistry);
+              NewRotation = subBuilder.BuildPartial();
+              break;
+            }
+          }
+        }
+        
+        if (unknownFields != null) {
+          this.UnknownFields = unknownFields.Build();
+        }
+        return this;
+      }
+      
+      
+      public bool HasNewPosition {
+       get { return result.hasNewPosition; }
+      }
+      public global::Jangada.Position NewPosition {
+        get { return result.NewPosition; }
+        set { SetNewPosition(value); }
+      }
+      public Builder SetNewPosition(global::Jangada.Position value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.hasNewPosition = true;
+        result.newPosition_ = value;
+        return this;
+      }
+      public Builder SetNewPosition(global::Jangada.Position.Builder builderForValue) {
+        pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+        PrepareBuilder();
+        result.hasNewPosition = true;
+        result.newPosition_ = builderForValue.Build();
+        return this;
+      }
+      public Builder MergeNewPosition(global::Jangada.Position value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        if (result.hasNewPosition &&
+            result.newPosition_ != global::Jangada.Position.DefaultInstance) {
+            result.newPosition_ = global::Jangada.Position.CreateBuilder(result.newPosition_).MergeFrom(value).BuildPartial();
+        } else {
+          result.newPosition_ = value;
+        }
+        result.hasNewPosition = true;
+        return this;
+      }
+      public Builder ClearNewPosition() {
+        PrepareBuilder();
+        result.hasNewPosition = false;
+        result.newPosition_ = null;
+        return this;
+      }
+      
+      public bool HasNewRotation {
+       get { return result.hasNewRotation; }
+      }
+      public global::Jangada.QuaternionMessage NewRotation {
+        get { return result.NewRotation; }
+        set { SetNewRotation(value); }
+      }
+      public Builder SetNewRotation(global::Jangada.QuaternionMessage value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.hasNewRotation = true;
+        result.newRotation_ = value;
+        return this;
+      }
+      public Builder SetNewRotation(global::Jangada.QuaternionMessage.Builder builderForValue) {
+        pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+        PrepareBuilder();
+        result.hasNewRotation = true;
+        result.newRotation_ = builderForValue.Build();
+        return this;
+      }
+      public Builder MergeNewRotation(global::Jangada.QuaternionMessage value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        if (result.hasNewRotation &&
+            result.newRotation_ != global::Jangada.QuaternionMessage.DefaultInstance) {
+            result.newRotation_ = global::Jangada.QuaternionMessage.CreateBuilder(result.newRotation_).MergeFrom(value).BuildPartial();
+        } else {
+          result.newRotation_ = value;
+        }
+        result.hasNewRotation = true;
+        return this;
+      }
+      public Builder ClearNewRotation() {
+        PrepareBuilder();
+        result.hasNewRotation = false;
+        result.newRotation_ = null;
+        return this;
+      }
+    }
+    static PlayerMovementPacket() {
+      object.ReferenceEquals(global::Jangada.Proto.Networkmessage.Descriptor, null);
+    }
+  }
+  
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+  public sealed partial class CharacterMovementPacket : pb::GeneratedMessage<CharacterMovementPacket, CharacterMovementPacket.Builder> {
+    private CharacterMovementPacket() { }
+    private static readonly CharacterMovementPacket defaultInstance = new CharacterMovementPacket().MakeReadOnly();
+    private static readonly string[] _characterMovementPacketFieldNames = new string[] { "player" };
+    private static readonly uint[] _characterMovementPacketFieldTags = new uint[] { 10 };
+    public static CharacterMovementPacket DefaultInstance {
+      get { return defaultInstance; }
+    }
+    
+    public override CharacterMovementPacket DefaultInstanceForType {
+      get { return DefaultInstance; }
+    }
+    
+    protected override CharacterMovementPacket ThisMessage {
+      get { return this; }
+    }
+    
+    public static pbd::MessageDescriptor Descriptor {
+      get { return global::Jangada.Proto.Networkmessage.internal__static_Jangada_CharacterMovementPacket__Descriptor; }
+    }
+    
+    protected override pb::FieldAccess.FieldAccessorTable<CharacterMovementPacket, CharacterMovementPacket.Builder> InternalFieldAccessors {
+      get { return global::Jangada.Proto.Networkmessage.internal__static_Jangada_CharacterMovementPacket__FieldAccessorTable; }
+    }
+    
+    public const int PlayerFieldNumber = 1;
+    private bool hasPlayer;
+    private global::Jangada.PlayerDescription player_;
+    public bool HasPlayer {
+      get { return hasPlayer; }
+    }
+    public global::Jangada.PlayerDescription Player {
+      get { return player_ ?? global::Jangada.PlayerDescription.DefaultInstance; }
+    }
+    
+    public override bool IsInitialized {
+      get {
+        if (!hasPlayer) return false;
+        if (!Player.IsInitialized) return false;
+        return true;
+      }
+    }
+    
+    public override void WriteTo(pb::ICodedOutputStream output) {
+      int size = SerializedSize;
+      string[] field_names = _characterMovementPacketFieldNames;
+      if (hasPlayer) {
+        output.WriteMessage(1, field_names[0], Player);
+      }
+      UnknownFields.WriteTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public override int SerializedSize {
+      get {
+        int size = memoizedSerializedSize;
+        if (size != -1) return size;
+        
+        size = 0;
+        if (hasPlayer) {
+          size += pb::CodedOutputStream.ComputeMessageSize(1, Player);
+        }
+        size += UnknownFields.SerializedSize;
+        memoizedSerializedSize = size;
+        return size;
+      }
+    }
+    
+    public static CharacterMovementPacket ParseFrom(pb::ByteString data) {
+      return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+    }
+    public static CharacterMovementPacket ParseFrom(pb::ByteString data, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+    }
+    public static CharacterMovementPacket ParseFrom(byte[] data) {
+      return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+    }
+    public static CharacterMovementPacket ParseFrom(byte[] data, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+    }
+    public static CharacterMovementPacket ParseFrom(global::System.IO.Stream input) {
+      return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+    }
+    public static CharacterMovementPacket ParseFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+    }
+    public static CharacterMovementPacket ParseDelimitedFrom(global::System.IO.Stream input) {
+      return CreateBuilder().MergeDelimitedFrom(input).BuildParsed();
+    }
+    public static CharacterMovementPacket ParseDelimitedFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+      return CreateBuilder().MergeDelimitedFrom(input, extensionRegistry).BuildParsed();
+    }
+    public static CharacterMovementPacket ParseFrom(pb::ICodedInputStream input) {
+      return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+    }
+    public static CharacterMovementPacket ParseFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+    }
+    private CharacterMovementPacket MakeReadOnly() {
+      return this;
+    }
+    
+    public static Builder CreateBuilder() { return new Builder(); }
+    public override Builder ToBuilder() { return CreateBuilder(this); }
+    public override Builder CreateBuilderForType() { return new Builder(); }
+    public static Builder CreateBuilder(CharacterMovementPacket prototype) {
+      return new Builder(prototype);
+    }
+    
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed partial class Builder : pb::GeneratedBuilder<CharacterMovementPacket, Builder> {
+      protected override Builder ThisBuilder {
+        get { return this; }
+      }
+      public Builder() {
+        result = DefaultInstance;
+        resultIsReadOnly = true;
+      }
+      internal Builder(CharacterMovementPacket cloneFrom) {
+        result = cloneFrom;
+        resultIsReadOnly = true;
+      }
+      
+      private bool resultIsReadOnly;
+      private CharacterMovementPacket result;
+      
+      private CharacterMovementPacket PrepareBuilder() {
+        if (resultIsReadOnly) {
+          CharacterMovementPacket original = result;
+          result = new CharacterMovementPacket();
+          resultIsReadOnly = false;
+          MergeFrom(original);
+        }
+        return result;
+      }
+      
+      public override bool IsInitialized {
+        get { return result.IsInitialized; }
+      }
+      
+      protected override CharacterMovementPacket MessageBeingBuilt {
+        get { return PrepareBuilder(); }
+      }
+      
+      public override Builder Clear() {
+        result = DefaultInstance;
+        resultIsReadOnly = true;
+        return this;
+      }
+      
+      public override Builder Clone() {
+        if (resultIsReadOnly) {
+          return new Builder(result);
+        } else {
+          return new Builder().MergeFrom(result);
+        }
+      }
+      
+      public override pbd::MessageDescriptor DescriptorForType {
+        get { return global::Jangada.CharacterMovementPacket.Descriptor; }
+      }
+      
+      public override CharacterMovementPacket DefaultInstanceForType {
+        get { return global::Jangada.CharacterMovementPacket.DefaultInstance; }
+      }
+      
+      public override CharacterMovementPacket BuildPartial() {
+        if (resultIsReadOnly) {
+          return result;
+        }
+        resultIsReadOnly = true;
+        return result.MakeReadOnly();
+      }
+      
+      public override Builder MergeFrom(pb::IMessage other) {
+        if (other is CharacterMovementPacket) {
+          return MergeFrom((CharacterMovementPacket) other);
+        } else {
+          base.MergeFrom(other);
+          return this;
+        }
+      }
+      
+      public override Builder MergeFrom(CharacterMovementPacket other) {
+        if (other == global::Jangada.CharacterMovementPacket.DefaultInstance) return this;
+        PrepareBuilder();
+        if (other.HasPlayer) {
+          MergePlayer(other.Player);
+        }
+        this.MergeUnknownFields(other.UnknownFields);
+        return this;
+      }
+      
+      public override Builder MergeFrom(pb::ICodedInputStream input) {
+        return MergeFrom(input, pb::ExtensionRegistry.Empty);
+      }
+      
+      public override Builder MergeFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+        PrepareBuilder();
+        pb::UnknownFieldSet.Builder unknownFields = null;
+        uint tag;
+        string field_name;
+        while (input.ReadTag(out tag, out field_name)) {
+          if(tag == 0 && field_name != null) {
+            int field_ordinal = global::System.Array.BinarySearch(_characterMovementPacketFieldNames, field_name, global::System.StringComparer.Ordinal);
+            if(field_ordinal >= 0)
+              tag = _characterMovementPacketFieldTags[field_ordinal];
+            else {
+              if (unknownFields == null) {
+                unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+              }
+              ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+              continue;
+            }
+          }
+          switch (tag) {
+            case 0: {
+              throw pb::InvalidProtocolBufferException.InvalidTag();
+            }
+            default: {
+              if (pb::WireFormat.IsEndGroupTag(tag)) {
+                if (unknownFields != null) {
+                  this.UnknownFields = unknownFields.Build();
+                }
+                return this;
+              }
+              if (unknownFields == null) {
+                unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+              }
+              ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+              break;
+            }
+            case 10: {
+              global::Jangada.PlayerDescription.Builder subBuilder = global::Jangada.PlayerDescription.CreateBuilder();
+              if (result.hasPlayer) {
+                subBuilder.MergeFrom(Player);
+              }
+              input.ReadMessage(subBuilder, extensionRegistry);
+              Player = subBuilder.BuildPartial();
+              break;
+            }
+          }
+        }
+        
+        if (unknownFields != null) {
+          this.UnknownFields = unknownFields.Build();
+        }
+        return this;
+      }
+      
+      
+      public bool HasPlayer {
+       get { return result.hasPlayer; }
+      }
+      public global::Jangada.PlayerDescription Player {
+        get { return result.Player; }
+        set { SetPlayer(value); }
+      }
+      public Builder SetPlayer(global::Jangada.PlayerDescription value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.hasPlayer = true;
+        result.player_ = value;
+        return this;
+      }
+      public Builder SetPlayer(global::Jangada.PlayerDescription.Builder builderForValue) {
+        pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+        PrepareBuilder();
+        result.hasPlayer = true;
+        result.player_ = builderForValue.Build();
+        return this;
+      }
+      public Builder MergePlayer(global::Jangada.PlayerDescription value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        if (result.hasPlayer &&
+            result.player_ != global::Jangada.PlayerDescription.DefaultInstance) {
+            result.player_ = global::Jangada.PlayerDescription.CreateBuilder(result.player_).MergeFrom(value).BuildPartial();
+        } else {
+          result.player_ = value;
+        }
+        result.hasPlayer = true;
+        return this;
+      }
+      public Builder ClearPlayer() {
+        PrepareBuilder();
+        result.hasPlayer = false;
+        result.player_ = null;
+        return this;
+      }
+    }
+    static CharacterMovementPacket() {
       object.ReferenceEquals(global::Jangada.Proto.Networkmessage.Descriptor, null);
     }
   }
@@ -2927,6 +5538,278 @@ namespace Jangada {
       }
     }
     static Messages() {
+      object.ReferenceEquals(global::Jangada.Proto.Networkmessage.Descriptor, null);
+    }
+  }
+  
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+  public sealed partial class PlayerLogoutPacket : pb::GeneratedMessage<PlayerLogoutPacket, PlayerLogoutPacket.Builder> {
+    private PlayerLogoutPacket() { }
+    private static readonly PlayerLogoutPacket defaultInstance = new PlayerLogoutPacket().MakeReadOnly();
+    private static readonly string[] _playerLogoutPacketFieldNames = new string[] { "playerGuid" };
+    private static readonly uint[] _playerLogoutPacketFieldTags = new uint[] { 10 };
+    public static PlayerLogoutPacket DefaultInstance {
+      get { return defaultInstance; }
+    }
+    
+    public override PlayerLogoutPacket DefaultInstanceForType {
+      get { return DefaultInstance; }
+    }
+    
+    protected override PlayerLogoutPacket ThisMessage {
+      get { return this; }
+    }
+    
+    public static pbd::MessageDescriptor Descriptor {
+      get { return global::Jangada.Proto.Networkmessage.internal__static_Jangada_PlayerLogoutPacket__Descriptor; }
+    }
+    
+    protected override pb::FieldAccess.FieldAccessorTable<PlayerLogoutPacket, PlayerLogoutPacket.Builder> InternalFieldAccessors {
+      get { return global::Jangada.Proto.Networkmessage.internal__static_Jangada_PlayerLogoutPacket__FieldAccessorTable; }
+    }
+    
+    public const int PlayerGuidFieldNumber = 1;
+    private bool hasPlayerGuid;
+    private string playerGuid_ = "";
+    public bool HasPlayerGuid {
+      get { return hasPlayerGuid; }
+    }
+    public string PlayerGuid {
+      get { return playerGuid_; }
+    }
+    
+    public override bool IsInitialized {
+      get {
+        if (!hasPlayerGuid) return false;
+        return true;
+      }
+    }
+    
+    public override void WriteTo(pb::ICodedOutputStream output) {
+      int size = SerializedSize;
+      string[] field_names = _playerLogoutPacketFieldNames;
+      if (hasPlayerGuid) {
+        output.WriteString(1, field_names[0], PlayerGuid);
+      }
+      UnknownFields.WriteTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public override int SerializedSize {
+      get {
+        int size = memoizedSerializedSize;
+        if (size != -1) return size;
+        
+        size = 0;
+        if (hasPlayerGuid) {
+          size += pb::CodedOutputStream.ComputeStringSize(1, PlayerGuid);
+        }
+        size += UnknownFields.SerializedSize;
+        memoizedSerializedSize = size;
+        return size;
+      }
+    }
+    
+    public static PlayerLogoutPacket ParseFrom(pb::ByteString data) {
+      return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+    }
+    public static PlayerLogoutPacket ParseFrom(pb::ByteString data, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+    }
+    public static PlayerLogoutPacket ParseFrom(byte[] data) {
+      return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+    }
+    public static PlayerLogoutPacket ParseFrom(byte[] data, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+    }
+    public static PlayerLogoutPacket ParseFrom(global::System.IO.Stream input) {
+      return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+    }
+    public static PlayerLogoutPacket ParseFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+    }
+    public static PlayerLogoutPacket ParseDelimitedFrom(global::System.IO.Stream input) {
+      return CreateBuilder().MergeDelimitedFrom(input).BuildParsed();
+    }
+    public static PlayerLogoutPacket ParseDelimitedFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+      return CreateBuilder().MergeDelimitedFrom(input, extensionRegistry).BuildParsed();
+    }
+    public static PlayerLogoutPacket ParseFrom(pb::ICodedInputStream input) {
+      return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+    }
+    public static PlayerLogoutPacket ParseFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+    }
+    private PlayerLogoutPacket MakeReadOnly() {
+      return this;
+    }
+    
+    public static Builder CreateBuilder() { return new Builder(); }
+    public override Builder ToBuilder() { return CreateBuilder(this); }
+    public override Builder CreateBuilderForType() { return new Builder(); }
+    public static Builder CreateBuilder(PlayerLogoutPacket prototype) {
+      return new Builder(prototype);
+    }
+    
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed partial class Builder : pb::GeneratedBuilder<PlayerLogoutPacket, Builder> {
+      protected override Builder ThisBuilder {
+        get { return this; }
+      }
+      public Builder() {
+        result = DefaultInstance;
+        resultIsReadOnly = true;
+      }
+      internal Builder(PlayerLogoutPacket cloneFrom) {
+        result = cloneFrom;
+        resultIsReadOnly = true;
+      }
+      
+      private bool resultIsReadOnly;
+      private PlayerLogoutPacket result;
+      
+      private PlayerLogoutPacket PrepareBuilder() {
+        if (resultIsReadOnly) {
+          PlayerLogoutPacket original = result;
+          result = new PlayerLogoutPacket();
+          resultIsReadOnly = false;
+          MergeFrom(original);
+        }
+        return result;
+      }
+      
+      public override bool IsInitialized {
+        get { return result.IsInitialized; }
+      }
+      
+      protected override PlayerLogoutPacket MessageBeingBuilt {
+        get { return PrepareBuilder(); }
+      }
+      
+      public override Builder Clear() {
+        result = DefaultInstance;
+        resultIsReadOnly = true;
+        return this;
+      }
+      
+      public override Builder Clone() {
+        if (resultIsReadOnly) {
+          return new Builder(result);
+        } else {
+          return new Builder().MergeFrom(result);
+        }
+      }
+      
+      public override pbd::MessageDescriptor DescriptorForType {
+        get { return global::Jangada.PlayerLogoutPacket.Descriptor; }
+      }
+      
+      public override PlayerLogoutPacket DefaultInstanceForType {
+        get { return global::Jangada.PlayerLogoutPacket.DefaultInstance; }
+      }
+      
+      public override PlayerLogoutPacket BuildPartial() {
+        if (resultIsReadOnly) {
+          return result;
+        }
+        resultIsReadOnly = true;
+        return result.MakeReadOnly();
+      }
+      
+      public override Builder MergeFrom(pb::IMessage other) {
+        if (other is PlayerLogoutPacket) {
+          return MergeFrom((PlayerLogoutPacket) other);
+        } else {
+          base.MergeFrom(other);
+          return this;
+        }
+      }
+      
+      public override Builder MergeFrom(PlayerLogoutPacket other) {
+        if (other == global::Jangada.PlayerLogoutPacket.DefaultInstance) return this;
+        PrepareBuilder();
+        if (other.HasPlayerGuid) {
+          PlayerGuid = other.PlayerGuid;
+        }
+        this.MergeUnknownFields(other.UnknownFields);
+        return this;
+      }
+      
+      public override Builder MergeFrom(pb::ICodedInputStream input) {
+        return MergeFrom(input, pb::ExtensionRegistry.Empty);
+      }
+      
+      public override Builder MergeFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+        PrepareBuilder();
+        pb::UnknownFieldSet.Builder unknownFields = null;
+        uint tag;
+        string field_name;
+        while (input.ReadTag(out tag, out field_name)) {
+          if(tag == 0 && field_name != null) {
+            int field_ordinal = global::System.Array.BinarySearch(_playerLogoutPacketFieldNames, field_name, global::System.StringComparer.Ordinal);
+            if(field_ordinal >= 0)
+              tag = _playerLogoutPacketFieldTags[field_ordinal];
+            else {
+              if (unknownFields == null) {
+                unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+              }
+              ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+              continue;
+            }
+          }
+          switch (tag) {
+            case 0: {
+              throw pb::InvalidProtocolBufferException.InvalidTag();
+            }
+            default: {
+              if (pb::WireFormat.IsEndGroupTag(tag)) {
+                if (unknownFields != null) {
+                  this.UnknownFields = unknownFields.Build();
+                }
+                return this;
+              }
+              if (unknownFields == null) {
+                unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+              }
+              ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+              break;
+            }
+            case 10: {
+              result.hasPlayerGuid = input.ReadString(ref result.playerGuid_);
+              break;
+            }
+          }
+        }
+        
+        if (unknownFields != null) {
+          this.UnknownFields = unknownFields.Build();
+        }
+        return this;
+      }
+      
+      
+      public bool HasPlayerGuid {
+        get { return result.hasPlayerGuid; }
+      }
+      public string PlayerGuid {
+        get { return result.PlayerGuid; }
+        set { SetPlayerGuid(value); }
+      }
+      public Builder SetPlayerGuid(string value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.hasPlayerGuid = true;
+        result.playerGuid_ = value;
+        return this;
+      }
+      public Builder ClearPlayerGuid() {
+        PrepareBuilder();
+        result.hasPlayerGuid = false;
+        result.playerGuid_ = "";
+        return this;
+      }
+    }
+    static PlayerLogoutPacket() {
       object.ReferenceEquals(global::Jangada.Proto.Networkmessage.Descriptor, null);
     }
   }

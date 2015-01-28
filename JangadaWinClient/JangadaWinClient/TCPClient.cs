@@ -1,4 +1,5 @@
 ﻿using Jangada;
+using JangadaWinClient.Network;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,12 +33,32 @@ namespace JangadaWinClient
             Connect("127.0.0.1", port, (bytes) =>
             {
                 Console.Write(bytes);
-                Messages messages = Messages.CreateBuilder().MergeFrom(bytes).Build();
-                foreach (Networkmessage message in messages.NetworkmessageList)
+                if (!Jangada.getInstance().useProto)
                 {
-                    if (!Parser.Parse(message.Type, message))
+                    NetworkMessage inMessage = new NetworkMessage(bytes);
+                    int size = (int)BitConverter.ToUInt32(inMessage.Buffer, 0) + 4;
+                    inMessage.Length = size;
+                    inMessage.PrepareToRead();
+
+                    while (inMessage.Position < inMessage.Length - 1)
                     {
-                        //Disconnect
+                        byte type = inMessage.GetByte();
+                        if (!Parser.Parse(type, inMessage))
+                        {
+                            //Disconnect
+                        }
+                    }
+
+                }
+                else
+                {
+                    Messages messages = Messages.CreateBuilder().MergeFrom(bytes).Build();
+                    foreach (Networkmessage message in messages.NetworkmessageList)
+                    {
+                        if (!Parser.Parse(message.Type, message))
+                        {
+                            //Disconnect
+                        }
                     }
                 }
             });
@@ -74,6 +95,12 @@ namespace JangadaWinClient
         public void Send(Messages message)
         {
             message.WriteTo(tcp.GetStream());
+        }
+
+        public void Send(Network.NetworkMessage message)
+        {
+            message.PrepareToSend();
+            tcp.GetStream().Write(message.Buffer, 0, message.Length);
         }
     }
 }
