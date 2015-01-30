@@ -11,7 +11,7 @@ namespace JangadaWinClient
     public class NewCamera
     {
         float aspectRatio;
-        public NewPlayer player
+        public Player player
         {
             get
             {
@@ -20,7 +20,7 @@ namespace JangadaWinClient
         }
         public Matrix viewMatrix;
         public Matrix projectionMatrix;
-        Quaternion rotation = Quaternion.Identity;
+        public Quaternion rotation = Quaternion.Identity;
         Vector3 position = new Vector3(0, 10.0f, -30.0f);
 
         public NewCamera(float aspectRatio)
@@ -33,6 +33,11 @@ namespace JangadaWinClient
             this.rotation *= Quaternion.CreateFromYawPitchRoll(0, MathHelper.ToRadians(amount), 0);
         }
 
+        public void Yaw(float amount)
+        {
+            this.rotation *= Quaternion.CreateFromYawPitchRoll(MathHelper.ToRadians(amount), 0, 0);
+        }
+
         public void Zoom(float amount)
         {
             if (amount > 0)
@@ -40,7 +45,6 @@ namespace JangadaWinClient
                 if (this.position.Y < 60f && this.position.Z > -60f)
                 {
                     this.position += new Vector3(0, 2f, -6f);
-                    Jangada.getInstance().AddLog("camPos " + position.ToString());
                 }
             }
             else
@@ -48,7 +52,6 @@ namespace JangadaWinClient
                 if (this.position.Y > 10f && this.position.Z < -30f)
                 {
                     this.position += new Vector3(0, -2f, 6f);
-                    Jangada.getInstance().AddLog("camPos " + position.ToString());
                 }
             }
         }

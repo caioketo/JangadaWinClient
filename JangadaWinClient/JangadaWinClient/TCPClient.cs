@@ -33,32 +33,12 @@ namespace JangadaWinClient
             Connect("127.0.0.1", port, (bytes) =>
             {
                 Console.Write(bytes);
-                if (!Jangada.getInstance().useProto)
+                Messages messages = Messages.CreateBuilder().MergeFrom(bytes).Build();
+                foreach (Networkmessage message in messages.NetworkmessageList)
                 {
-                    NetworkMessage inMessage = new NetworkMessage(bytes);
-                    int size = (int)BitConverter.ToUInt32(inMessage.Buffer, 0) + 4;
-                    inMessage.Length = size;
-                    inMessage.PrepareToRead();
-
-                    while (inMessage.Position < inMessage.Length - 1)
+                    if (!Parser.Parse(message.Type, message))
                     {
-                        byte type = inMessage.GetByte();
-                        if (!Parser.Parse(type, inMessage))
-                        {
-                            //Disconnect
-                        }
-                    }
-
-                }
-                else
-                {
-                    Messages messages = Messages.CreateBuilder().MergeFrom(bytes).Build();
-                    foreach (Networkmessage message in messages.NetworkmessageList)
-                    {
-                        if (!Parser.Parse(message.Type, message))
-                        {
-                            //Disconnect
-                        }
+                        //Disconnect
                     }
                 }
             });

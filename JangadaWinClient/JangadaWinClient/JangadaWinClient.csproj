@@ -85,7 +85,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Content\SmallPortrait.cs" />
-    <Compile Include="Creatures\NewPlayer.cs" />
+    <Compile Include="Creatures\Creature.cs" />
+    <Compile Include="Creatures\Player.cs" />
+    <Compile Include="Creatures\Stats.cs" />
     <Compile Include="Enums\ClientMessageType.cs" />
     <Compile Include="Enums\MovementType.cs" />
     <Compile Include="Enums\ServerMessageType.cs" />
@@ -114,6 +116,7 @@
     <Compile Include="TerrainData.cs" />
     <Compile Include="Util.cs" />
     <Compile Include="Utils\CustomRectangle.cs" />
+    <Compile Include="Utils\TexturesHolder.cs" />
     <Compile Include="World.cs" />
   </ItemGroup>
   <ItemGroup>

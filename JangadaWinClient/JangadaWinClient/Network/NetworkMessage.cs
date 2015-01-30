@@ -89,7 +89,7 @@ namespace JangadaWinClient.Network
 
         public void Reset()
         {
-            Reset(6);
+            Reset(4);
         }
 
         #endregion
@@ -145,7 +145,7 @@ namespace JangadaWinClient.Network
 
         public float GetDouble()
         {
-            return (GetUInt32() / 10);
+            return (GetUInt32() / 1000);
         }
 
         public Vector3 GetPosition()
@@ -176,6 +176,7 @@ namespace JangadaWinClient.Network
                 throw new Exception("NetworkMessage buffer is full.");
 
             Array.Copy(value, 0, buffer, position, value.Length);
+            position += value.Length;
 
             if (position > length)
                 length = position;
@@ -213,7 +214,7 @@ namespace JangadaWinClient.Network
 
         public void AddDouble(double value)
         {
-            uint iValue = (uint)(value * 10);
+            uint iValue = (uint)(value * 1000);
             AddUInt32(iValue);
         }
 
@@ -291,8 +292,8 @@ namespace JangadaWinClient.Network
 
         private void InsertIdentifier()
         {
-            byte[] id = { 0x01, 0x02 };
-            Array.Copy(id, 0, buffer, 0, 2);
+            //byte[] id = { 0x01, 0x02 };
+            //Array.Copy(id, 0, buffer, 0, 2);
         }
 
         private void InsertTotalLength()
@@ -300,8 +301,8 @@ namespace JangadaWinClient.Network
             try
             {
                 byte[] len = new byte[4];
-                len = BitConverter.GetBytes((int)(length - 6));
-                Array.Copy(len, 0, buffer, 2, 4);
+                len = BitConverter.GetBytes((int)(length - 4));
+                Array.Copy(len, 0, buffer, 0, 4);
             }
             catch (Exception ex)
             {

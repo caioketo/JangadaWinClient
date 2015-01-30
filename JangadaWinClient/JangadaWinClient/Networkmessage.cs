@@ -38,6 +38,8 @@ namespace Jangada {
       internal static pb::FieldAccess.FieldAccessorTable<global::Jangada.AreaDescriptionPacket, global::Jangada.AreaDescriptionPacket.Builder> internal__static_Jangada_AreaDescriptionPacket__FieldAccessorTable;
       internal static pbd::MessageDescriptor internal__static_Jangada_PlayerDescription__Descriptor;
       internal static pb::FieldAccess.FieldAccessorTable<global::Jangada.PlayerDescription, global::Jangada.PlayerDescription.Builder> internal__static_Jangada_PlayerDescription__FieldAccessorTable;
+      internal static pbd::MessageDescriptor internal__static_Jangada_StatsDescription__Descriptor;
+      internal static pb::FieldAccess.FieldAccessorTable<global::Jangada.StatsDescription, global::Jangada.StatsDescription.Builder> internal__static_Jangada_StatsDescription__FieldAccessorTable;
       internal static pbd::MessageDescriptor internal__static_Jangada_PlayerLoginPacket__Descriptor;
       internal static pb::FieldAccess.FieldAccessorTable<global::Jangada.PlayerLoginPacket, global::Jangada.PlayerLoginPacket.Builder> internal__static_Jangada_PlayerLoginPacket__FieldAccessorTable;
       internal static pbd::MessageDescriptor internal__static_Jangada_PlayerMovementPacket__Descriptor;
@@ -88,18 +90,21 @@ namespace Jangada {
             "RBACEgcKA1lBVxADIoABChVBcmVhRGVzY3JpcHRpb25QYWNrZXQSDgoGYXJl" + 
             "YUlkGAEgAigFEioKBnBsYXllchgCIAIoCzIaLkphbmdhZGEuUGxheWVyRGVz" + 
             "Y3JpcHRpb24SKwoHcGxheWVycxgDIAMoCzIaLkphbmdhZGEuUGxheWVyRGVz" + 
-            "Y3JpcHRpb24ihgEKEVBsYXllckRlc2NyaXB0aW9uEhIKCnBsYXllckd1aWQY" + 
+            "Y3JpcHRpb24isAEKEVBsYXllckRlc2NyaXB0aW9uEhIKCnBsYXllckd1aWQY" + 
             "ASACKAkSKQoOcGxheWVyUG9zaXRpb24YAiACKAsyES5KYW5nYWRhLlBvc2l0" + 
             "aW9uEjIKDnBsYXllclJvdGF0aW9uGAMgAigLMhouSmFuZ2FkYS5RdWF0ZXJu" + 
-            "aW9uTWVzc2FnZSI/ChFQbGF5ZXJMb2dpblBhY2tldBIqCgZwbGF5ZXIYASAC" + 
-            "KAsyGi5KYW5nYWRhLlBsYXllckRlc2NyaXB0aW9uIm8KFFBsYXllck1vdmVt" + 
-            "ZW50UGFja2V0EiYKC25ld1Bvc2l0aW9uGAEgAigLMhEuSmFuZ2FkYS5Qb3Np" + 
-            "dGlvbhIvCgtuZXdSb3RhdGlvbhgCIAIoCzIaLkphbmdhZGEuUXVhdGVybmlv" + 
-            "bk1lc3NhZ2UiRQoXQ2hhcmFjdGVyTW92ZW1lbnRQYWNrZXQSKgoGcGxheWVy" + 
-            "GAEgAigLMhouSmFuZ2FkYS5QbGF5ZXJEZXNjcmlwdGlvbiI7CghNZXNzYWdl" + 
-            "cxIvCg5OZXR3b3JrbWVzc2FnZRgBIAMoCzIXLkphbmdhZGEuTmV0d29ya21l" + 
-            "c3NhZ2UiKAoSUGxheWVyTG9nb3V0UGFja2V0EhIKCnBsYXllckd1aWQYASAC" + 
-            "KAlCAkgB");
+            "aW9uTWVzc2FnZRIoCgVzdGF0cxgEIAEoCzIZLkphbmdhZGEuU3RhdHNEZXNj" + 
+            "cmlwdGlvbiJsChBTdGF0c0Rlc2NyaXB0aW9uEgwKBENPTlMYASACKAUSCwoD" + 
+            "U1RSGAIgAigFEgsKA0lOVBgDIAIoBRILCgNXSVMYBCACKAUSCwoDREVYGAUg" + 
+            "AigFEgoKAkhQGAYgAigFEgoKAk1QGAcgAigFIj8KEVBsYXllckxvZ2luUGFj" + 
+            "a2V0EioKBnBsYXllchgBIAIoCzIaLkphbmdhZGEuUGxheWVyRGVzY3JpcHRp" + 
+            "b24ibwoUUGxheWVyTW92ZW1lbnRQYWNrZXQSJgoLbmV3UG9zaXRpb24YASAC" + 
+            "KAsyES5KYW5nYWRhLlBvc2l0aW9uEi8KC25ld1JvdGF0aW9uGAIgAigLMhou" + 
+            "SmFuZ2FkYS5RdWF0ZXJuaW9uTWVzc2FnZSJFChdDaGFyYWN0ZXJNb3ZlbWVu" + 
+            "dFBhY2tldBIqCgZwbGF5ZXIYASACKAsyGi5KYW5nYWRhLlBsYXllckRlc2Ny" + 
+            "aXB0aW9uIjsKCE1lc3NhZ2VzEi8KDk5ldHdvcmttZXNzYWdlGAEgAygLMhcu" + 
+            "SmFuZ2FkYS5OZXR3b3JrbWVzc2FnZSIoChJQbGF5ZXJMb2dvdXRQYWNrZXQS" + 
+            "EgoKcGxheWVyR3VpZBgBIAIoCUICSAE=");
         pbd::FileDescriptor.InternalDescriptorAssigner assigner = delegate(pbd::FileDescriptor root) {
           descriptor = root;
           internal__static_Jangada_Networkmessage__Descriptor = Descriptor.MessageTypes[0];
@@ -141,24 +146,28 @@ namespace Jangada {
           internal__static_Jangada_PlayerDescription__Descriptor = Descriptor.MessageTypes[9];
           internal__static_Jangada_PlayerDescription__FieldAccessorTable = 
               new pb::FieldAccess.FieldAccessorTable<global::Jangada.PlayerDescription, global::Jangada.PlayerDescription.Builder>(internal__static_Jangada_PlayerDescription__Descriptor,
-                  new string[] { "PlayerGuid", "PlayerPosition", "PlayerRotation", });
-          internal__static_Jangada_PlayerLoginPacket__Descriptor = Descriptor.MessageTypes[10];
+                  new string[] { "PlayerGuid", "PlayerPosition", "PlayerRotation", "Stats", });
+          internal__static_Jangada_StatsDescription__Descriptor = Descriptor.MessageTypes[10];
+          internal__static_Jangada_StatsDescription__FieldAccessorTable = 
+              new pb::FieldAccess.FieldAccessorTable<global::Jangada.StatsDescription, global::Jangada.StatsDescription.Builder>(internal__static_Jangada_StatsDescription__Descriptor,
+                  new string[] { "CONS", "STR", "INT", "WIS", "DEX", "HP", "MP", });
+          internal__static_Jangada_PlayerLoginPacket__Descriptor = Descriptor.MessageTypes[11];
           internal__static_Jangada_PlayerLoginPacket__FieldAccessorTable = 
               new pb::FieldAccess.FieldAccessorTable<global::Jangada.PlayerLoginPacket, global::Jangada.PlayerLoginPacket.Builder>(internal__static_Jangada_PlayerLoginPacket__Descriptor,
                   new string[] { "Player", });
-          internal__static_Jangada_PlayerMovementPacket__Descriptor = Descriptor.MessageTypes[11];
+          internal__static_Jangada_PlayerMovementPacket__Descriptor = Descriptor.MessageTypes[12];
           internal__static_Jangada_PlayerMovementPacket__FieldAccessorTable = 
               new pb::FieldAccess.FieldAccessorTable<global::Jangada.PlayerMovementPacket, global::Jangada.PlayerMovementPacket.Builder>(internal__static_Jangada_PlayerMovementPacket__Descriptor,
                   new string[] { "NewPosition", "NewRotation", });
-          internal__static_Jangada_CharacterMovementPacket__Descriptor = Descriptor.MessageTypes[12];
+          internal__static_Jangada_CharacterMovementPacket__Descriptor = Descriptor.MessageTypes[13];
           internal__static_Jangada_CharacterMovementPacket__FieldAccessorTable = 
               new pb::FieldAccess.FieldAccessorTable<global::Jangada.CharacterMovementPacket, global::Jangada.CharacterMovementPacket.Builder>(internal__static_Jangada_CharacterMovementPacket__Descriptor,
                   new string[] { "Player", });
-          internal__static_Jangada_Messages__Descriptor = Descriptor.MessageTypes[13];
+          internal__static_Jangada_Messages__Descriptor = Descriptor.MessageTypes[14];
           internal__static_Jangada_Messages__FieldAccessorTable = 
               new pb::FieldAccess.FieldAccessorTable<global::Jangada.Messages, global::Jangada.Messages.Builder>(internal__static_Jangada_Messages__Descriptor,
                   new string[] { "Networkmessage", });
-          internal__static_Jangada_PlayerLogoutPacket__Descriptor = Descriptor.MessageTypes[14];
+          internal__static_Jangada_PlayerLogoutPacket__Descriptor = Descriptor.MessageTypes[15];
           internal__static_Jangada_PlayerLogoutPacket__FieldAccessorTable = 
               new pb::FieldAccess.FieldAccessorTable<global::Jangada.PlayerLogoutPacket, global::Jangada.PlayerLogoutPacket.Builder>(internal__static_Jangada_PlayerLogoutPacket__Descriptor,
                   new string[] { "PlayerGuid", });
@@ -3873,8 +3882,8 @@ namespace Jangada {
   public sealed partial class PlayerDescription : pb::GeneratedMessage<PlayerDescription, PlayerDescription.Builder> {
     private PlayerDescription() { }
     private static readonly PlayerDescription defaultInstance = new PlayerDescription().MakeReadOnly();
-    private static readonly string[] _playerDescriptionFieldNames = new string[] { "playerGuid", "playerPosition", "playerRotation" };
-    private static readonly uint[] _playerDescriptionFieldTags = new uint[] { 10, 18, 26 };
+    private static readonly string[] _playerDescriptionFieldNames = new string[] { "playerGuid", "playerPosition", "playerRotation", "stats" };
+    private static readonly uint[] _playerDescriptionFieldTags = new uint[] { 10, 18, 26, 34 };
     public static PlayerDescription DefaultInstance {
       get { return defaultInstance; }
     }
@@ -3925,6 +3934,16 @@ namespace Jangada {
       get { return playerRotation_ ?? global::Jangada.QuaternionMessage.DefaultInstance; }
     }
     
+    public const int StatsFieldNumber = 4;
+    private bool hasStats;
+    private global::Jangada.StatsDescription stats_;
+    public bool HasStats {
+      get { return hasStats; }
+    }
+    public global::Jangada.StatsDescription Stats {
+      get { return stats_ ?? global::Jangada.StatsDescription.DefaultInstance; }
+    }
+    
     public override bool IsInitialized {
       get {
         if (!hasPlayerGuid) return false;
@@ -3932,6 +3951,9 @@ namespace Jangada {
         if (!hasPlayerRotation) return false;
         if (!PlayerPosition.IsInitialized) return false;
         if (!PlayerRotation.IsInitialized) return false;
+        if (HasStats) {
+          if (!Stats.IsInitialized) return false;
+        }
         return true;
       }
     }
@@ -3947,6 +3969,9 @@ namespace Jangada {
       }
       if (hasPlayerRotation) {
         output.WriteMessage(3, field_names[2], PlayerRotation);
+      }
+      if (hasStats) {
+        output.WriteMessage(4, field_names[3], Stats);
       }
       UnknownFields.WriteTo(output);
     }
@@ -3966,6 +3991,9 @@ namespace Jangada {
         }
         if (hasPlayerRotation) {
           size += pb::CodedOutputStream.ComputeMessageSize(3, PlayerRotation);
+        }
+        if (hasStats) {
+          size += pb::CodedOutputStream.ComputeMessageSize(4, Stats);
         }
         size += UnknownFields.SerializedSize;
         memoizedSerializedSize = size;
@@ -4100,6 +4128,9 @@ namespace Jangada {
         if (other.HasPlayerRotation) {
           MergePlayerRotation(other.PlayerRotation);
         }
+        if (other.HasStats) {
+          MergeStats(other.Stats);
+        }
         this.MergeUnknownFields(other.UnknownFields);
         return this;
       }
@@ -4163,6 +4194,15 @@ namespace Jangada {
               }
               input.ReadMessage(subBuilder, extensionRegistry);
               PlayerRotation = subBuilder.BuildPartial();
+              break;
+            }
+            case 34: {
+              global::Jangada.StatsDescription.Builder subBuilder = global::Jangada.StatsDescription.CreateBuilder();
+              if (result.hasStats) {
+                subBuilder.MergeFrom(Stats);
+              }
+              input.ReadMessage(subBuilder, extensionRegistry);
+              Stats = subBuilder.BuildPartial();
               break;
             }
           }
@@ -4275,8 +4315,583 @@ namespace Jangada {
         result.playerRotation_ = null;
         return this;
       }
+      
+      public bool HasStats {
+       get { return result.hasStats; }
+      }
+      public global::Jangada.StatsDescription Stats {
+        get { return result.Stats; }
+        set { SetStats(value); }
+      }
+      public Builder SetStats(global::Jangada.StatsDescription value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.hasStats = true;
+        result.stats_ = value;
+        return this;
+      }
+      public Builder SetStats(global::Jangada.StatsDescription.Builder builderForValue) {
+        pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+        PrepareBuilder();
+        result.hasStats = true;
+        result.stats_ = builderForValue.Build();
+        return this;
+      }
+      public Builder MergeStats(global::Jangada.StatsDescription value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        if (result.hasStats &&
+            result.stats_ != global::Jangada.StatsDescription.DefaultInstance) {
+            result.stats_ = global::Jangada.StatsDescription.CreateBuilder(result.stats_).MergeFrom(value).BuildPartial();
+        } else {
+          result.stats_ = value;
+        }
+        result.hasStats = true;
+        return this;
+      }
+      public Builder ClearStats() {
+        PrepareBuilder();
+        result.hasStats = false;
+        result.stats_ = null;
+        return this;
+      }
     }
     static PlayerDescription() {
+      object.ReferenceEquals(global::Jangada.Proto.Networkmessage.Descriptor, null);
+    }
+  }
+  
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+  public sealed partial class StatsDescription : pb::GeneratedMessage<StatsDescription, StatsDescription.Builder> {
+    private StatsDescription() { }
+    private static readonly StatsDescription defaultInstance = new StatsDescription().MakeReadOnly();
+    private static readonly string[] _statsDescriptionFieldNames = new string[] { "CONS", "DEX", "HP", "INT", "MP", "STR", "WIS" };
+    private static readonly uint[] _statsDescriptionFieldTags = new uint[] { 8, 40, 48, 24, 56, 16, 32 };
+    public static StatsDescription DefaultInstance {
+      get { return defaultInstance; }
+    }
+    
+    public override StatsDescription DefaultInstanceForType {
+      get { return DefaultInstance; }
+    }
+    
+    protected override StatsDescription ThisMessage {
+      get { return this; }
+    }
+    
+    public static pbd::MessageDescriptor Descriptor {
+      get { return global::Jangada.Proto.Networkmessage.internal__static_Jangada_StatsDescription__Descriptor; }
+    }
+    
+    protected override pb::FieldAccess.FieldAccessorTable<StatsDescription, StatsDescription.Builder> InternalFieldAccessors {
+      get { return global::Jangada.Proto.Networkmessage.internal__static_Jangada_StatsDescription__FieldAccessorTable; }
+    }
+    
+    public const int CONSFieldNumber = 1;
+    private bool hasCONS;
+    private int cONS_;
+    public bool HasCONS {
+      get { return hasCONS; }
+    }
+    public int CONS {
+      get { return cONS_; }
+    }
+    
+    public const int STRFieldNumber = 2;
+    private bool hasSTR;
+    private int sTR_;
+    public bool HasSTR {
+      get { return hasSTR; }
+    }
+    public int STR {
+      get { return sTR_; }
+    }
+    
+    public const int INTFieldNumber = 3;
+    private bool hasINT;
+    private int iNT_;
+    public bool HasINT {
+      get { return hasINT; }
+    }
+    public int INT {
+      get { return iNT_; }
+    }
+    
+    public const int WISFieldNumber = 4;
+    private bool hasWIS;
+    private int wIS_;
+    public bool HasWIS {
+      get { return hasWIS; }
+    }
+    public int WIS {
+      get { return wIS_; }
+    }
+    
+    public const int DEXFieldNumber = 5;
+    private bool hasDEX;
+    private int dEX_;
+    public bool HasDEX {
+      get { return hasDEX; }
+    }
+    public int DEX {
+      get { return dEX_; }
+    }
+    
+    public const int HPFieldNumber = 6;
+    private bool hasHP;
+    private int hP_;
+    public bool HasHP {
+      get { return hasHP; }
+    }
+    public int HP {
+      get { return hP_; }
+    }
+    
+    public const int MPFieldNumber = 7;
+    private bool hasMP;
+    private int mP_;
+    public bool HasMP {
+      get { return hasMP; }
+    }
+    public int MP {
+      get { return mP_; }
+    }
+    
+    public override bool IsInitialized {
+      get {
+        if (!hasCONS) return false;
+        if (!hasSTR) return false;
+        if (!hasINT) return false;
+        if (!hasWIS) return false;
+        if (!hasDEX) return false;
+        if (!hasHP) return false;
+        if (!hasMP) return false;
+        return true;
+      }
+    }
+    
+    public override void WriteTo(pb::ICodedOutputStream output) {
+      int size = SerializedSize;
+      string[] field_names = _statsDescriptionFieldNames;
+      if (hasCONS) {
+        output.WriteInt32(1, field_names[0], CONS);
+      }
+      if (hasSTR) {
+        output.WriteInt32(2, field_names[5], STR);
+      }
+      if (hasINT) {
+        output.WriteInt32(3, field_names[3], INT);
+      }
+      if (hasWIS) {
+        output.WriteInt32(4, field_names[6], WIS);
+      }
+      if (hasDEX) {
+        output.WriteInt32(5, field_names[1], DEX);
+      }
+      if (hasHP) {
+        output.WriteInt32(6, field_names[2], HP);
+      }
+      if (hasMP) {
+        output.WriteInt32(7, field_names[4], MP);
+      }
+      UnknownFields.WriteTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public override int SerializedSize {
+      get {
+        int size = memoizedSerializedSize;
+        if (size != -1) return size;
+        
+        size = 0;
+        if (hasCONS) {
+          size += pb::CodedOutputStream.ComputeInt32Size(1, CONS);
+        }
+        if (hasSTR) {
+          size += pb::CodedOutputStream.ComputeInt32Size(2, STR);
+        }
+        if (hasINT) {
+          size += pb::CodedOutputStream.ComputeInt32Size(3, INT);
+        }
+        if (hasWIS) {
+          size += pb::CodedOutputStream.ComputeInt32Size(4, WIS);
+        }
+        if (hasDEX) {
+          size += pb::CodedOutputStream.ComputeInt32Size(5, DEX);
+        }
+        if (hasHP) {
+          size += pb::CodedOutputStream.ComputeInt32Size(6, HP);
+        }
+        if (hasMP) {
+          size += pb::CodedOutputStream.ComputeInt32Size(7, MP);
+        }
+        size += UnknownFields.SerializedSize;
+        memoizedSerializedSize = size;
+        return size;
+      }
+    }
+    
+    public static StatsDescription ParseFrom(pb::ByteString data) {
+      return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+    }
+    public static StatsDescription ParseFrom(pb::ByteString data, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+    }
+    public static StatsDescription ParseFrom(byte[] data) {
+      return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+    }
+    public static StatsDescription ParseFrom(byte[] data, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+    }
+    public static StatsDescription ParseFrom(global::System.IO.Stream input) {
+      return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+    }
+    public static StatsDescription ParseFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+    }
+    public static StatsDescription ParseDelimitedFrom(global::System.IO.Stream input) {
+      return CreateBuilder().MergeDelimitedFrom(input).BuildParsed();
+    }
+    public static StatsDescription ParseDelimitedFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+      return CreateBuilder().MergeDelimitedFrom(input, extensionRegistry).BuildParsed();
+    }
+    public static StatsDescription ParseFrom(pb::ICodedInputStream input) {
+      return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+    }
+    public static StatsDescription ParseFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+    }
+    private StatsDescription MakeReadOnly() {
+      return this;
+    }
+    
+    public static Builder CreateBuilder() { return new Builder(); }
+    public override Builder ToBuilder() { return CreateBuilder(this); }
+    public override Builder CreateBuilderForType() { return new Builder(); }
+    public static Builder CreateBuilder(StatsDescription prototype) {
+      return new Builder(prototype);
+    }
+    
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed partial class Builder : pb::GeneratedBuilder<StatsDescription, Builder> {
+      protected override Builder ThisBuilder {
+        get { return this; }
+      }
+      public Builder() {
+        result = DefaultInstance;
+        resultIsReadOnly = true;
+      }
+      internal Builder(StatsDescription cloneFrom) {
+        result = cloneFrom;
+        resultIsReadOnly = true;
+      }
+      
+      private bool resultIsReadOnly;
+      private StatsDescription result;
+      
+      private StatsDescription PrepareBuilder() {
+        if (resultIsReadOnly) {
+          StatsDescription original = result;
+          result = new StatsDescription();
+          resultIsReadOnly = false;
+          MergeFrom(original);
+        }
+        return result;
+      }
+      
+      public override bool IsInitialized {
+        get { return result.IsInitialized; }
+      }
+      
+      protected override StatsDescription MessageBeingBuilt {
+        get { return PrepareBuilder(); }
+      }
+      
+      public override Builder Clear() {
+        result = DefaultInstance;
+        resultIsReadOnly = true;
+        return this;
+      }
+      
+      public override Builder Clone() {
+        if (resultIsReadOnly) {
+          return new Builder(result);
+        } else {
+          return new Builder().MergeFrom(result);
+        }
+      }
+      
+      public override pbd::MessageDescriptor DescriptorForType {
+        get { return global::Jangada.StatsDescription.Descriptor; }
+      }
+      
+      public override StatsDescription DefaultInstanceForType {
+        get { return global::Jangada.StatsDescription.DefaultInstance; }
+      }
+      
+      public override StatsDescription BuildPartial() {
+        if (resultIsReadOnly) {
+          return result;
+        }
+        resultIsReadOnly = true;
+        return result.MakeReadOnly();
+      }
+      
+      public override Builder MergeFrom(pb::IMessage other) {
+        if (other is StatsDescription) {
+          return MergeFrom((StatsDescription) other);
+        } else {
+          base.MergeFrom(other);
+          return this;
+        }
+      }
+      
+      public override Builder MergeFrom(StatsDescription other) {
+        if (other == global::Jangada.StatsDescription.DefaultInstance) return this;
+        PrepareBuilder();
+        if (other.HasCONS) {
+          CONS = other.CONS;
+        }
+        if (other.HasSTR) {
+          STR = other.STR;
+        }
+        if (other.HasINT) {
+          INT = other.INT;
+        }
+        if (other.HasWIS) {
+          WIS = other.WIS;
+        }
+        if (other.HasDEX) {
+          DEX = other.DEX;
+        }
+        if (other.HasHP) {
+          HP = other.HP;
+        }
+        if (other.HasMP) {
+          MP = other.MP;
+        }
+        this.MergeUnknownFields(other.UnknownFields);
+        return this;
+      }
+      
+      public override Builder MergeFrom(pb::ICodedInputStream input) {
+        return MergeFrom(input, pb::ExtensionRegistry.Empty);
+      }
+      
+      public override Builder MergeFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+        PrepareBuilder();
+        pb::UnknownFieldSet.Builder unknownFields = null;
+        uint tag;
+        string field_name;
+        while (input.ReadTag(out tag, out field_name)) {
+          if(tag == 0 && field_name != null) {
+            int field_ordinal = global::System.Array.BinarySearch(_statsDescriptionFieldNames, field_name, global::System.StringComparer.Ordinal);
+            if(field_ordinal >= 0)
+              tag = _statsDescriptionFieldTags[field_ordinal];
+            else {
+              if (unknownFields == null) {
+                unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+              }
+              ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+              continue;
+            }
+          }
+          switch (tag) {
+            case 0: {
+              throw pb::InvalidProtocolBufferException.InvalidTag();
+            }
+            default: {
+              if (pb::WireFormat.IsEndGroupTag(tag)) {
+                if (unknownFields != null) {
+                  this.UnknownFields = unknownFields.Build();
+                }
+                return this;
+              }
+              if (unknownFields == null) {
+                unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+              }
+              ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+              break;
+            }
+            case 8: {
+              result.hasCONS = input.ReadInt32(ref result.cONS_);
+              break;
+            }
+            case 16: {
+              result.hasSTR = input.ReadInt32(ref result.sTR_);
+              break;
+            }
+            case 24: {
+              result.hasINT = input.ReadInt32(ref result.iNT_);
+              break;
+            }
+            case 32: {
+              result.hasWIS = input.ReadInt32(ref result.wIS_);
+              break;
+            }
+            case 40: {
+              result.hasDEX = input.ReadInt32(ref result.dEX_);
+              break;
+            }
+            case 48: {
+              result.hasHP = input.ReadInt32(ref result.hP_);
+              break;
+            }
+            case 56: {
+              result.hasMP = input.ReadInt32(ref result.mP_);
+              break;
+            }
+          }
+        }
+        
+        if (unknownFields != null) {
+          this.UnknownFields = unknownFields.Build();
+        }
+        return this;
+      }
+      
+      
+      public bool HasCONS {
+        get { return result.hasCONS; }
+      }
+      public int CONS {
+        get { return result.CONS; }
+        set { SetCONS(value); }
+      }
+      public Builder SetCONS(int value) {
+        PrepareBuilder();
+        result.hasCONS = true;
+        result.cONS_ = value;
+        return this;
+      }
+      public Builder ClearCONS() {
+        PrepareBuilder();
+        result.hasCONS = false;
+        result.cONS_ = 0;
+        return this;
+      }
+      
+      public bool HasSTR {
+        get { return result.hasSTR; }
+      }
+      public int STR {
+        get { return result.STR; }
+        set { SetSTR(value); }
+      }
+      public Builder SetSTR(int value) {
+        PrepareBuilder();
+        result.hasSTR = true;
+        result.sTR_ = value;
+        return this;
+      }
+      public Builder ClearSTR() {
+        PrepareBuilder();
+        result.hasSTR = false;
+        result.sTR_ = 0;
+        return this;
+      }
+      
+      public bool HasINT {
+        get { return result.hasINT; }
+      }
+      public int INT {
+        get { return result.INT; }
+        set { SetINT(value); }
+      }
+      public Builder SetINT(int value) {
+        PrepareBuilder();
+        result.hasINT = true;
+        result.iNT_ = value;
+        return this;
+      }
+      public Builder ClearINT() {
+        PrepareBuilder();
+        result.hasINT = false;
+        result.iNT_ = 0;
+        return this;
+      }
+      
+      public bool HasWIS {
+        get { return result.hasWIS; }
+      }
+      public int WIS {
+        get { return result.WIS; }
+        set { SetWIS(value); }
+      }
+      public Builder SetWIS(int value) {
+        PrepareBuilder();
+        result.hasWIS = true;
+        result.wIS_ = value;
+        return this;
+      }
+      public Builder ClearWIS() {
+        PrepareBuilder();
+        result.hasWIS = false;
+        result.wIS_ = 0;
+        return this;
+      }
+      
+      public bool HasDEX {
+        get { return result.hasDEX; }
+      }
+      public int DEX {
+        get { return result.DEX; }
+        set { SetDEX(value); }
+      }
+      public Builder SetDEX(int value) {
+        PrepareBuilder();
+        result.hasDEX = true;
+        result.dEX_ = value;
+        return this;
+      }
+      public Builder ClearDEX() {
+        PrepareBuilder();
+        result.hasDEX = false;
+        result.dEX_ = 0;
+        return this;
+      }
+      
+      public bool HasHP {
+        get { return result.hasHP; }
+      }
+      public int HP {
+        get { return result.HP; }
+        set { SetHP(value); }
+      }
+      public Builder SetHP(int value) {
+        PrepareBuilder();
+        result.hasHP = true;
+        result.hP_ = value;
+        return this;
+      }
+      public Builder ClearHP() {
+        PrepareBuilder();
+        result.hasHP = false;
+        result.hP_ = 0;
+        return this;
+      }
+      
+      public bool HasMP {
+        get { return result.hasMP; }
+      }
+      public int MP {
+        get { return result.MP; }
+        set { SetMP(value); }
+      }
+      public Builder SetMP(int value) {
+        PrepareBuilder();
+        result.hasMP = true;
+        result.mP_ = value;
+        return this;
+      }
+      public Builder ClearMP() {
+        PrepareBuilder();
+        result.hasMP = false;
+        result.mP_ = 0;
+        return this;
+      }
+    }
+    static StatsDescription() {
       object.ReferenceEquals(global::Jangada.Proto.Networkmessage.Descriptor, null);
     }
   }

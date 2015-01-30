@@ -9,29 +9,31 @@ namespace JangadaWinClient
     public class World
     {
         public Terrain terrain;
-        public NewPlayer player;
-        public List<NewPlayer> players = new List<NewPlayer>();
+        public Player player;
+        public List<Creature> creatures = new List<Creature>();
+        public Creature selectedCreature = null;
 
-        public World(NewPlayer player)
+
+        public World(Player player)
         {
             this.player = player;
         }
 
-        public NewPlayer FindPlayerByGuid(string guid)
+        public Player FindPlayerByGuid(string guid)
         {
-            foreach (NewPlayer nPlayer in players)
+            foreach (Creature creature in creatures)
             {
-                if (nPlayer.Guid.Equals(guid))
+                if (creature.Guid.Equals(guid))
                 {
-                    return nPlayer;
+                    return (Player)creature;
                 }
             }
             return null;
         }
 
-        public void AddPlayer(NewPlayer _player)
+        public void AddPlayer(Player _player)
         {
-            players.Add(_player);
+            creatures.Add(_player);
         }
 
         public void SetTerrain(Terrain terrain)
@@ -42,16 +44,21 @@ namespace JangadaWinClient
         public void Draw(NewCamera camera)
         {
             terrain.Draw(camera);
-            foreach (NewPlayer _player in players)
+            foreach (Creature creature in creatures)
             {
-                _player.Draw(camera);
+                creature.Draw(camera);
             }
             player.Draw(camera);
         }
 
-        internal void RemovePlayer(NewPlayer nPlayer)
+        public bool IsSelected(Creature creature)
         {
-            players.Remove(nPlayer);
+            return creature.Equals(selectedCreature);
+        }
+
+        internal void RemovePlayer(Player nPlayer)
+        {
+            creatures.Remove(nPlayer);
         }
     }
 }

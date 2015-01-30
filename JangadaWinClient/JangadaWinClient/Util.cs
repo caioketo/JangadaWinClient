@@ -21,7 +21,7 @@ namespace JangadaWinClient
             return new Quaternion(quaMessage.X, quaMessage.Y, quaMessage.Z, quaMessage.W);
         }
 
-        public static NewPlayer getPlayer()
+        public static Player getPlayer()
         {
             return Jangada.getInstance().GetCamera().player;
         }

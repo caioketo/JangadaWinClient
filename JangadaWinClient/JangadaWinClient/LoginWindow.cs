@@ -131,6 +131,26 @@ namespace JangadaWinClient
             MessageHelper.SendLoginMessage(loginBox.Text, passBox.Text);
         }
 
+        public void ShowCharList(List<Network.ServerPackets.CharactersPacket.Character> characters)
+        {
+            int top = 0;
+            foreach (Network.ServerPackets.CharactersPacket.Character character in characters)
+            {
+                Button btn = new Button(manager);
+                btn.Init();
+                btn.Text = character.Name + " | " + character.Info;
+                btn.Name = character.Id.ToString();
+                btn.Click += new TomShane.Neoforce.Controls.EventHandler(this.charBtn_click);
+                btn.Top = top;
+                btn.Height = 20;
+                btn.Width = 200;
+                charList.Add(btn);
+                top += 20;
+            }
+            connectingWindow.Hide();
+            charList.Show();
+        }
+
         public void ShowCharList(List<Character> characters)
         {
             int top = 0;

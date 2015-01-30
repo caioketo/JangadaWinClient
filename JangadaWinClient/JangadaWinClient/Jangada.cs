@@ -28,7 +28,7 @@ namespace JangadaWinClient
             return instance;
         }
 
-        MouseHandler mouseHandler = new MouseHandler();
+        MouseHandler mouseHandler;
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Manager manager;
@@ -36,7 +36,7 @@ namespace JangadaWinClient
         public LoginWindow loginWindow;
         TomShane.Neoforce.Controls.Console consoleWindow;
         Texture2D background;
-        GraphicsDevice device;
+        public GraphicsDevice device;
         NewCamera newCamera;
         public World world;
         Dictionary<int, Terrain> terrains = new Dictionary<int,Terrain>();
@@ -45,7 +45,6 @@ namespace JangadaWinClient
         public Model humanModel;
         public bool useProto = true;
 
-        SmallPortrait sPortrait;
         public int MapIndex
         {
             get
@@ -141,6 +140,10 @@ namespace JangadaWinClient
             spriteBatch = new SpriteBatch(GraphicsDevice);
             device = graphics.GraphicsDevice;
             background = Content.Load<Texture2D>("background");
+            TexturesHolder.BG_BARS = Content.Load<Texture2D>("bghp");
+            TexturesHolder.BG_SMALL_PORTRAIT = Content.Load<Texture2D>("bgsp");
+            TexturesHolder.LINE_TEXT = new Texture2D(GraphicsDevice, 1, 1);
+            TexturesHolder.LINE_TEXT.SetData(new[] { Color.White });
             terrainDatas.Add(new TerrainData(Content.Load<Texture2D>("HM1"), Content.Load<Texture2D>("TEX1"))
                 {
                     Id = 1
@@ -155,10 +158,11 @@ namespace JangadaWinClient
             {
                 bone.Transform *= Matrix.CreateScale(0.08f);
             }
-            world = new World(new NewPlayer(humanModel));
+            Player player = new Player(humanModel);
+            mouseHandler = new MouseHandler(device);
+            world = new World(player);
             newCamera = new NewCamera(graphics.GraphicsDevice.Viewport.AspectRatio);
-            sPortrait = new SmallPortrait(Content.Load<Texture2D>("bgsp"), world.player);
-            sPortrait.Load(GraphicsDevice);
+            
         }
 
         protected override void UnloadContent()
@@ -238,7 +242,11 @@ namespace JangadaWinClient
             spriteBatch.Begin();
             if (!isInMenu)
             {
-                sPortrait.Draw(spriteBatch);
+                Util.getWorld().player.smallPortrait.Draw(spriteBatch);
+                if (Util.getWorld().selectedCreature != null)
+                {
+                    Util.getWorld().selectedCreature.smallPortrait.Draw(spriteBatch, 300);
+                }
             }
             spriteBatch.End();
 

@@ -839,3 +839,180 @@ Assembly: TomShane.Neoforce.Controls.dll
    em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
 ////////////////////////////////////////////////////////////////
 
+////////////////////////////////////////////////////////////////
+    Date: 29/01/2015 10:06:00
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: Não é possível gravar dados na conexão de transporte: Foi forçado o cancelamento de uma conexão existente pelo host remoto.
+////////////////////////////////////////////////////////////////
+   em System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   em Google.ProtocolBuffers.CodedOutputStream.RefreshBuffer()
+   em Google.ProtocolBuffers.CodedOutputStream.Flush()
+   em Google.ProtocolBuffers.AbstractMessageLite`2.WriteTo(Stream output)
+   em JangadaWinClient.TCPClient.Send(Messages message) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\TCPClient.cs:linha 97
+   em JangadaWinClient.MessageHelper.SendRequestMovement(MovementType type, Single ammount) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\MessageHelper.cs:linha 69
+   em JangadaWinClient.MouseHandler.Update(NewCamera camera) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\MouseHandler.cs:linha 41
+   em JangadaWinClient.Jangada.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 201
+   em Microsoft.Xna.Framework.Game.Tick()
+   em Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   em Microsoft.Xna.Framework.GameHost.OnIdle()
+   em Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   em Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   em System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   em System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.Run(Form mainForm)
+   em Microsoft.Xna.Framework.WindowsGameHost.Run()
+   em Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   em Microsoft.Xna.Framework.Game.Run()
+   em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+    Date: 30/01/2015 08:34:51
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: Não é possível gravar dados na conexão de transporte: Foi forçado o cancelamento de uma conexão existente pelo host remoto.
+////////////////////////////////////////////////////////////////
+   em System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   em Google.ProtocolBuffers.CodedOutputStream.RefreshBuffer()
+   em Google.ProtocolBuffers.CodedOutputStream.Flush()
+   em Google.ProtocolBuffers.AbstractMessageLite`2.WriteTo(Stream output)
+   em JangadaWinClient.TCPClient.Send(Messages message) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\TCPClient.cs:linha 77
+   em JangadaWinClient.MessageHelper.SendRequestMovement(MovementType type, Single ammount) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\MessageHelper.cs:linha 69
+   em JangadaWinClient.MouseHandler.Update(NewCamera camera) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\MouseHandler.cs:linha 61
+   em JangadaWinClient.Jangada.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 203
+   em Microsoft.Xna.Framework.Game.Tick()
+   em Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   em Microsoft.Xna.Framework.GameHost.OnIdle()
+   em Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   em Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   em System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   em System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.Run(Form mainForm)
+   em Microsoft.Xna.Framework.WindowsGameHost.Run()
+   em Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   em Microsoft.Xna.Framework.Game.Run()
+   em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+    Date: 30/01/2015 10:08:17
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: Não é possível gravar dados na conexão de transporte: Foi forçado o cancelamento de uma conexão existente pelo host remoto.
+////////////////////////////////////////////////////////////////
+   em System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   em Google.ProtocolBuffers.CodedOutputStream.RefreshBuffer()
+   em Google.ProtocolBuffers.CodedOutputStream.Flush()
+   em Google.ProtocolBuffers.AbstractMessageLite`2.WriteTo(Stream output)
+   em JangadaWinClient.TCPClient.Send(Messages message) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\TCPClient.cs:linha 77
+   em JangadaWinClient.MessageHelper.SendRequestMovement(MovementType type, Single ammount) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\MessageHelper.cs:linha 69
+   em JangadaWinClient.MouseHandler.Update(NewCamera camera) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\MouseHandler.cs:linha 62
+   em JangadaWinClient.Jangada.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 203
+   em Microsoft.Xna.Framework.Game.Tick()
+   em Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   em Microsoft.Xna.Framework.GameHost.OnIdle()
+   em Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   em Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   em System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   em System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.Run(Form mainForm)
+   em Microsoft.Xna.Framework.WindowsGameHost.Run()
+   em Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   em Microsoft.Xna.Framework.Game.Run()
+   em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+    Date: 30/01/2015 10:17:05
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: Não é possível gravar dados na conexão de transporte: Foi forçado o cancelamento de uma conexão existente pelo host remoto.
+////////////////////////////////////////////////////////////////
+   em System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   em Google.ProtocolBuffers.CodedOutputStream.RefreshBuffer()
+   em Google.ProtocolBuffers.CodedOutputStream.Flush()
+   em Google.ProtocolBuffers.AbstractMessageLite`2.WriteTo(Stream output)
+   em JangadaWinClient.TCPClient.Send(Messages message) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\TCPClient.cs:linha 77
+   em JangadaWinClient.MessageHelper.SendRequestMovement(MovementType type, Single ammount) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\MessageHelper.cs:linha 69
+   em JangadaWinClient.Jangada.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 182
+   em Microsoft.Xna.Framework.Game.Tick()
+   em Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   em Microsoft.Xna.Framework.GameHost.OnIdle()
+   em Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   em Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   em System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   em System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.Run(Form mainForm)
+   em Microsoft.Xna.Framework.WindowsGameHost.Run()
+   em Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   em Microsoft.Xna.Framework.Game.Run()
+   em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+    Date: 30/01/2015 10:18:49
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: Não é possível gravar dados na conexão de transporte: Foi forçado o cancelamento de uma conexão existente pelo host remoto.
+////////////////////////////////////////////////////////////////
+   em System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   em Google.ProtocolBuffers.CodedOutputStream.RefreshBuffer()
+   em Google.ProtocolBuffers.CodedOutputStream.Flush()
+   em Google.ProtocolBuffers.AbstractMessageLite`2.WriteTo(Stream output)
+   em JangadaWinClient.TCPClient.Send(Messages message) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\TCPClient.cs:linha 77
+   em JangadaWinClient.MessageHelper.SendRequestMovement(MovementType type, Single ammount) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\MessageHelper.cs:linha 69
+   em JangadaWinClient.Jangada.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 182
+   em Microsoft.Xna.Framework.Game.Tick()
+   em Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   em Microsoft.Xna.Framework.GameHost.OnIdle()
+   em Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   em Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   em System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   em System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.Run(Form mainForm)
+   em Microsoft.Xna.Framework.WindowsGameHost.Run()
+   em Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   em Microsoft.Xna.Framework.Game.Run()
+   em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
+////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////
+    Date: 30/01/2015 10:29:12
+Assembly: TomShane.Neoforce.Controls.dll
+ Version: 0.7.2407.1915
+ Message: Não é possível gravar dados na conexão de transporte: Foi forçado o cancelamento de uma conexão existente pelo host remoto.
+////////////////////////////////////////////////////////////////
+   em System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   em Google.ProtocolBuffers.CodedOutputStream.RefreshBuffer()
+   em Google.ProtocolBuffers.CodedOutputStream.Flush()
+   em Google.ProtocolBuffers.AbstractMessageLite`2.WriteTo(Stream output)
+   em JangadaWinClient.TCPClient.Send(Messages message) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\TCPClient.cs:linha 77
+   em JangadaWinClient.MessageHelper.SendRequestMovement(MovementType type, Single ammount) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\MessageHelper.cs:linha 69
+   em JangadaWinClient.Jangada.Update(GameTime gameTime) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Jangada.cs:linha 182
+   em Microsoft.Xna.Framework.Game.Tick()
+   em Microsoft.Xna.Framework.Game.HostIdle(Object sender, EventArgs e)
+   em Microsoft.Xna.Framework.GameHost.OnIdle()
+   em Microsoft.Xna.Framework.WindowsGameHost.RunOneFrame()
+   em Microsoft.Xna.Framework.WindowsGameHost.ApplicationIdle(Object sender, EventArgs e)
+   em System.Windows.Forms.Application.ThreadContext.System.Windows.Forms.UnsafeNativeMethods.IMsoComponent.FDoIdle(Int32 grfidlef)
+   em System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   em System.Windows.Forms.Application.Run(Form mainForm)
+   em Microsoft.Xna.Framework.WindowsGameHost.Run()
+   em Microsoft.Xna.Framework.Game.RunGame(Boolean useBlockingRun)
+   em Microsoft.Xna.Framework.Game.Run()
+   em JangadaWinClient.Program.Main(String[] args) na c:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\Program.cs:linha 15
+////////////////////////////////////////////////////////////////
+
