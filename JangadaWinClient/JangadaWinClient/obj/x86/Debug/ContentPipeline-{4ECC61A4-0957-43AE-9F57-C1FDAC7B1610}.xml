@@ -86,6 +86,15 @@
       <Output>C:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\bin\x86\Debug\Content\bghp.xnb</Output>
       <Time>2015-01-29T10:01:20.5996234-02:00</Time>
     </Item>
+    <Item>
+      <Source>HM2.png</Source>
+      <Name>HM2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\bin\x86\Debug\Content\HM2.xnb</Output>
+      <Time>2015-02-02T09:59:02.4266935-02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{4ECC61A4-0957-43AE-9F57-C1FDAC7B1610}</ContentProjectGUID>

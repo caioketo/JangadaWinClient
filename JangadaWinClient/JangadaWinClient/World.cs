@@ -11,6 +11,7 @@ namespace JangadaWinClient
         public Terrain terrain;
         public Player player;
         public List<Creature> creatures = new List<Creature>();
+        public List<Player> players = new List<Player>();
         public Creature selectedCreature = null;
 
 
@@ -21,19 +22,36 @@ namespace JangadaWinClient
 
         public Player FindPlayerByGuid(string guid)
         {
-            foreach (Creature creature in creatures)
+            foreach (Player player in players)
             {
-                if (creature.Guid.Equals(guid))
+                if (player.Guid.Equals(guid))
                 {
-                    return (Player)creature;
+                    return player;
                 }
             }
             return null;
         }
 
+        public Creature FindCreatureByGuid(string guid)
+        {
+            foreach (Creature creature in creatures)
+            {
+                if (creature.Guid.Equals(guid))
+                {
+                    return creature;
+                }
+            }
+            return null;
+        }
+
+        public void AddCreature(Creature creature)
+        {
+            creatures.Add(creature);
+        }
+
         public void AddPlayer(Player _player)
         {
-            creatures.Add(_player);
+            players.Add(_player);
         }
 
         public void SetTerrain(Terrain terrain)
@@ -44,6 +62,10 @@ namespace JangadaWinClient
         public void Draw(NewCamera camera)
         {
             terrain.Draw(camera);
+            foreach (Player nPlayer in players)
+            {
+                nPlayer.Draw(camera);
+            }
             foreach (Creature creature in creatures)
             {
                 creature.Draw(camera);
@@ -58,7 +80,12 @@ namespace JangadaWinClient
 
         internal void RemovePlayer(Player nPlayer)
         {
-            creatures.Remove(nPlayer);
+            players.Remove(nPlayer);
+        }
+
+        internal void RemoveCreature(Creature creature)
+        {
+            creatures.Remove(creature);
         }
     }
 }

@@ -5,3 +5,4 @@ Content\human.xnb
 Content\human2.xnb
 Content\bgsp.xnb
 Content\bghp.xnb
+Content\HM2.xnb

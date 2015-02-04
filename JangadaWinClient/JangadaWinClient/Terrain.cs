@@ -49,7 +49,7 @@ namespace JangadaWinClient
 
         private void LoadHeightData(Texture2D heightMap)
         {
-            width = heightMap.Width;
+            width = heightMap.Width;    
             height = heightMap.Height;
 
             Color[] heightMapColors = new Color[width * height];

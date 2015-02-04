@@ -36,6 +36,8 @@ namespace Jangada {
       internal static pb::FieldAccess.FieldAccessorTable<global::Jangada.RequestMovementPacket, global::Jangada.RequestMovementPacket.Builder> internal__static_Jangada_RequestMovementPacket__FieldAccessorTable;
       internal static pbd::MessageDescriptor internal__static_Jangada_AreaDescriptionPacket__Descriptor;
       internal static pb::FieldAccess.FieldAccessorTable<global::Jangada.AreaDescriptionPacket, global::Jangada.AreaDescriptionPacket.Builder> internal__static_Jangada_AreaDescriptionPacket__FieldAccessorTable;
+      internal static pbd::MessageDescriptor internal__static_Jangada_CreatureDescription__Descriptor;
+      internal static pb::FieldAccess.FieldAccessorTable<global::Jangada.CreatureDescription, global::Jangada.CreatureDescription.Builder> internal__static_Jangada_CreatureDescription__FieldAccessorTable;
       internal static pbd::MessageDescriptor internal__static_Jangada_PlayerDescription__Descriptor;
       internal static pb::FieldAccess.FieldAccessorTable<global::Jangada.PlayerDescription, global::Jangada.PlayerDescription.Builder> internal__static_Jangada_PlayerDescription__FieldAccessorTable;
       internal static pbd::MessageDescriptor internal__static_Jangada_StatsDescription__Descriptor;
@@ -87,24 +89,30 @@ namespace Jangada {
             "ZW1lbnRQYWNrZXQSQQoMbW92ZW1lbnRUeXBlGAEgAigOMisuSmFuZ2FkYS5S" + 
             "ZXF1ZXN0TW92ZW1lbnRQYWNrZXQuTW92ZW1lbnRUeXBlEg8KB2FtbW91bnQY" + 
             "AiACKAIiMgoMTW92ZW1lbnRUeXBlEgsKB0ZPUldBUkQQARIMCghCQUNLV0FS" + 
-            "RBACEgcKA1lBVxADIoABChVBcmVhRGVzY3JpcHRpb25QYWNrZXQSDgoGYXJl" + 
+            "RBACEgcKA1lBVxADIrEBChVBcmVhRGVzY3JpcHRpb25QYWNrZXQSDgoGYXJl" + 
             "YUlkGAEgAigFEioKBnBsYXllchgCIAIoCzIaLkphbmdhZGEuUGxheWVyRGVz" + 
             "Y3JpcHRpb24SKwoHcGxheWVycxgDIAMoCzIaLkphbmdhZGEuUGxheWVyRGVz" + 
-            "Y3JpcHRpb24isAEKEVBsYXllckRlc2NyaXB0aW9uEhIKCnBsYXllckd1aWQY" + 
-            "ASACKAkSKQoOcGxheWVyUG9zaXRpb24YAiACKAsyES5KYW5nYWRhLlBvc2l0" + 
-            "aW9uEjIKDnBsYXllclJvdGF0aW9uGAMgAigLMhouSmFuZ2FkYS5RdWF0ZXJu" + 
-            "aW9uTWVzc2FnZRIoCgVzdGF0cxgEIAEoCzIZLkphbmdhZGEuU3RhdHNEZXNj" + 
-            "cmlwdGlvbiJsChBTdGF0c0Rlc2NyaXB0aW9uEgwKBENPTlMYASACKAUSCwoD" + 
-            "U1RSGAIgAigFEgsKA0lOVBgDIAIoBRILCgNXSVMYBCACKAUSCwoDREVYGAUg" + 
-            "AigFEgoKAkhQGAYgAigFEgoKAk1QGAcgAigFIj8KEVBsYXllckxvZ2luUGFj" + 
-            "a2V0EioKBnBsYXllchgBIAIoCzIaLkphbmdhZGEuUGxheWVyRGVzY3JpcHRp" + 
-            "b24ibwoUUGxheWVyTW92ZW1lbnRQYWNrZXQSJgoLbmV3UG9zaXRpb24YASAC" + 
-            "KAsyES5KYW5nYWRhLlBvc2l0aW9uEi8KC25ld1JvdGF0aW9uGAIgAigLMhou" + 
-            "SmFuZ2FkYS5RdWF0ZXJuaW9uTWVzc2FnZSJFChdDaGFyYWN0ZXJNb3ZlbWVu" + 
-            "dFBhY2tldBIqCgZwbGF5ZXIYASACKAsyGi5KYW5nYWRhLlBsYXllckRlc2Ny" + 
-            "aXB0aW9uIjsKCE1lc3NhZ2VzEi8KDk5ldHdvcmttZXNzYWdlGAEgAygLMhcu" + 
-            "SmFuZ2FkYS5OZXR3b3JrbWVzc2FnZSIoChJQbGF5ZXJMb2dvdXRQYWNrZXQS" + 
-            "EgoKcGxheWVyR3VpZBgBIAIoCUICSAE=");
+            "Y3JpcHRpb24SLwoJY3JlYXR1cmVzGAQgAygLMhwuSmFuZ2FkYS5DcmVhdHVy" + 
+            "ZURlc2NyaXB0aW9uIskBChNDcmVhdHVyZURlc2NyaXB0aW9uEhQKDGNyZWF0" + 
+            "dXJlR3VpZBgBIAIoCRIPCgdtb2RlbElkGAIgAigFEisKEGNyZWF0dXJlUG9z" + 
+            "aXRpb24YAyACKAsyES5KYW5nYWRhLlBvc2l0aW9uEjQKEGNyZWF0dXJlUm90" + 
+            "YXRpb24YBCACKAsyGi5KYW5nYWRhLlF1YXRlcm5pb25NZXNzYWdlEigKBXN0" + 
+            "YXRzGAUgAigLMhkuSmFuZ2FkYS5TdGF0c0Rlc2NyaXB0aW9uIrABChFQbGF5" + 
+            "ZXJEZXNjcmlwdGlvbhISCgpwbGF5ZXJHdWlkGAEgAigJEikKDnBsYXllclBv" + 
+            "c2l0aW9uGAIgAigLMhEuSmFuZ2FkYS5Qb3NpdGlvbhIyCg5wbGF5ZXJSb3Rh" + 
+            "dGlvbhgDIAIoCzIaLkphbmdhZGEuUXVhdGVybmlvbk1lc3NhZ2USKAoFc3Rh" + 
+            "dHMYBCACKAsyGS5KYW5nYWRhLlN0YXRzRGVzY3JpcHRpb24ibAoQU3RhdHNE" + 
+            "ZXNjcmlwdGlvbhIMCgRDT05TGAEgAigFEgsKA1NUUhgCIAIoBRILCgNJTlQY" + 
+            "AyACKAUSCwoDV0lTGAQgAigFEgsKA0RFWBgFIAIoBRIKCgJIUBgGIAIoBRIK" + 
+            "CgJNUBgHIAIoBSI/ChFQbGF5ZXJMb2dpblBhY2tldBIqCgZwbGF5ZXIYASAC" + 
+            "KAsyGi5KYW5nYWRhLlBsYXllckRlc2NyaXB0aW9uIm8KFFBsYXllck1vdmVt" + 
+            "ZW50UGFja2V0EiYKC25ld1Bvc2l0aW9uGAEgAigLMhEuSmFuZ2FkYS5Qb3Np" + 
+            "dGlvbhIvCgtuZXdSb3RhdGlvbhgCIAIoCzIaLkphbmdhZGEuUXVhdGVybmlv" + 
+            "bk1lc3NhZ2UiRQoXQ2hhcmFjdGVyTW92ZW1lbnRQYWNrZXQSKgoGcGxheWVy" + 
+            "GAEgAigLMhouSmFuZ2FkYS5QbGF5ZXJEZXNjcmlwdGlvbiI7CghNZXNzYWdl" + 
+            "cxIvCg5OZXR3b3JrbWVzc2FnZRgBIAMoCzIXLkphbmdhZGEuTmV0d29ya21l" + 
+            "c3NhZ2UiKAoSUGxheWVyTG9nb3V0UGFja2V0EhIKCnBsYXllckd1aWQYASAC" + 
+            "KAlCAkgB");
         pbd::FileDescriptor.InternalDescriptorAssigner assigner = delegate(pbd::FileDescriptor root) {
           descriptor = root;
           internal__static_Jangada_Networkmessage__Descriptor = Descriptor.MessageTypes[0];
@@ -142,32 +150,36 @@ namespace Jangada {
           internal__static_Jangada_AreaDescriptionPacket__Descriptor = Descriptor.MessageTypes[8];
           internal__static_Jangada_AreaDescriptionPacket__FieldAccessorTable = 
               new pb::FieldAccess.FieldAccessorTable<global::Jangada.AreaDescriptionPacket, global::Jangada.AreaDescriptionPacket.Builder>(internal__static_Jangada_AreaDescriptionPacket__Descriptor,
-                  new string[] { "AreaId", "Player", "Players", });
-          internal__static_Jangada_PlayerDescription__Descriptor = Descriptor.MessageTypes[9];
+                  new string[] { "AreaId", "Player", "Players", "Creatures", });
+          internal__static_Jangada_CreatureDescription__Descriptor = Descriptor.MessageTypes[9];
+          internal__static_Jangada_CreatureDescription__FieldAccessorTable = 
+              new pb::FieldAccess.FieldAccessorTable<global::Jangada.CreatureDescription, global::Jangada.CreatureDescription.Builder>(internal__static_Jangada_CreatureDescription__Descriptor,
+                  new string[] { "CreatureGuid", "ModelId", "CreaturePosition", "CreatureRotation", "Stats", });
+          internal__static_Jangada_PlayerDescription__Descriptor = Descriptor.MessageTypes[10];
           internal__static_Jangada_PlayerDescription__FieldAccessorTable = 
               new pb::FieldAccess.FieldAccessorTable<global::Jangada.PlayerDescription, global::Jangada.PlayerDescription.Builder>(internal__static_Jangada_PlayerDescription__Descriptor,
                   new string[] { "PlayerGuid", "PlayerPosition", "PlayerRotation", "Stats", });
-          internal__static_Jangada_StatsDescription__Descriptor = Descriptor.MessageTypes[10];
+          internal__static_Jangada_StatsDescription__Descriptor = Descriptor.MessageTypes[11];
           internal__static_Jangada_StatsDescription__FieldAccessorTable = 
               new pb::FieldAccess.FieldAccessorTable<global::Jangada.StatsDescription, global::Jangada.StatsDescription.Builder>(internal__static_Jangada_StatsDescription__Descriptor,
                   new string[] { "CONS", "STR", "INT", "WIS", "DEX", "HP", "MP", });
-          internal__static_Jangada_PlayerLoginPacket__Descriptor = Descriptor.MessageTypes[11];
+          internal__static_Jangada_PlayerLoginPacket__Descriptor = Descriptor.MessageTypes[12];
           internal__static_Jangada_PlayerLoginPacket__FieldAccessorTable = 
               new pb::FieldAccess.FieldAccessorTable<global::Jangada.PlayerLoginPacket, global::Jangada.PlayerLoginPacket.Builder>(internal__static_Jangada_PlayerLoginPacket__Descriptor,
                   new string[] { "Player", });
-          internal__static_Jangada_PlayerMovementPacket__Descriptor = Descriptor.MessageTypes[12];
+          internal__static_Jangada_PlayerMovementPacket__Descriptor = Descriptor.MessageTypes[13];
           internal__static_Jangada_PlayerMovementPacket__FieldAccessorTable = 
               new pb::FieldAccess.FieldAccessorTable<global::Jangada.PlayerMovementPacket, global::Jangada.PlayerMovementPacket.Builder>(internal__static_Jangada_PlayerMovementPacket__Descriptor,
                   new string[] { "NewPosition", "NewRotation", });
-          internal__static_Jangada_CharacterMovementPacket__Descriptor = Descriptor.MessageTypes[13];
+          internal__static_Jangada_CharacterMovementPacket__Descriptor = Descriptor.MessageTypes[14];
           internal__static_Jangada_CharacterMovementPacket__FieldAccessorTable = 
               new pb::FieldAccess.FieldAccessorTable<global::Jangada.CharacterMovementPacket, global::Jangada.CharacterMovementPacket.Builder>(internal__static_Jangada_CharacterMovementPacket__Descriptor,
                   new string[] { "Player", });
-          internal__static_Jangada_Messages__Descriptor = Descriptor.MessageTypes[14];
+          internal__static_Jangada_Messages__Descriptor = Descriptor.MessageTypes[15];
           internal__static_Jangada_Messages__FieldAccessorTable = 
               new pb::FieldAccess.FieldAccessorTable<global::Jangada.Messages, global::Jangada.Messages.Builder>(internal__static_Jangada_Messages__Descriptor,
                   new string[] { "Networkmessage", });
-          internal__static_Jangada_PlayerLogoutPacket__Descriptor = Descriptor.MessageTypes[15];
+          internal__static_Jangada_PlayerLogoutPacket__Descriptor = Descriptor.MessageTypes[16];
           internal__static_Jangada_PlayerLogoutPacket__FieldAccessorTable = 
               new pb::FieldAccess.FieldAccessorTable<global::Jangada.PlayerLogoutPacket, global::Jangada.PlayerLogoutPacket.Builder>(internal__static_Jangada_PlayerLogoutPacket__Descriptor,
                   new string[] { "PlayerGuid", });
@@ -3468,8 +3480,8 @@ namespace Jangada {
   public sealed partial class AreaDescriptionPacket : pb::GeneratedMessage<AreaDescriptionPacket, AreaDescriptionPacket.Builder> {
     private AreaDescriptionPacket() { }
     private static readonly AreaDescriptionPacket defaultInstance = new AreaDescriptionPacket().MakeReadOnly();
-    private static readonly string[] _areaDescriptionPacketFieldNames = new string[] { "areaId", "player", "players" };
-    private static readonly uint[] _areaDescriptionPacketFieldTags = new uint[] { 8, 18, 26 };
+    private static readonly string[] _areaDescriptionPacketFieldNames = new string[] { "areaId", "creatures", "player", "players" };
+    private static readonly uint[] _areaDescriptionPacketFieldTags = new uint[] { 8, 34, 18, 26 };
     public static AreaDescriptionPacket DefaultInstance {
       get { return defaultInstance; }
     }
@@ -3522,12 +3534,27 @@ namespace Jangada {
       return players_[index];
     }
     
+    public const int CreaturesFieldNumber = 4;
+    private pbc::PopsicleList<global::Jangada.CreatureDescription> creatures_ = new pbc::PopsicleList<global::Jangada.CreatureDescription>();
+    public scg::IList<global::Jangada.CreatureDescription> CreaturesList {
+      get { return creatures_; }
+    }
+    public int CreaturesCount {
+      get { return creatures_.Count; }
+    }
+    public global::Jangada.CreatureDescription GetCreatures(int index) {
+      return creatures_[index];
+    }
+    
     public override bool IsInitialized {
       get {
         if (!hasAreaId) return false;
         if (!hasPlayer) return false;
         if (!Player.IsInitialized) return false;
         foreach (global::Jangada.PlayerDescription element in PlayersList) {
+          if (!element.IsInitialized) return false;
+        }
+        foreach (global::Jangada.CreatureDescription element in CreaturesList) {
           if (!element.IsInitialized) return false;
         }
         return true;
@@ -3541,10 +3568,13 @@ namespace Jangada {
         output.WriteInt32(1, field_names[0], AreaId);
       }
       if (hasPlayer) {
-        output.WriteMessage(2, field_names[1], Player);
+        output.WriteMessage(2, field_names[2], Player);
       }
       if (players_.Count > 0) {
-        output.WriteMessageArray(3, field_names[2], players_);
+        output.WriteMessageArray(3, field_names[3], players_);
+      }
+      if (creatures_.Count > 0) {
+        output.WriteMessageArray(4, field_names[1], creatures_);
       }
       UnknownFields.WriteTo(output);
     }
@@ -3564,6 +3594,9 @@ namespace Jangada {
         }
         foreach (global::Jangada.PlayerDescription element in PlayersList) {
           size += pb::CodedOutputStream.ComputeMessageSize(3, element);
+        }
+        foreach (global::Jangada.CreatureDescription element in CreaturesList) {
+          size += pb::CodedOutputStream.ComputeMessageSize(4, element);
         }
         size += UnknownFields.SerializedSize;
         memoizedSerializedSize = size;
@@ -3603,6 +3636,7 @@ namespace Jangada {
     }
     private AreaDescriptionPacket MakeReadOnly() {
       players_.MakeReadOnly();
+      creatures_.MakeReadOnly();
       return this;
     }
     
@@ -3699,6 +3733,9 @@ namespace Jangada {
         if (other.players_.Count != 0) {
           result.players_.Add(other.players_);
         }
+        if (other.creatures_.Count != 0) {
+          result.creatures_.Add(other.creatures_);
+        }
         this.MergeUnknownFields(other.UnknownFields);
         return this;
       }
@@ -3757,6 +3794,10 @@ namespace Jangada {
             }
             case 26: {
               input.ReadMessageArray(tag, field_name, result.players_, global::Jangada.PlayerDescription.DefaultInstance, extensionRegistry);
+              break;
+            }
+            case 34: {
+              input.ReadMessageArray(tag, field_name, result.creatures_, global::Jangada.CreatureDescription.DefaultInstance, extensionRegistry);
               break;
             }
           }
@@ -3872,8 +3913,578 @@ namespace Jangada {
         result.players_.Clear();
         return this;
       }
+      
+      public pbc::IPopsicleList<global::Jangada.CreatureDescription> CreaturesList {
+        get { return PrepareBuilder().creatures_; }
+      }
+      public int CreaturesCount {
+        get { return result.CreaturesCount; }
+      }
+      public global::Jangada.CreatureDescription GetCreatures(int index) {
+        return result.GetCreatures(index);
+      }
+      public Builder SetCreatures(int index, global::Jangada.CreatureDescription value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.creatures_[index] = value;
+        return this;
+      }
+      public Builder SetCreatures(int index, global::Jangada.CreatureDescription.Builder builderForValue) {
+        pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+        PrepareBuilder();
+        result.creatures_[index] = builderForValue.Build();
+        return this;
+      }
+      public Builder AddCreatures(global::Jangada.CreatureDescription value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.creatures_.Add(value);
+        return this;
+      }
+      public Builder AddCreatures(global::Jangada.CreatureDescription.Builder builderForValue) {
+        pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+        PrepareBuilder();
+        result.creatures_.Add(builderForValue.Build());
+        return this;
+      }
+      public Builder AddRangeCreatures(scg::IEnumerable<global::Jangada.CreatureDescription> values) {
+        PrepareBuilder();
+        result.creatures_.Add(values);
+        return this;
+      }
+      public Builder ClearCreatures() {
+        PrepareBuilder();
+        result.creatures_.Clear();
+        return this;
+      }
     }
     static AreaDescriptionPacket() {
+      object.ReferenceEquals(global::Jangada.Proto.Networkmessage.Descriptor, null);
+    }
+  }
+  
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+  public sealed partial class CreatureDescription : pb::GeneratedMessage<CreatureDescription, CreatureDescription.Builder> {
+    private CreatureDescription() { }
+    private static readonly CreatureDescription defaultInstance = new CreatureDescription().MakeReadOnly();
+    private static readonly string[] _creatureDescriptionFieldNames = new string[] { "creatureGuid", "creaturePosition", "creatureRotation", "modelId", "stats" };
+    private static readonly uint[] _creatureDescriptionFieldTags = new uint[] { 10, 26, 34, 16, 42 };
+    public static CreatureDescription DefaultInstance {
+      get { return defaultInstance; }
+    }
+    
+    public override CreatureDescription DefaultInstanceForType {
+      get { return DefaultInstance; }
+    }
+    
+    protected override CreatureDescription ThisMessage {
+      get { return this; }
+    }
+    
+    public static pbd::MessageDescriptor Descriptor {
+      get { return global::Jangada.Proto.Networkmessage.internal__static_Jangada_CreatureDescription__Descriptor; }
+    }
+    
+    protected override pb::FieldAccess.FieldAccessorTable<CreatureDescription, CreatureDescription.Builder> InternalFieldAccessors {
+      get { return global::Jangada.Proto.Networkmessage.internal__static_Jangada_CreatureDescription__FieldAccessorTable; }
+    }
+    
+    public const int CreatureGuidFieldNumber = 1;
+    private bool hasCreatureGuid;
+    private string creatureGuid_ = "";
+    public bool HasCreatureGuid {
+      get { return hasCreatureGuid; }
+    }
+    public string CreatureGuid {
+      get { return creatureGuid_; }
+    }
+    
+    public const int ModelIdFieldNumber = 2;
+    private bool hasModelId;
+    private int modelId_;
+    public bool HasModelId {
+      get { return hasModelId; }
+    }
+    public int ModelId {
+      get { return modelId_; }
+    }
+    
+    public const int CreaturePositionFieldNumber = 3;
+    private bool hasCreaturePosition;
+    private global::Jangada.Position creaturePosition_;
+    public bool HasCreaturePosition {
+      get { return hasCreaturePosition; }
+    }
+    public global::Jangada.Position CreaturePosition {
+      get { return creaturePosition_ ?? global::Jangada.Position.DefaultInstance; }
+    }
+    
+    public const int CreatureRotationFieldNumber = 4;
+    private bool hasCreatureRotation;
+    private global::Jangada.QuaternionMessage creatureRotation_;
+    public bool HasCreatureRotation {
+      get { return hasCreatureRotation; }
+    }
+    public global::Jangada.QuaternionMessage CreatureRotation {
+      get { return creatureRotation_ ?? global::Jangada.QuaternionMessage.DefaultInstance; }
+    }
+    
+    public const int StatsFieldNumber = 5;
+    private bool hasStats;
+    private global::Jangada.StatsDescription stats_;
+    public bool HasStats {
+      get { return hasStats; }
+    }
+    public global::Jangada.StatsDescription Stats {
+      get { return stats_ ?? global::Jangada.StatsDescription.DefaultInstance; }
+    }
+    
+    public override bool IsInitialized {
+      get {
+        if (!hasCreatureGuid) return false;
+        if (!hasModelId) return false;
+        if (!hasCreaturePosition) return false;
+        if (!hasCreatureRotation) return false;
+        if (!hasStats) return false;
+        if (!CreaturePosition.IsInitialized) return false;
+        if (!CreatureRotation.IsInitialized) return false;
+        if (!Stats.IsInitialized) return false;
+        return true;
+      }
+    }
+    
+    public override void WriteTo(pb::ICodedOutputStream output) {
+      int size = SerializedSize;
+      string[] field_names = _creatureDescriptionFieldNames;
+      if (hasCreatureGuid) {
+        output.WriteString(1, field_names[0], CreatureGuid);
+      }
+      if (hasModelId) {
+        output.WriteInt32(2, field_names[3], ModelId);
+      }
+      if (hasCreaturePosition) {
+        output.WriteMessage(3, field_names[1], CreaturePosition);
+      }
+      if (hasCreatureRotation) {
+        output.WriteMessage(4, field_names[2], CreatureRotation);
+      }
+      if (hasStats) {
+        output.WriteMessage(5, field_names[4], Stats);
+      }
+      UnknownFields.WriteTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public override int SerializedSize {
+      get {
+        int size = memoizedSerializedSize;
+        if (size != -1) return size;
+        
+        size = 0;
+        if (hasCreatureGuid) {
+          size += pb::CodedOutputStream.ComputeStringSize(1, CreatureGuid);
+        }
+        if (hasModelId) {
+          size += pb::CodedOutputStream.ComputeInt32Size(2, ModelId);
+        }
+        if (hasCreaturePosition) {
+          size += pb::CodedOutputStream.ComputeMessageSize(3, CreaturePosition);
+        }
+        if (hasCreatureRotation) {
+          size += pb::CodedOutputStream.ComputeMessageSize(4, CreatureRotation);
+        }
+        if (hasStats) {
+          size += pb::CodedOutputStream.ComputeMessageSize(5, Stats);
+        }
+        size += UnknownFields.SerializedSize;
+        memoizedSerializedSize = size;
+        return size;
+      }
+    }
+    
+    public static CreatureDescription ParseFrom(pb::ByteString data) {
+      return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+    }
+    public static CreatureDescription ParseFrom(pb::ByteString data, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+    }
+    public static CreatureDescription ParseFrom(byte[] data) {
+      return ((Builder) CreateBuilder().MergeFrom(data)).BuildParsed();
+    }
+    public static CreatureDescription ParseFrom(byte[] data, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(data, extensionRegistry)).BuildParsed();
+    }
+    public static CreatureDescription ParseFrom(global::System.IO.Stream input) {
+      return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+    }
+    public static CreatureDescription ParseFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+    }
+    public static CreatureDescription ParseDelimitedFrom(global::System.IO.Stream input) {
+      return CreateBuilder().MergeDelimitedFrom(input).BuildParsed();
+    }
+    public static CreatureDescription ParseDelimitedFrom(global::System.IO.Stream input, pb::ExtensionRegistry extensionRegistry) {
+      return CreateBuilder().MergeDelimitedFrom(input, extensionRegistry).BuildParsed();
+    }
+    public static CreatureDescription ParseFrom(pb::ICodedInputStream input) {
+      return ((Builder) CreateBuilder().MergeFrom(input)).BuildParsed();
+    }
+    public static CreatureDescription ParseFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+      return ((Builder) CreateBuilder().MergeFrom(input, extensionRegistry)).BuildParsed();
+    }
+    private CreatureDescription MakeReadOnly() {
+      return this;
+    }
+    
+    public static Builder CreateBuilder() { return new Builder(); }
+    public override Builder ToBuilder() { return CreateBuilder(this); }
+    public override Builder CreateBuilderForType() { return new Builder(); }
+    public static Builder CreateBuilder(CreatureDescription prototype) {
+      return new Builder(prototype);
+    }
+    
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public sealed partial class Builder : pb::GeneratedBuilder<CreatureDescription, Builder> {
+      protected override Builder ThisBuilder {
+        get { return this; }
+      }
+      public Builder() {
+        result = DefaultInstance;
+        resultIsReadOnly = true;
+      }
+      internal Builder(CreatureDescription cloneFrom) {
+        result = cloneFrom;
+        resultIsReadOnly = true;
+      }
+      
+      private bool resultIsReadOnly;
+      private CreatureDescription result;
+      
+      private CreatureDescription PrepareBuilder() {
+        if (resultIsReadOnly) {
+          CreatureDescription original = result;
+          result = new CreatureDescription();
+          resultIsReadOnly = false;
+          MergeFrom(original);
+        }
+        return result;
+      }
+      
+      public override bool IsInitialized {
+        get { return result.IsInitialized; }
+      }
+      
+      protected override CreatureDescription MessageBeingBuilt {
+        get { return PrepareBuilder(); }
+      }
+      
+      public override Builder Clear() {
+        result = DefaultInstance;
+        resultIsReadOnly = true;
+        return this;
+      }
+      
+      public override Builder Clone() {
+        if (resultIsReadOnly) {
+          return new Builder(result);
+        } else {
+          return new Builder().MergeFrom(result);
+        }
+      }
+      
+      public override pbd::MessageDescriptor DescriptorForType {
+        get { return global::Jangada.CreatureDescription.Descriptor; }
+      }
+      
+      public override CreatureDescription DefaultInstanceForType {
+        get { return global::Jangada.CreatureDescription.DefaultInstance; }
+      }
+      
+      public override CreatureDescription BuildPartial() {
+        if (resultIsReadOnly) {
+          return result;
+        }
+        resultIsReadOnly = true;
+        return result.MakeReadOnly();
+      }
+      
+      public override Builder MergeFrom(pb::IMessage other) {
+        if (other is CreatureDescription) {
+          return MergeFrom((CreatureDescription) other);
+        } else {
+          base.MergeFrom(other);
+          return this;
+        }
+      }
+      
+      public override Builder MergeFrom(CreatureDescription other) {
+        if (other == global::Jangada.CreatureDescription.DefaultInstance) return this;
+        PrepareBuilder();
+        if (other.HasCreatureGuid) {
+          CreatureGuid = other.CreatureGuid;
+        }
+        if (other.HasModelId) {
+          ModelId = other.ModelId;
+        }
+        if (other.HasCreaturePosition) {
+          MergeCreaturePosition(other.CreaturePosition);
+        }
+        if (other.HasCreatureRotation) {
+          MergeCreatureRotation(other.CreatureRotation);
+        }
+        if (other.HasStats) {
+          MergeStats(other.Stats);
+        }
+        this.MergeUnknownFields(other.UnknownFields);
+        return this;
+      }
+      
+      public override Builder MergeFrom(pb::ICodedInputStream input) {
+        return MergeFrom(input, pb::ExtensionRegistry.Empty);
+      }
+      
+      public override Builder MergeFrom(pb::ICodedInputStream input, pb::ExtensionRegistry extensionRegistry) {
+        PrepareBuilder();
+        pb::UnknownFieldSet.Builder unknownFields = null;
+        uint tag;
+        string field_name;
+        while (input.ReadTag(out tag, out field_name)) {
+          if(tag == 0 && field_name != null) {
+            int field_ordinal = global::System.Array.BinarySearch(_creatureDescriptionFieldNames, field_name, global::System.StringComparer.Ordinal);
+            if(field_ordinal >= 0)
+              tag = _creatureDescriptionFieldTags[field_ordinal];
+            else {
+              if (unknownFields == null) {
+                unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+              }
+              ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+              continue;
+            }
+          }
+          switch (tag) {
+            case 0: {
+              throw pb::InvalidProtocolBufferException.InvalidTag();
+            }
+            default: {
+              if (pb::WireFormat.IsEndGroupTag(tag)) {
+                if (unknownFields != null) {
+                  this.UnknownFields = unknownFields.Build();
+                }
+                return this;
+              }
+              if (unknownFields == null) {
+                unknownFields = pb::UnknownFieldSet.CreateBuilder(this.UnknownFields);
+              }
+              ParseUnknownField(input, unknownFields, extensionRegistry, tag, field_name);
+              break;
+            }
+            case 10: {
+              result.hasCreatureGuid = input.ReadString(ref result.creatureGuid_);
+              break;
+            }
+            case 16: {
+              result.hasModelId = input.ReadInt32(ref result.modelId_);
+              break;
+            }
+            case 26: {
+              global::Jangada.Position.Builder subBuilder = global::Jangada.Position.CreateBuilder();
+              if (result.hasCreaturePosition) {
+                subBuilder.MergeFrom(CreaturePosition);
+              }
+              input.ReadMessage(subBuilder, extensionRegistry);
+              CreaturePosition = subBuilder.BuildPartial();
+              break;
+            }
+            case 34: {
+              global::Jangada.QuaternionMessage.Builder subBuilder = global::Jangada.QuaternionMessage.CreateBuilder();
+              if (result.hasCreatureRotation) {
+                subBuilder.MergeFrom(CreatureRotation);
+              }
+              input.ReadMessage(subBuilder, extensionRegistry);
+              CreatureRotation = subBuilder.BuildPartial();
+              break;
+            }
+            case 42: {
+              global::Jangada.StatsDescription.Builder subBuilder = global::Jangada.StatsDescription.CreateBuilder();
+              if (result.hasStats) {
+                subBuilder.MergeFrom(Stats);
+              }
+              input.ReadMessage(subBuilder, extensionRegistry);
+              Stats = subBuilder.BuildPartial();
+              break;
+            }
+          }
+        }
+        
+        if (unknownFields != null) {
+          this.UnknownFields = unknownFields.Build();
+        }
+        return this;
+      }
+      
+      
+      public bool HasCreatureGuid {
+        get { return result.hasCreatureGuid; }
+      }
+      public string CreatureGuid {
+        get { return result.CreatureGuid; }
+        set { SetCreatureGuid(value); }
+      }
+      public Builder SetCreatureGuid(string value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.hasCreatureGuid = true;
+        result.creatureGuid_ = value;
+        return this;
+      }
+      public Builder ClearCreatureGuid() {
+        PrepareBuilder();
+        result.hasCreatureGuid = false;
+        result.creatureGuid_ = "";
+        return this;
+      }
+      
+      public bool HasModelId {
+        get { return result.hasModelId; }
+      }
+      public int ModelId {
+        get { return result.ModelId; }
+        set { SetModelId(value); }
+      }
+      public Builder SetModelId(int value) {
+        PrepareBuilder();
+        result.hasModelId = true;
+        result.modelId_ = value;
+        return this;
+      }
+      public Builder ClearModelId() {
+        PrepareBuilder();
+        result.hasModelId = false;
+        result.modelId_ = 0;
+        return this;
+      }
+      
+      public bool HasCreaturePosition {
+       get { return result.hasCreaturePosition; }
+      }
+      public global::Jangada.Position CreaturePosition {
+        get { return result.CreaturePosition; }
+        set { SetCreaturePosition(value); }
+      }
+      public Builder SetCreaturePosition(global::Jangada.Position value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.hasCreaturePosition = true;
+        result.creaturePosition_ = value;
+        return this;
+      }
+      public Builder SetCreaturePosition(global::Jangada.Position.Builder builderForValue) {
+        pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+        PrepareBuilder();
+        result.hasCreaturePosition = true;
+        result.creaturePosition_ = builderForValue.Build();
+        return this;
+      }
+      public Builder MergeCreaturePosition(global::Jangada.Position value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        if (result.hasCreaturePosition &&
+            result.creaturePosition_ != global::Jangada.Position.DefaultInstance) {
+            result.creaturePosition_ = global::Jangada.Position.CreateBuilder(result.creaturePosition_).MergeFrom(value).BuildPartial();
+        } else {
+          result.creaturePosition_ = value;
+        }
+        result.hasCreaturePosition = true;
+        return this;
+      }
+      public Builder ClearCreaturePosition() {
+        PrepareBuilder();
+        result.hasCreaturePosition = false;
+        result.creaturePosition_ = null;
+        return this;
+      }
+      
+      public bool HasCreatureRotation {
+       get { return result.hasCreatureRotation; }
+      }
+      public global::Jangada.QuaternionMessage CreatureRotation {
+        get { return result.CreatureRotation; }
+        set { SetCreatureRotation(value); }
+      }
+      public Builder SetCreatureRotation(global::Jangada.QuaternionMessage value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.hasCreatureRotation = true;
+        result.creatureRotation_ = value;
+        return this;
+      }
+      public Builder SetCreatureRotation(global::Jangada.QuaternionMessage.Builder builderForValue) {
+        pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+        PrepareBuilder();
+        result.hasCreatureRotation = true;
+        result.creatureRotation_ = builderForValue.Build();
+        return this;
+      }
+      public Builder MergeCreatureRotation(global::Jangada.QuaternionMessage value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        if (result.hasCreatureRotation &&
+            result.creatureRotation_ != global::Jangada.QuaternionMessage.DefaultInstance) {
+            result.creatureRotation_ = global::Jangada.QuaternionMessage.CreateBuilder(result.creatureRotation_).MergeFrom(value).BuildPartial();
+        } else {
+          result.creatureRotation_ = value;
+        }
+        result.hasCreatureRotation = true;
+        return this;
+      }
+      public Builder ClearCreatureRotation() {
+        PrepareBuilder();
+        result.hasCreatureRotation = false;
+        result.creatureRotation_ = null;
+        return this;
+      }
+      
+      public bool HasStats {
+       get { return result.hasStats; }
+      }
+      public global::Jangada.StatsDescription Stats {
+        get { return result.Stats; }
+        set { SetStats(value); }
+      }
+      public Builder SetStats(global::Jangada.StatsDescription value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        result.hasStats = true;
+        result.stats_ = value;
+        return this;
+      }
+      public Builder SetStats(global::Jangada.StatsDescription.Builder builderForValue) {
+        pb::ThrowHelper.ThrowIfNull(builderForValue, "builderForValue");
+        PrepareBuilder();
+        result.hasStats = true;
+        result.stats_ = builderForValue.Build();
+        return this;
+      }
+      public Builder MergeStats(global::Jangada.StatsDescription value) {
+        pb::ThrowHelper.ThrowIfNull(value, "value");
+        PrepareBuilder();
+        if (result.hasStats &&
+            result.stats_ != global::Jangada.StatsDescription.DefaultInstance) {
+            result.stats_ = global::Jangada.StatsDescription.CreateBuilder(result.stats_).MergeFrom(value).BuildPartial();
+        } else {
+          result.stats_ = value;
+        }
+        result.hasStats = true;
+        return this;
+      }
+      public Builder ClearStats() {
+        PrepareBuilder();
+        result.hasStats = false;
+        result.stats_ = null;
+        return this;
+      }
+    }
+    static CreatureDescription() {
       object.ReferenceEquals(global::Jangada.Proto.Networkmessage.Descriptor, null);
     }
   }
@@ -3949,11 +4560,10 @@ namespace Jangada {
         if (!hasPlayerGuid) return false;
         if (!hasPlayerPosition) return false;
         if (!hasPlayerRotation) return false;
+        if (!hasStats) return false;
         if (!PlayerPosition.IsInitialized) return false;
         if (!PlayerRotation.IsInitialized) return false;
-        if (HasStats) {
-          if (!Stats.IsInitialized) return false;
-        }
+        if (!Stats.IsInitialized) return false;
         return true;
       }
     }

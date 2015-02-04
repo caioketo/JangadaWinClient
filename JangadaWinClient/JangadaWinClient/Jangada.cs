@@ -39,7 +39,8 @@ namespace JangadaWinClient
         public GraphicsDevice device;
         NewCamera newCamera;
         public World world;
-        Dictionary<int, Terrain> terrains = new Dictionary<int,Terrain>();
+        Dictionary<int, Terrain> terrains = new Dictionary<int, Terrain>();
+        public Dictionary<int, Model> models = new Dictionary<int, Model>();
         List<TerrainData> terrainDatas = new List<TerrainData>();
         int mapIndex;
         public Model humanModel;
@@ -101,7 +102,7 @@ namespace JangadaWinClient
             manager.Initialize();
             manager.AutoCreateRenderTarget = false;
             new TCPClient(7777);
-            terrains.Add(1, new Terrain(GraphicsDevice, new Vector3(0, -100, 256)));
+            terrains.Add(1, new Terrain(GraphicsDevice, new Vector3(0, 0, 0)));
             base.Initialize();
         }
 
@@ -144,7 +145,7 @@ namespace JangadaWinClient
             TexturesHolder.BG_SMALL_PORTRAIT = Content.Load<Texture2D>("bgsp");
             TexturesHolder.LINE_TEXT = new Texture2D(GraphicsDevice, 1, 1);
             TexturesHolder.LINE_TEXT.SetData(new[] { Color.White });
-            terrainDatas.Add(new TerrainData(Content.Load<Texture2D>("HM1"), Content.Load<Texture2D>("TEX1"))
+            terrainDatas.Add(new TerrainData(Content.Load<Texture2D>("HM2"), Content.Load<Texture2D>("TEX1"))
                 {
                     Id = 1
                 });
@@ -158,6 +159,7 @@ namespace JangadaWinClient
             {
                 bone.Transform *= Matrix.CreateScale(0.08f);
             }
+            models.Add(1, humanModel);
             Player player = new Player(humanModel);
             mouseHandler = new MouseHandler(device);
             world = new World(player);

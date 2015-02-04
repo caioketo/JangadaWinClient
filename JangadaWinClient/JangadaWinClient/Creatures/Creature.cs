@@ -14,6 +14,7 @@ namespace JangadaWinClient.Creatures
     {
         #region Atributes
         Model model;
+        public int ModelId;
         public SmallPortrait smallPortrait;
         public string Guid;
         public Vector3 position = new Vector3(8, 1, -3);
@@ -39,22 +40,24 @@ namespace JangadaWinClient.Creatures
             this.smallPortrait = new SmallPortrait(TexturesHolder.BG_SMALL_PORTRAIT, TexturesHolder.BG_BARS, this);
             SetDescription(playerDesc);
         }
+
+        public Creature(CreatureDescription creatureDesc)
+        {
+            this.smallPortrait = new SmallPortrait(TexturesHolder.BG_SMALL_PORTRAIT, TexturesHolder.BG_BARS, this);
+            SetDescription(creatureDesc);
+        }
         #endregion
-
-
-
-
+        
 
 
         #region Setters
-        public void SetDescription(PlayerDescription playerDesc)
+        private void SetAll(string guid, Position position, QuaternionMessage rotation, bool hasStats, StatsDescription stats)
         {
-            this.Guid = playerDesc.PlayerGuid;
-            this.position = Util.fromPosition(playerDesc.PlayerPosition);
-            this.rotation = Util.fromQuaternionMessage(playerDesc.PlayerRotation);
-            if (playerDesc.HasStats)
+            this.Guid = guid;
+            this.position = Util.fromPosition(position);
+            this.rotation = Util.fromQuaternionMessage(rotation);
+            if (hasStats)
             {
-                StatsDescription stats = playerDesc.Stats;
                 this.health = stats.HP;
                 this.mana = stats.MP;
                 this.Stats.CONS = stats.CONS;
@@ -68,6 +71,21 @@ namespace JangadaWinClient.Creatures
                 this.health = 75;
                 this.mana = 80;
             }
+        }
+
+
+        public void SetDescription(CreatureDescription creatureDesc)
+        {
+            this.SetAll(creatureDesc.CreatureGuid, creatureDesc.CreaturePosition, creatureDesc.CreatureRotation,
+                creatureDesc.HasStats, creatureDesc.Stats);
+            this.ModelId = creatureDesc.ModelId;
+            this.model = Util.getModel(this.ModelId);
+        }
+
+        public void SetDescription(PlayerDescription playerDesc)
+        {
+            this.SetAll(playerDesc.PlayerGuid, playerDesc.PlayerPosition, playerDesc.PlayerRotation, 
+                playerDesc.HasStats, playerDesc.Stats);
         }
         #endregion
 

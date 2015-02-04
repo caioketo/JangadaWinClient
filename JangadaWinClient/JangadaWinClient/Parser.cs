@@ -33,6 +33,14 @@ namespace JangadaWinClient
                             Util.getWorld().AddPlayer(new Player(Jangada.getInstance().humanModel, playerDesc));
                         }
                     }
+
+                    if (message.AreaDescriptionPacket.CreaturesCount > 0)
+                    {
+                        foreach (CreatureDescription creatureDesc in message.AreaDescriptionPacket.CreaturesList)
+                        {
+                            Util.getWorld().AddCreature(new Creature(creatureDesc));
+                        }
+                    }
                     Jangada.getInstance().setIsInMenu(false);
                     break;
                 case Networkmessage.Types.Type.PLAYER_LOGIN:
