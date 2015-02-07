@@ -23,6 +23,7 @@ namespace JangadaWinClient.Creatures
         public Stats Stats = new Stats();
         public int health;
         public int mana;
+        public List<Skill> Skills = new List<Skill>();
         #endregion
 
         #region Constructors
@@ -86,6 +87,11 @@ namespace JangadaWinClient.Creatures
         {
             this.SetAll(playerDesc.PlayerGuid, playerDesc.PlayerPosition, playerDesc.PlayerRotation, 
                 playerDesc.HasStats, playerDesc.Stats);
+
+            foreach (SkillsDescription skillDesc in playerDesc.SkillsList)
+            {
+                this.Skills.Add(new Skill(skillDesc));
+            }
         }
         #endregion
 

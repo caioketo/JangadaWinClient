@@ -43,6 +43,9 @@ namespace JangadaWinClient
                     }
                     Jangada.getInstance().setIsInMenu(false);
                     break;
+                case Networkmessage.Types.Type.CREATURE_RESPAWN:
+                    Util.getWorld().AddCreature(new Creature(message.CreatureRespawnPacket.CreatureDescription));
+                    break;
                 case Networkmessage.Types.Type.PLAYER_LOGIN:
                     Util.getWorld().AddPlayer(new Player(Jangada.getInstance().humanModel, message.PlayerLoginPacket.Player));
                     break;
@@ -66,7 +69,6 @@ namespace JangadaWinClient
                     {
                         Util.getWorld().RemovePlayer(nPlayer);
                     }
-
                     break;
                 default:
                     break;

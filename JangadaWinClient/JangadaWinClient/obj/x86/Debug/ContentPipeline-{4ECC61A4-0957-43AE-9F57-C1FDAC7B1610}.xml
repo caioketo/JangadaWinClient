@@ -95,6 +95,24 @@
       <Output>C:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\bin\x86\Debug\Content\HM2.xnb</Output>
       <Time>2015-02-02T09:59:02.4266935-02:00</Time>
     </Item>
+    <Item>
+      <Source>skillsbar.png</Source>
+      <Name>skillsbar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\bin\x86\Debug\Content\skillsbar.xnb</Output>
+      <Time>2015-02-02T10:14:46.0901065-02:00</Time>
+    </Item>
+    <Item>
+      <Source>1.png</Source>
+      <Name>1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\bin\x86\Debug\Content\1.xnb</Output>
+      <Time>2015-02-07T18:34:33.3656843-02:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{4ECC61A4-0957-43AE-9F57-C1FDAC7B1610}</ContentProjectGUID>

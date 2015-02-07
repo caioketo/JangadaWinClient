@@ -58,7 +58,7 @@ namespace JangadaWinClient
             heightMapData = new float[width, height];
             for (int x = 0; x < width; x++)
                 for (int y = 0; y < height; y++)
-                    heightMapData[x, y] = heightMapColors[x + y * width].R / 5.0f;
+                    heightMapData[x, y] = 0;// heightMapColors[x + y * width].R / 5.0f;
         }
 
 

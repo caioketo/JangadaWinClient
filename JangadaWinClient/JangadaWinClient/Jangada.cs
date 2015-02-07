@@ -41,10 +41,12 @@ namespace JangadaWinClient
         public World world;
         Dictionary<int, Terrain> terrains = new Dictionary<int, Terrain>();
         public Dictionary<int, Model> models = new Dictionary<int, Model>();
+        public Dictionary<int, Texture2D> textures = new Dictionary<int, Texture2D>();
         List<TerrainData> terrainDatas = new List<TerrainData>();
         int mapIndex;
         public Model humanModel;
         public bool useProto = true;
+        SkillBars skills;
 
         public int MapIndex
         {
@@ -160,10 +162,12 @@ namespace JangadaWinClient
                 bone.Transform *= Matrix.CreateScale(0.08f);
             }
             models.Add(1, humanModel);
+            textures.Add(1, Content.Load<Texture2D>("1"));
             Player player = new Player(humanModel);
             mouseHandler = new MouseHandler(device);
             world = new World(player);
             newCamera = new NewCamera(graphics.GraphicsDevice.Viewport.AspectRatio);
+            skills = new SkillBars(Content.Load<Texture2D>("skillsbar"), player);
             
         }
 
@@ -249,6 +253,7 @@ namespace JangadaWinClient
                 {
                     Util.getWorld().selectedCreature.smallPortrait.Draw(spriteBatch, 300);
                 }
+                skills.Draw(spriteBatch);
             }
             spriteBatch.End();
 

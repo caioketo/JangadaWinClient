@@ -84,9 +84,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Content\SkillBars.cs" />
     <Compile Include="Content\SmallPortrait.cs" />
     <Compile Include="Creatures\Creature.cs" />
     <Compile Include="Creatures\Player.cs" />
+    <Compile Include="Creatures\Skill.cs" />
     <Compile Include="Creatures\Stats.cs" />
     <Compile Include="Enums\ClientMessageType.cs" />
     <Compile Include="Enums\MovementType.cs" />

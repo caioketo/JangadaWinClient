@@ -6,3 +6,5 @@ Content\human2.xnb
 Content\bgsp.xnb
 Content\bghp.xnb
 Content\HM2.xnb
+Content\skillsbar.xnb
+Content\1.xnb

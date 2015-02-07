@@ -18,3 +18,5 @@ C:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClien
 C:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\bin\x86\Debug\Content\bgsp.xnb
 C:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\bin\x86\Debug\Content\bghp.xnb
 C:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\bin\x86\Debug\Content\HM2.xnb
+C:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\bin\x86\Debug\Content\skillsbar.xnb
+C:\Users\Caio\Documents\GitHub\JangadaWinClient\JangadaWinClient\JangadaWinClient\bin\x86\Debug\Content\1.xnb
